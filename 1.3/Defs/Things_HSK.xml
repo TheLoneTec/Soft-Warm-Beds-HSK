@@ -30,7 +30,7 @@
       <li>Beddings</li>
     </thingCategories>
     <recipeMaker>
-      <researchPrerequisite>ComplexFurniture</researchPrerequisite>
+      <researchPrerequisite>Beds_A1</researchPrerequisite>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
@@ -66,7 +66,7 @@
       <li>Beddings</li>
     </thingCategories>
     <recipeMaker>
-      <researchPrerequisite>ComplexFurniture</researchPrerequisite>
+      <researchPrerequisite>Beds_A1</researchPrerequisite>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
@@ -107,7 +107,7 @@
       <li>Beddings</li>
     </thingCategories>
     <recipeMaker>
-      <researchPrerequisite>ComplexFurniture</researchPrerequisite>
+      <researchPrerequisite>Beds_C3</researchPrerequisite>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
@@ -145,7 +145,7 @@
       <li>Beddings</li>
     </thingCategories>
     <recipeMaker>
-      <researchPrerequisite>ComplexFurniture</researchPrerequisite>
+      <researchPrerequisite>Beds_C3</researchPrerequisite>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
@@ -186,7 +186,7 @@
       <li>Beddings</li>
     </thingCategories>
     <recipeMaker>
-      <researchPrerequisite>ComplexFurniture</researchPrerequisite>
+      <researchPrerequisite>Beds_C2</researchPrerequisite>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
@@ -226,7 +226,7 @@
       <li>Beddings</li>
     </thingCategories>
     <recipeMaker>
-      <researchPrerequisite>ComplexFurniture</researchPrerequisite>
+      <researchPrerequisite>HospitalBed</researchPrerequisite>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
@@ -266,7 +266,7 @@
       <li>Beddings</li>
     </thingCategories>
     <recipeMaker>
-      <researchPrerequisite>ComplexFurniture</researchPrerequisite>
+      <researchPrerequisite>Clinical_D1</researchPrerequisite>
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
