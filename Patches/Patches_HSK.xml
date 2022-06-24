@@ -220,6 +220,7 @@
 					<xpath>/Defs/ThingDef[defName = "cryo_double_bed"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
 					</value>
 				</li>
 				
@@ -352,6 +353,7 @@
 					<xpath>/Defs/ThingDef[defName = "cryo_single_bed"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
 					</value>
 				</li>
 			
@@ -484,6 +486,19 @@
 					<xpath>/Defs/ThingDef[defName = "space_double_bed"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.6</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
+					</value>
+				</li>
+			
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "space_double_bed"]/costList</xpath>
+					<value>
+						<costList>
+							<SyntheticFibers>8</SyntheticFibers>
+							<Electronics>4</Electronics>
+							<ComponentSpacer>7</ComponentSpacer>
+						</costList>
 					</value>
 				</li>
 			
@@ -616,6 +631,19 @@
 					<xpath>/Defs/ThingDef[defName = "PodBed"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.6</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
+					</value>
+				</li>
+			
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "PodBed"]/costList</xpath>
+					<value>
+						<costList>
+							<SyntheticFibers>4</SyntheticFibers>
+							<Electronics>2</Electronics>
+							<ComponentSpacer>3</ComponentSpacer>
+						</costList>
 					</value>
 				</li>
 			
@@ -748,6 +776,20 @@
 					<xpath>/Defs/ThingDef[defName = "AdvHospitalBed"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
+					</value>
+				</li>
+				
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "AdvHospitalBed"]/costList</xpath>
+					<value>
+						<costList>
+							<Rubber>10</Rubber>
+							<MedicineUltratech>10</MedicineUltratech>
+							<ComponentSpacer>2</ComponentSpacer>
+							<Electronics>2</Electronics>
+						</costList>
 					</value>
 				</li>
 				
@@ -880,6 +922,19 @@
 					<xpath>/Defs/ThingDef[defName = "HospitalBed"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.3</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.2</BedStuffEffectMultiplierInsulation_Heat>
+					</value>
+				</li>
+			
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "HospitalBed"]/costList</xpath>
+					<value>
+						<costList>
+							<MedicineIndustrial>10</MedicineIndustrial>
+							<ComponentIndustrial>3</ComponentIndustrial>
+							<Mechanism>1</Mechanism>
+						</costList>
 					</value>
 				</li>
 			
@@ -1012,6 +1067,7 @@
 					<xpath>/Defs/ThingDef[defName = "industrial_double_bed"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
 					</value>
 				</li>
 			
@@ -1024,6 +1080,16 @@
 							<li>Woody</li>
 							<li>Plastic</li>
 						</stuffCategories>
+					</value>
+				</li>
+
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "industrial_double_bed"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentIndustrial>14</ComponentIndustrial>
+						</costList>
 					</value>
 				</li>
 				
@@ -1156,6 +1222,7 @@
 					<xpath>/Defs/ThingDef[defName = "industrial_single_bed"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
 					</value>
 				</li>
 			
@@ -1168,6 +1235,16 @@
 							<li>Woody</li>
 							<li>Plastic</li>
 						</stuffCategories>
+					</value>
+				</li>
+			
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "industrial_single_bed"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentIndustrial>5</ComponentIndustrial>
+						</costList>
 					</value>
 				</li>
 			
@@ -1300,6 +1377,7 @@
 					<xpath>/Defs/ThingDef[defName = "MilleniumDoubleBed"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.6</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
 					</value>
 				</li>
 			
@@ -1311,6 +1389,16 @@
 							<li>Metallic</li>
 							<li>Plastic</li>
 						</stuffCategories>
+					</value>
+				</li>
+			
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "MilleniumBed"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentIndustrial>6</ComponentIndustrial>
+						</costList>
 					</value>
 				</li>
 			
@@ -1443,6 +1531,7 @@
 					<xpath>/Defs/ThingDef[defName = "MilleniumBed"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.6</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
 					</value>
 				</li>
 			
@@ -1454,6 +1543,16 @@
 							<li>Metallic</li>
 							<li>Plastic</li>
 						</stuffCategories>
+					</value>
+				</li>
+			
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "MilleniumBed"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentIndustrial>4</ComponentIndustrial>
+						</costList>
 					</value>
 				</li>
 			
@@ -1578,7 +1677,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "RoyalBed"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.2</Comfort>
+						<Comfort>0.3</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -1586,6 +1685,7 @@
 					<xpath>/Defs/ThingDef[defName = "RoyalBed"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.8</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.4</BedStuffEffectMultiplierInsulation_Heat>
 					</value>
 				</li>
 			
@@ -1598,6 +1698,16 @@
 							<li>Woody</li>
 							<li>Plastic</li>
 						</stuffCategories>
+					</value>
+				</li>
+			
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "RoyalBed"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentIndustrial>4</ComponentIndustrial>
+						</costList>
 					</value>
 				</li>
 			
@@ -1722,7 +1832,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "DoubleBed"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.2</Comfort>
+						<Comfort>0.3</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -1730,6 +1840,7 @@
 					<xpath>/Defs/ThingDef[defName = "DoubleBed"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
 					</value>
 				</li>
 			
@@ -1741,6 +1852,16 @@
 							<li>Metallic</li>
 							<li>Woody</li>
 						</stuffCategories>
+					</value>
+				</li>
+			
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "DoubleBed"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentMedieval>8</ComponentMedieval>
+						</costList>
 					</value>
 				</li>
 			
@@ -1865,7 +1986,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "Bed"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.2</Comfort>
+						<Comfort>0.3</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -1873,6 +1994,7 @@
 					<xpath>/Defs/ThingDef[defName = "Bed"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
 					</value>
 				</li>
 			
@@ -1884,6 +2006,16 @@
 							<li>Metallic</li>
 							<li>Woody</li>
 						</stuffCategories>
+					</value>
+				</li>
+			
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "Bed"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentMedieval>4</ComponentMedieval>
+						</costList>
 					</value>
 				</li>
 			
@@ -1998,7 +2130,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "BedrollDouble"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.2</Comfort>
+						<Comfort>0.3</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -2006,6 +2138,7 @@
 					<xpath>/Defs/ThingDef[defName = "BedrollDouble"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.4</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.2</BedStuffEffectMultiplierInsulation_Heat>
 					</value>
 				</li>
 			
@@ -2016,6 +2149,16 @@
 						<stuffCategories>
 							<li>Woody</li>
 						</stuffCategories>
+					</value>
+				</li>
+				
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "BedrollDouble"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentMedieval>4</ComponentMedieval>
+						</costList>
 					</value>
 				</li>
 			
@@ -2130,7 +2273,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "Bedroll"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.2</Comfort>
+						<Comfort>0.3</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -2138,6 +2281,7 @@
 					<xpath>/Defs/ThingDef[defName = "Bedroll"]/statBases</xpath>
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.4</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.2</BedStuffEffectMultiplierInsulation_Heat>
 					</value>
 				</li>
 			
@@ -2148,6 +2292,16 @@
 						<stuffCategories>
 							<li>Woody</li>
 						</stuffCategories>
+					</value>
+				</li>
+			
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "Bedroll"]/costList</xpath>
+					<value>
+						<costList>
+							<ComponentMedieval>2</ComponentMedieval>
+						</costList>
 					</value>
 				</li>
 			
@@ -2187,6 +2341,32 @@
 							<ComponentMedieval>4</ComponentMedieval>
 							<RawCotton>80</RawCotton>
 						</costList>
+					</value>
+				</li>
+		
+				<!-- ==== Hi-Tech Fabrics Softness ==== -->	
+		
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "DevilstrandCloth" or defName = "Synthread" or defName = "Hyperweave" or defName = "Kevlar" or defName = "AlphaPoly" or defName = "BetaPoly"]/stuffProps/categories</xpath>
+					<value>
+						<li>Fabric</li>
+					</value>
+				</li>
+		
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "ChitinPlating"]/stuffProps/categories</xpath>
+					<value>
+						<li>Leathery</li>
+					</value>
+				</li>
+		
+				<!-- ==== Prison Bed Default Comfort ==== -->	
+		
+				<!--Comfort Settings-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "prison_single_bed_RT" or defName = "prison_single_bed_LB"]/statBases/Comfort</xpath>
+					<value>
+						<Comfort>0.15</Comfort>
 					</value>
 				</li>
 		
