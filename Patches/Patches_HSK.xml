@@ -2236,6 +2236,7 @@
 						<uiIconPath/>
 					</value>
 				</li>
+
 				<li Class="JPTools.PatchOperationCopy">
 					<xpath>/Defs/ThingDef[defName = "Bedroll"]/graphicData/texPath</xpath>
 					<toXpath>/Defs/ThingDef[defName = "Bedroll"]/uiIconPath</toXpath>
@@ -2311,7 +2312,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "HayBed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.4</BedRestEffectiveness>
+						<BedRestEffectiveness>0.6</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
