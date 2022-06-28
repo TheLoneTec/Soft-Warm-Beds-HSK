@@ -141,10 +141,73 @@
 					<xpath>/Defs/ThingDef[defName = "Crib"]/researchPrerequisites</xpath>
 					<value>
 						<researchPrerequisites>
-							<li>Beds_C1</li>
+							<li>Beds_B1</li>
 						</researchPrerequisites>
 					</value>
 				</li>
+
+				<!-- ======== Basic Crib ======== -->
+
+				<!--Graphic Modifications Place Holder-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="AMBCrib"]/graphicData/texPath</xpath>
+					<value>
+						<texPath>Things/Building/HSK/HayCrib/BasicCrib</texPath>
+					</value>
+				</li>
+
+				<!--Insulation Settings-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "AMBCrib"]/statBases</xpath>
+					<value>
+						<statBases>
+							<MaxHitPoints>100</MaxHitPoints>
+							<Flammability>1.0</Flammability>
+							<Beauty>-1</Beauty>
+							<WorkToBuild>750</WorkToBuild>
+							<Mass>6</Mass>
+							<Bulk>25</Bulk>
+							<BedRestEffectiveness>0.5</BedRestEffectiveness>
+							<Comfort>0.4</Comfort>
+							<ImmunityGainSpeedFactor>1.0</ImmunityGainSpeedFactor>
+							<SurgerySuccessChanceFactor>0.8</SurgerySuccessChanceFactor>
+							<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
+						</statBases>
+					</value>
+				</li>
+
+				<li Class="PatchOperationSequence">
+					<success>Always</success>
+					<operations>
+						<li Class="PatchOperationReplace">
+							<xpath>/Defs/ThingDef[defName = "AMBCrib"]/uiIconScale</xpath>
+							<value>
+								<uiIconScale>1.66</uiIconScale>
+							</value>
+						</li>
+						<li Class="PatchOperationTest">
+							<xpath>/Defs/ThingDef[defName = "AMBCrib"]/uiIconScale</xpath>
+							<success>Invert</success>
+						</li>
+						<li Class="PatchOperationAdd">
+							<xpath>/Defs/ThingDef[defName = "AMBCrib"]</xpath>
+							<value>
+								<uiIconScale>1.66</uiIconScale>
+							</value>
+						</li>
+					</operations>
+				</li>		
+		
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "AMBCrib"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Beds_A1</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+
+
 				
 				<Operation Class="PatchOperationFindMod">
 				<mods>

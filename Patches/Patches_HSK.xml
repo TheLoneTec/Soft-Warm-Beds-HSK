@@ -205,14 +205,14 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "cryo_double_bed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.75</BedRestEffectiveness>
+						<BedRestEffectiveness>0.5</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "cryo_double_bed"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.4</Comfort>
+						<Comfort>0.5</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -338,14 +338,14 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "cryo_single_bed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.75</BedRestEffectiveness>
+						<BedRestEffectiveness>0.5</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "cryo_single_bed"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.4</Comfort>
+						<Comfort>0.5</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -471,14 +471,14 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "space_double_bed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.9</BedRestEffectiveness>
+						<BedRestEffectiveness>0.55</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "space_double_bed"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.6</Comfort>
+						<Comfort>0.55</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -616,14 +616,14 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "PodBed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.9</BedRestEffectiveness>
+						<BedRestEffectiveness>0.55</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "PodBed"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.6</Comfort>
+						<Comfort>0.55</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -761,7 +761,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "AdvHospitalBed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.75</BedRestEffectiveness>
+						<BedRestEffectiveness>0.5</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
@@ -907,7 +907,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "HospitalBed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.5</BedRestEffectiveness>
+						<BedRestEffectiveness>0.4</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
@@ -1052,14 +1052,14 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "industrial_double_bed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.65</BedRestEffectiveness>
+						<BedRestEffectiveness>0.45</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "industrial_double_bed"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.3</Comfort>
+						<Comfort>0.35</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -1207,14 +1207,14 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "industrial_single_bed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.65</BedRestEffectiveness>
+						<BedRestEffectiveness>0.45</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "industrial_single_bed"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.3</Comfort>
+						<Comfort>0.35</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -1362,14 +1362,14 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "MilleniumDoubleBed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.75</BedRestEffectiveness>
+						<BedRestEffectiveness>0.5</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "MilleniumDoubleBed"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.5</Comfort>
+						<Comfort>0.45</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -1516,14 +1516,14 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "MilleniumBed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.75</BedRestEffectiveness>
+						<BedRestEffectiveness>0.5</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "MilleniumBed"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.5</Comfort>
+						<Comfort>0.45</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -1677,7 +1677,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "RoyalBed"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.3</Comfort>
+						<Comfort>0.35</Comfort>
 					</value>
 				</li>
 				<!--Insulation Settings-->
@@ -1825,7 +1825,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "DoubleBed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.45</BedRestEffectiveness>
+						<BedRestEffectiveness>0.4</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
@@ -1979,7 +1979,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "Bed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.45</BedRestEffectiveness>
+						<BedRestEffectiveness>0.4</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
@@ -2123,7 +2123,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "BedrollDouble"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.25</BedRestEffectiveness>
+						<BedRestEffectiveness>0.35</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
@@ -2267,7 +2267,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "Bedroll"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.25</BedRestEffectiveness>
+						<BedRestEffectiveness>0.35</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
@@ -2312,7 +2312,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "HayBed"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.6</BedRestEffectiveness>
+						<BedRestEffectiveness>0.5</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
@@ -2320,6 +2320,15 @@
 					<xpath>/Defs/ThingDef[defName = "HayBed"]/statBases/Comfort</xpath>
 					<value>
 						<Comfort>0.4</Comfort>
+					</value>
+				</li>
+			
+				<!-- ==== Sleeping Spot ==== -->
+			
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "SleepingSpot" or defName = "DoubleSleepingSpot"]/statBases/BedRestEffectiveness</xpath>
+					<value>
+					  <BedRestEffectiveness>0.3</BedRestEffectiveness>
 					</value>
 				</li>
 			
@@ -2379,7 +2388,7 @@
 		
 				<!--Comfort Settings-->
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName = "prison_single_bed_RT" or defName = "prison_single_bed_LB"]/statBases/BedRestEffectiveness</xpath>
+					<xpath>/Defs/ThingDef[defName = "prison_single_bed_RT" or defName = "prison_single_bed_LB"]/statBases/Comfort</xpath>
 					<value>
 						<Comfort>0.15</Comfort>
 					</value>
@@ -2387,12 +2396,149 @@
 		
 				<!--Bed Rest Settings-->
 				<li Class="PatchOperationReplace">
-				  <xpath>Defs/ThingDef[defName="Bed_Simple"]/statBases/BedRestEffectiveness</xpath>
+				  <xpath>Defs/ThingDef[defName = "prison_single_bed_RT" or defName = "prison_single_bed_LB"]/statBases/BedRestEffectiveness</xpath>
 				  <value>
 					<BedRestEffectiveness>0.45</BedRestEffectiveness>
 				  </value>
 				</li>
+	
+				<!-- ============ Max Bed Rest Value ============-->
+	
+				<li Class="PatchOperationAdd">
+					<xpath>*/StatDef[defName = "BedRestEffectiveness"]</xpath>
+					<value>
+					  <maxValue>1.4</maxValue>
+					</value>
+				</li>
 		
+				<!-- Check for Hard Mode -->
+				
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Soft Warm Beds HSK Hard Mode</li>
+					</mods>
+					<nomatch Class="PatchOperationSequence">
+						<operations>
+					
+						<!-- ============ Material Softness Stats (without rebalance) ============ -->	 
+				
+				
+						<li Class="PatchOperationAdd">
+						  <xpath>Defs/ThingDef[defName="Cloth"]/statBases</xpath>
+						  <value>
+							<Textile_Softness>0.42</Textile_Softness>
+						  </value>
+						</li>
+
+						<li Class="PatchOperationAdd">
+						  <xpath>Defs/ThingDef[defName="Velour"]/statBases</xpath>
+						  <value>
+							<Textile_Softness>0.6</Textile_Softness>
+						  </value>
+						</li>
+
+						<li Class="PatchOperationAdd">
+						  <xpath>Defs/ThingDef[defName="Flaxcloth"]/statBases</xpath>
+						  <value>
+							<Textile_Softness>0.35</Textile_Softness>
+						  </value>
+						</li>
+
+						<li Class="PatchOperationAdd">
+						  <xpath>Defs/ThingDef[defName="DevilstrandCloth"]/statBases</xpath>
+						  <value>
+							<Textile_Softness>0.5</Textile_Softness>
+						  </value>
+						</li>
+						
+						<li Class="PatchOperationAdd">
+						  <xpath>Defs/ThingDef[defName="Synthread"]/statBases</xpath>
+						  <value>
+							<Textile_Softness>0.35</Textile_Softness>
+						  </value>
+						</li>
+
+						<li Class="PatchOperationAdd">
+						  <xpath>Defs/ThingDef[defName="Hyperweave"]/statBases</xpath>
+						  <value>
+							<Textile_Softness>0.55</Textile_Softness>
+						  </value>
+						</li>
+						
+						<li Class="PatchOperationAdd">
+						  <xpath>Defs/ThingDef[defName="Leather_Bird"]/statBases</xpath>
+						  <value>
+							<Textile_Softness>0.1</Textile_Softness>
+						  </value>
+						</li>
+
+						<li Class="PatchOperationAdd">
+						  <xpath>Defs/ThingDef[defName="Leather_Thrumbo"]/statBases</xpath>
+						  <value>
+							<Textile_Softness>0.44</Textile_Softness>
+						  </value>
+						</li>
+						
+						<li Class="PatchOperationAdd">
+						  <xpath>Defs/ThingDef[defName="RK_Wool_KingHamster"]/statBases</xpath>
+						  <value>
+							<Textile_Softness>0.5</Textile_Softness>
+						  </value>
+						</li>
+						
+						<!-- Insulator -->
+						
+						<li Class="PatchOperationFindMod">
+							<mods>
+								<li>Insulation (Continued)</li>
+							</mods>
+							<match Class="PatchOperationSequence">
+								<operations>
+							
+
+								
+								<li Class="PatchOperationAdd">
+								  <xpath>Defs/ThingDef[defName="INS_Burlap"]/statBases</xpath>
+								  <value>
+									<Textile_Softness>0.4</Textile_Softness>
+								  </value>
+								</li>
+								
+								</operations>
+							</match>
+						</li>	
+					
+						<!-- Alpha Animals -->
+						
+						<li Class="PatchOperationFindMod">
+							<mods>
+								<li>Alpha Animals</li>
+							</mods>
+							<match Class="PatchOperationSequence">
+								<operations>
+							
+								<li Class="PatchOperationAdd">
+								  <xpath>Defs/ThingDef[defName="AA_Leather_Aerofleet"]/statBases</xpath>
+								  <value>
+									<Textile_Softness>0.28</Textile_Softness>
+								  </value>
+								</li>
+
+								<li Class="PatchOperationAdd">
+								  <xpath>Defs/ThingDef[defName="Leather_Gallatross"]/statBases</xpath>
+								  <value>
+									<Textile_Softness>0.56</Textile_Softness>
+								  </value>
+								</li>
+								
+								</operations>
+							</match>
+						</li>
+						
+						</operations>
+					</nomatch>
+				</li>	
+						
 			</operations>
 		</match>
 	</Operation>
