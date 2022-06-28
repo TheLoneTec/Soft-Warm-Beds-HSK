@@ -137,6 +137,15 @@
 						<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
 					</value>
 				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "Crib"]/researchPrerequisites</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Beds_C1</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
 			</operations>
 		</match>
 	</Operation>
