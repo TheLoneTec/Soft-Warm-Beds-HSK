@@ -2335,6 +2335,13 @@
 					</value>
 				</li>
 				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "SingleBedding"]/recipeMaker/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>Beds_B1</researchPrerequisite>
+					</value>
+				</li>
+				
 				<li Class="PatchOperationInsert">
 					<xpath>/Defs/ThingDef[defName = "DoubleBedding"]/stuffCategories</xpath>
 					<value>
@@ -2342,6 +2349,13 @@
 							<ComponentMedieval>4</ComponentMedieval>
 							<RawCotton>80</RawCotton>
 						</costList>
+					</value>
+				</li>
+		
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "DoubleBedding"]/recipeMaker/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisite>Beds_B1</researchPrerequisite>
 					</value>
 				</li>
 		
