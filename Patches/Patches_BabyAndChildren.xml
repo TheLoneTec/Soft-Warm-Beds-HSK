@@ -235,15 +235,28 @@
 					</value>
 				</li>
 
-				<Operation Class="PatchOperationFindMod">
+				<li Class="PatchOperationFindMod">
 				<mods>
 					<li>Tec's Assorted Patches</li>
 				</mods>
 					<nomatch Class="PatchOperationSequence">
 						<operations>
 						
-							<li Class="PatchOperationRemove">
+							<li Class="PatchOperationAdd">
+								<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="SubCategory_SpecialBeds"]/defNames</xpath>
+								<value>
+									<li>Crib</li>
+									<li>AMBCrib</li>
+								</value>
+							</li>
+						
+							<li Class="PatchOperationAdd">
 								<xpath>Defs/ThingDef[defName="AMBCrib"]</xpath>
+								<value>
+								<costList>
+									<ComponentMedieval>3</ComponentMedieval>
+								</costList>
+								</value>
 							</li>
 							
 							<li Class="PatchOperationAdd">
@@ -257,7 +270,7 @@
 						
 						</operations>
 					</nomatch>
-				</Operation>
+				</li>
 				
 			</operations>
 		</match>
