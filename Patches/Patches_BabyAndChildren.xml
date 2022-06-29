@@ -207,8 +207,34 @@
 					</value>
 				</li>
 
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "Crib"]/label</xpath>
+					<value>
+						<label>Simple Hay Crib</label>
+					</value>
+				</li>
+	
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "Crib"]/description</xpath>
+					<value>
+						<description>A high walled crib, designed to keep a young child safe through the night. With bedding for increased comfort.</description>
+					</value>
+				</li>
+	
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "AMBCrib"]/label</xpath>
+					<value>
+						<label>Crib</label>
+					</value>
+				</li>
 
-				
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "AMBCrib"]/description</xpath>
+					<value>
+						<description>A primitive high walled crib, with hay bedding. Its better than leaving them on the floor.</description>
+					</value>
+				</li>
+
 				<Operation Class="PatchOperationFindMod">
 				<mods>
 					<li>Tec's Assorted Patches</li>
