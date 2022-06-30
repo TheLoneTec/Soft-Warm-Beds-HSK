@@ -2166,9 +2166,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "BedrollDouble"]/building/bed_showSleeperBody</xpath>
 					<value>
-						<costList>
-							<bed_showSleeperBody>True</bed_showSleeperBody>
-						</costList>
+						<bed_showSleeperBody>False</bed_showSleeperBody>
 					</value>
 				</li>
 			
@@ -2320,9 +2318,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "Bedroll"]/building/bed_showSleeperBody</xpath>
 					<value>
-						<costList>
-							<bed_showSleeperBody>True</bed_showSleeperBody>
-						</costList>
+						<bed_showSleeperBody>False</bed_showSleeperBody>
 					</value>
 				</li>
 			
