@@ -2161,6 +2161,16 @@
 						</costList>
 					</value>
 				</li>
+				
+				<!--Hide Body Under bedding-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "BedrollDouble"]/building/bed_showSleeperBody</xpath>
+					<value>
+						<costList>
+							<bed_showSleeperBody>True</bed_showSleeperBody>
+						</costList>
+					</value>
+				</li>
 			
 				<!-- ============== Norbal Single Bed ============== -->
 				
@@ -2302,6 +2312,16 @@
 					<value>
 						<costList>
 							<ComponentMedieval>2</ComponentMedieval>
+						</costList>
+					</value>
+				</li>
+			
+				<!--Hide Body Under bedding-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "Bedroll"]/building/bed_showSleeperBody</xpath>
+					<value>
+						<costList>
+							<bed_showSleeperBody>True</bed_showSleeperBody>
 						</costList>
 					</value>
 				</li>
