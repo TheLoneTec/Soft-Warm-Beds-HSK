@@ -120,7 +120,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "Crib"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-						<BedRestEffectiveness>0.7</BedRestEffectiveness>
+						<BedRestEffectiveness>0.3</BedRestEffectiveness>
 					</value>
 				</li>
 				<!--Comfort Settings-->
@@ -169,7 +169,7 @@
 							<Bulk>25</Bulk>
 							<BedRestEffectiveness>0.5</BedRestEffectiveness>
 							<Comfort>0.4</Comfort>
-							<ImmunityGainSpeedFactor>1.0</ImmunityGainSpeedFactor>
+							<ImmunityGainSpeedFactor>0.2</ImmunityGainSpeedFactor>
 							<SurgerySuccessChanceFactor>0.8</SurgerySuccessChanceFactor>
 							<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
 						</statBases>
@@ -219,6 +219,14 @@
 					<value>
 						<description>A high walled crib, designed to keep a young child safe through the night. With bedding for increased comfort.</description>
 					</value>
+				</li>
+	
+				<!--Bed Rest Settings-->
+				<li Class="PatchOperationReplace">
+				  <xpath>Defs/ThingDef[defName = "Crib"]/statBases/ImmunityGainSpeedFactor</xpath>
+				  <value>
+					<ImmunityGainSpeedFactor>0.4</ImmunityGainSpeedFactor>
+				  </value>
 				</li>
 	
 				<li Class="PatchOperationReplace">

@@ -77,4 +77,18 @@
     <toStringStyle>PercentZero</toStringStyle>
     <showIfUndefined>false</showIfUndefined>
   </StatDef>
+ 
+	<!-- ==== HSK Immunity ==== -->
+ 
+  <StatDef>
+    <defName>Bed_Immunity_Stuff</defName>
+    <label>Cleanliness</label>
+    <description>Determines how sterile and easy to keep clean something made out of this can be. When used in beddings, it affects how much immunity gain speed it provides.</description>
+    <category>StuffStatFactors</category>
+    <defaultBaseValue>0.5</defaultBaseValue>
+    <minValue>0</minValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <showIfUndefined>False</showIfUndefined>
+  </StatDef>
+  
 </Defs>
