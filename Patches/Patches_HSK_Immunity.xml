@@ -22,6 +22,21 @@
 				</value>
 			</li>
 	
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName = "ImmunityGainSpeedFactor"]/parts</xpath>
+				<value>
+				  <li Class="StatPart_Quality">
+					<factorAwful>0.8</factorAwful>
+					<factorPoor>0.9</factorPoor>
+					<factorNormal>1</factorNormal>
+					<factorGood>1.1</factorGood>
+					<factorExcellent>1.2</factorExcellent>
+					<factorMasterwork>1.3</factorMasterwork>
+					<factorLegendary>1.4</factorLegendary>
+				  </li>
+				</value>
+			</li>
+	
 			<!-- ============ Reassign Immunity Speed Gain Factor ============ -->
 	
 			<!-- ======== Stone ======== -->

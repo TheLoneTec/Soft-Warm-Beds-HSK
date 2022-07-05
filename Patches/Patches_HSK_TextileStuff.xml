@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+	<!-- Pure stuff: Basics -->
+	
+	<Operation Class="PatchOperationFindMod">
+	<mods>
+		<li>Core SK</li>
+	</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/StatDef[defName="ImmunityGainSpeedFactor"]/minValue</xpath>
+				<value>
+					<minValue>0.2</minValue>
+				</value>
+			</li>	
+			
+			<!-- ========== Leather ========== -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Plain"]/statBases</xpath>
+				<value><!-- IGSF 0.96 -->
+					<Bed_Immunity_Stuff>0.48</Bed_Immunity_Stuff>
+					<Textile_Softness>0.2</Textile_Softness>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Dog"]/statBases</xpath>
+				<value><!-- IGSF 0.8 -->
+					<Bed_Immunity_Stuff>0.40</Bed_Immunity_Stuff>
+					<Textile_Softness>0.16</Textile_Softness>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Wolf"]/statBases</xpath>
+				<value><!-- IGSF 0.75 -->
+					<Bed_Immunity_Stuff>0.37</Bed_Immunity_Stuff>
+					<Textile_Softness>0.38</Textile_Softness>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Nightling"]/statBases</xpath>
+				<value><!-- IGSF 1.25 -->
+					<Bed_Immunity_Stuff>0.62</Bed_Immunity_Stuff>
+					<Textile_Softness>0.48</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Panthera"]/statBases</xpath>
+				<value><!-- IGSF 1.1 -->
+					<Bed_Immunity_Stuff>0.55</Bed_Immunity_Stuff>
+					<Textile_Softness>0.44</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Bluefur"]/statBases</xpath>
+				<value><!-- IGSF 1.2 -->
+					<Bed_Immunity_Stuff>0.60</Bed_Immunity_Stuff>
+					<Textile_Softness>0.34</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Human"]/statBases</xpath>
+				<value><!-- IGSF 0.92 -->
+					<Bed_Immunity_Stuff>0.46</Bed_Immunity_Stuff>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Pig"]/statBases</xpath>
+				<value><!-- IGSF 1 -->
+					<Bed_Immunity_Stuff>0.5</Bed_Immunity_Stuff>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Light"]/statBases</xpath>
+				<value><!-- IGSF 0.84 -->
+					<Bed_Immunity_Stuff>0.42</Bed_Immunity_Stuff>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Bird"]/statBases</xpath>
+				<value><!-- IGSF 0.92 -->
+					<Bed_Immunity_Stuff>0.46</Bed_Immunity_Stuff>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Chinchilla"]/statBases</xpath>
+				<value><!-- IGSF 1.1 -->
+					<Bed_Immunity_Stuff>0.55</Bed_Immunity_Stuff>
+					<Textile_Softness>0.55</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Fox"]/statBases</xpath>
+				<value><!-- IGSF 1.1 -->
+					<Bed_Immunity_Stuff>0.55</Bed_Immunity_Stuff>
+					<Textile_Softness>0.46</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Lizard"]/statBases</xpath>
+				<value><!-- IGSF 1.31 -->
+					<Bed_Immunity_Stuff>0.65</Bed_Immunity_Stuff>
+					<Textile_Softness>0.12</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Boomanimal"]/statBases</xpath>
+				<value><!-- IGSF 1.14 -->
+					<Bed_Immunity_Stuff>0.57</Bed_Immunity_Stuff>
+					<Textile_Softness>0.25</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Elephant"]/statBases</xpath>
+				<value><!-- IGSF 0.92 -->
+					<Bed_Immunity_Stuff>0.46</Bed_Immunity_Stuff>
+					<Textile_Softness>0.08</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Heavy"]/statBases</xpath>
+				<value><!-- IGSF 1.17 -->
+					<Bed_Immunity_Stuff>0.58</Bed_Immunity_Stuff>
+					<Textile_Softness>0.26</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Rhinoceros"]/statBases</xpath>
+				<value><!-- IGSF 1 -->
+					<Bed_Immunity_Stuff>0.5</Bed_Immunity_Stuff>
+					<Textile_Softness>0.12</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Thrumbo"]/statBases</xpath>
+				<value><!-- IGSF 1.14 -->
+					<Bed_Immunity_Stuff>0.62</Bed_Immunity_Stuff>
+					<Textile_Softness>0.58</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+			  <xpath>Defs/ThingDef[defName="Leather_ChJAndroid"]/statBases</xpath>
+			  <value>
+			  	<Bed_Immunity_Stuff>0.46</Bed_Immunity_Stuff>
+				<Textile_Softness>0.05</Textile_Softness>
+			  </value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_FireDragonskin"]/statBases</xpath>
+				<value><!-- IGSF 1.33 -->
+					<Bed_Immunity_Stuff>0.66</Bed_Immunity_Stuff>
+					<Textile_Softness>0.22</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_KirinHide"]/statBases</xpath>
+				<value><!-- IGSF 1.35 -->
+					<Bed_Immunity_Stuff>0.67</Bed_Immunity_Stuff>
+					<Textile_Softness>0.39</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_FeatheredRaptorLeather"]/statBases</xpath>
+				<value><!-- IGSF 1.17 -->
+					<Bed_Immunity_Stuff>0.58</Bed_Immunity_Stuff>
+					<Textile_Softness>0.25</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_BarghestFur"]/statBases</xpath>
+				<value><!-- IGSF 1.12 -->
+					<Bed_Immunity_Stuff>0.56</Bed_Immunity_Stuff>
+					<Textile_Softness>0.34</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Chitin"]/statBases</xpath>
+				<value><!-- IGSF None -->
+					<Bed_Immunity_Stuff>0.6</Bed_Immunity_Stuff>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Leather_Patch"]/statBases</xpath>
+				<value><!-- IGSF 0.84 -->
+					<Bed_Immunity_Stuff>0.42</Bed_Immunity_Stuff>
+				</value>
+			</li>
+			
+			<!-- ========== Fabric ========== -->
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Cloth"]/statBases</xpath>
+				<value><!-- IGSF 0.9 -->
+					<Bed_Immunity_Stuff>0.45</Bed_Immunity_Stuff>
+					<Textile_Softness>0.35</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoolMegasloth"]/statBases</xpath>
+				<value><!-- IGSF 1 -->
+					<Bed_Immunity_Stuff>0.5</Bed_Immunity_Stuff>
+					<Textile_Softness>0.5</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoolMuffalo"]/statBases</xpath>
+				<value><!-- IGSF 1 -->
+					<Bed_Immunity_Stuff>0.5</Bed_Immunity_Stuff>
+					<Textile_Softness>0.45</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoolDromedary"]/statBases</xpath>
+				<value><!-- IGSF 1.1 -->
+					<Bed_Immunity_Stuff>0.45</Bed_Immunity_Stuff>
+					<Textile_Softness>0.38</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoolAlpaca"]/statBases</xpath>
+				<value><!-- IGSF 1.05 -->
+					<Bed_Immunity_Stuff>0.52</Bed_Immunity_Stuff>
+					<Textile_Softness>0.34</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoolBison"]/statBases</xpath>
+				<value><!-- IGSF 1.05 -->
+					<Bed_Immunity_Stuff>0.52</Bed_Immunity_Stuff>
+					<Textile_Softness>0.34</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoolSheep"]/statBases</xpath>
+				<value><!-- IGSF 1.05 -->
+					<Bed_Immunity_Stuff>0.52</Bed_Immunity_Stuff>
+					<Textile_Softness>0.34</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="HempCloth"]/statBases</xpath>
+				<value><!-- IGSF 1.25 -->
+					<Bed_Immunity_Stuff>0.62</Bed_Immunity_Stuff>
+					<Textile_Softness>0.3</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Velour"]/statBases</xpath>
+				<value><!-- IGSF 1.1 -->
+					<Bed_Immunity_Stuff>0.55</Bed_Immunity_Stuff>
+					<Textile_Softness>0.4</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Flaxcloth"]/statBases</xpath>
+				<value><!-- IGSF 1.15 -->
+					<Bed_Immunity_Stuff>0.57</Bed_Immunity_Stuff>
+					<Textile_Softness>0.28</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="DevilstrandCloth"]/statBases</xpath>
+				<value><!-- IGSF 1.35 -->
+					<Bed_Immunity_Stuff>0.67</Bed_Immunity_Stuff>
+					<Textile_Softness>0.22</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Synthread"]/statBases</xpath>
+				<value><!-- IGSF 1.05 -->
+					<Bed_Immunity_Stuff>0.52</Bed_Immunity_Stuff>
+					<Textile_Softness>0.42</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Hyperweave"]/statBases</xpath>
+				<value><!-- IGSF 1.15 -->
+					<Bed_Immunity_Stuff>0.45</Bed_Immunity_Stuff>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="Kevlar"]/statBases</xpath>
+				<value><!-- IGSF 0.9 -->
+					<Bed_Immunity_Stuff>0.45</Bed_Immunity_Stuff>
+					<Textile_Softness>0.17</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="ChitinPlating"]/statBases</xpath>
+				<value><!-- IGSF None -->
+					<Bed_Immunity_Stuff>0.55</Bed_Immunity_Stuff>
+					<Textile_Softness>0.05</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="AlphaPoly"]/statBases</xpath>
+				<value><!-- IGSF 0.9 -->
+					<Bed_Immunity_Stuff>0.6</Bed_Immunity_Stuff>
+					<Textile_Softness>0.35</Textile_Softness>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="BetaPoly"]/statBases</xpath>
+				<value><!-- IGSF None -->
+					<Bed_Immunity_Stuff>0.7</Bed_Immunity_Stuff>
+					<Textile_Softness>0.45</Textile_Softness>
+				</value>
+			</li>
+			
+			<!-- Insulator -->
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Insulation (Continued)</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+				
+
+					
+					<li Class="PatchOperationAdd">
+					  <xpath>Defs/ThingDef[defName="INS_Burlap"]/statBases</xpath>
+					  <value>
+						<Bed_Immunity_Stuff>0.45</Bed_Immunity_Stuff>
+					  </value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>	
+		
+			<!-- Alpha Animals -->
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Alpha Animals</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+				
+					<li Class="PatchOperationAdd">
+					  <xpath>Defs/ThingDef[defName="AA_Leather_Aerofleet"]/statBases</xpath>
+					  <value>
+						<Bed_Immunity_Stuff>0.55</Bed_Immunity_Stuff>
+						<Textile_Softness>0.35</Textile_Softness>
+					  </value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+					  <xpath>Defs/ThingDef[defName="AA_ArcticLion_Leather"]/statBases</xpath>
+					  <value>
+						<Bed_Immunity_Stuff>0.52</Bed_Immunity_Stuff>
+						<Textile_Softness>0.4</Textile_Softness>
+					  </value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+					  <xpath>Defs/ThingDef[defName="AA_SandLion_Leather"]/statBases</xpath>
+					  <value>
+						<Bed_Immunity_Stuff>0.52</Bed_Immunity_Stuff>
+						<Textile_Softness>0.4</Textile_Softness>
+					  </value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+					  <xpath>Defs/ThingDef[defName="Leather_IronChitin"]/statBases</xpath>
+					  <value>
+						<Bed_Immunity_Stuff>0.35</Bed_Immunity_Stuff>
+					  </value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+					  <xpath>Defs/ThingDef[defName="Leather_RaptorPlates"]/statBases</xpath>
+					  <value>
+						<Bed_Immunity_Stuff>0.3</Bed_Immunity_Stuff>
+					  </value>
+					</li>
+
+					<li Class="PatchOperationAdd">
+					  <xpath>Defs/ThingDef[defName="Leather_BlackChitin"]/statBases</xpath>
+					  <value>
+						<Bed_Immunity_Stuff>0.4</Bed_Immunity_Stuff>
+					  </value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+					  <xpath>Defs/ThingDef[defName="Leather_Gallatross"]/statBases</xpath>
+					  <value><!-- IGSF 1.4 -->
+						<Bed_Immunity_Stuff>0.7</Bed_Immunity_Stuff>
+						<Textile_Softness>0.25</Textile_Softness>
+					  </value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+					  <xpath>Defs/ThingDef[defName="AA_CinderSilk"]/statBases</xpath>
+					  <value><!-- IGSF 1 -->
+						<Bed_Immunity_Stuff>0.5</Bed_Immunity_Stuff>
+						<Textile_Softness>0.25</Textile_Softness>
+					  </value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+					  <xpath>Defs/ThingDef[defName="AA_MothSilk"]/statBases</xpath>
+					  <value><!-- IGSF 1.15 -->
+						<Bed_Immunity_Stuff>0.57</Bed_Immunity_Stuff>
+						<Textile_Softness>0.35</Textile_Softness>
+					  </value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>

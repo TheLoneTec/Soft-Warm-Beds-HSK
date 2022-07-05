@@ -782,6 +782,20 @@
 				
 				<!--Recipe-->
 				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "HospitalBed"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>Metallic</li>
+							<li>StrongMetallic</li>
+							<li>HeavyMetallic</li>
+							<li>Precious</li>
+							<li>Plastic</li>
+						</stuffCategories>
+					</value>
+				</li>
+				
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "AdvHospitalBed"]/costList</xpath>
 					<value>
 						<costList>
@@ -923,6 +937,22 @@
 					<value>
 						<BedStuffEffectMultiplierInsulation_Cold>0.3</BedStuffEffectMultiplierInsulation_Cold>
 						<BedStuffEffectMultiplierInsulation_Heat>0.2</BedStuffEffectMultiplierInsulation_Heat>
+					</value>
+				</li>
+			
+				<!--Recipe-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName = "HospitalBed"]/stuffCategories</xpath>
+					<value>
+						<stuffCategories>
+							<li>Metallic</li>
+							<li>StrongMetallic</li>
+							<li>RuggedMetallic</li>
+							<li>HeavyMetallic</li>
+							<li>Precious</li>
+							<li>Woody</li>
+							<li>Plastic</li>
+						</stuffCategories>
 					</value>
 				</li>
 			
@@ -1873,6 +1903,7 @@
 							<li>RuggedMetallic</li>
 							<li>HeavyMetallic</li>
 							<li>Precious</li>
+							<li>Plastic</li>
 							<li>Woody</li>
 						</stuffCategories>
 					</value>
@@ -2031,6 +2062,7 @@
 							<li>RuggedMetallic</li>
 							<li>HeavyMetallic</li>
 							<li>Precious</li>
+							<li>Plastic</li>
 							<li>Woody</li>
 						</stuffCategories>
 					</value>
@@ -2473,223 +2505,6 @@
 					  <maxValue>1.4</maxValue>
 					</value>
 				</li>
-		
-				<!-- Check for Hard Mode -->
-				
-				<li Class="PatchOperationFindMod">
-					<mods>
-						<li>Soft Warm Beds HSK Easy Mode</li>
-					</mods>
-					<nomatch Class="PatchOperationSequence">
-						<operations>
-					
-						<!-- ============ Material Softness Stats (without rebalance) ============ -->	 
-
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="AlphaPoly"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.34</Textile_Softness>
-						  </value>
-						</li>
-
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="BetaPoly"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.4</Textile_Softness>
-						  </value>
-						</li>
-
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Cloth"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.2</Textile_Softness>
-						  </value>
-						</li>
-						
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="HempCloth"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.15</Textile_Softness>
-						  </value>
-						</li>
-
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Velour"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.3</Textile_Softness>
-						  </value>
-						</li>
-						
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Flaxcloth"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.17</Textile_Softness>
-						  </value>
-						</li>
-
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="DevilstrandCloth"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.25</Textile_Softness>
-						  </value>
-						</li>
-						
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Synthread"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.25</Textile_Softness>
-						  </value>
-						</li>
-						
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Kevlar"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.1</Textile_Softness>
-						  </value>
-						</li>
-
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="ChitinPlating"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.05</Textile_Softness>
-						  </value>
-						</li>
-						
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Leather_Dog"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.16</Textile_Softness>
-						  </value>
-						</li>
-					
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Leather_Wolf"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.24</Textile_Softness>
-						  </value>
-						</li>
-						
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Leather_Chinchilla"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.28</Textile_Softness>
-						  </value>
-						</li>
-
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Leather_Fox"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.26</Textile_Softness>
-						  </value>
-						</li>
-						
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Leather_Lizard"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.12</Textile_Softness>
-						  </value>
-						</li>
-					
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Leather_Elephant"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.08</Textile_Softness>
-						  </value>
-						</li>
-						
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Leather_Heavy"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.24</Textile_Softness>
-						  </value>
-						</li>
-
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Leather_Rhinoceros"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.12</Textile_Softness>
-						  </value>
-						</li>
-						
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Leather_Thrumbo"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.28</Textile_Softness>
-						  </value>
-						</li>
-					
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Leather_ChJAndroid"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.05</Textile_Softness>
-						  </value>
-						</li>
-						
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="WoolMegasloth"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.29</Textile_Softness>
-						  </value>
-						</li>
-						
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="WoolMuffalo"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.27</Textile_Softness>
-						  </value>
-						</li>
-					
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Leather_Panthera"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.25</Textile_Softness>
-						  </value>
-						</li>
-					
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="WoolBison"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.18</Textile_Softness>
-						  </value>
-						</li>
-						
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Leather_FireDragonskin"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.22</Textile_Softness>
-						  </value>
-						</li>
-
-						<li Class="PatchOperationAdd">
-						  <xpath>Defs/ThingDef[defName="Leather_KirinHide"]/statBases</xpath>
-						  <value>
-							<Textile_Softness>0.39</Textile_Softness>
-						  </value>
-						</li>	
-			
-						<!-- Alpha Animals -->
-						
-						<li Class="PatchOperationFindMod">
-							<mods>
-								<li>Alpha Animals</li>
-							</mods>
-							<match Class="PatchOperationSequence">
-								<operations>
-
-								<li Class="PatchOperationAdd">
-									  <xpath>Defs/ThingDef[defName="Leather_Gallatross"]/statBases</xpath>
-									  <value>
-										<Textile_Softness>0.4</Textile_Softness>
-									  </value>
-								</li>
-								
-								</operations>
-							</match>
-						</li>			
-				
-						</operations>
-					</nomatch>
-				</li>	
 				
 			</operations>
 		</match>

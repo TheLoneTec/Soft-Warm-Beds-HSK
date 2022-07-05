@@ -16,7 +16,7 @@
         <factorGood>1.1</factorGood>
         <factorExcellent>1.2</factorExcellent>
         <factorMasterwork>1.5</factorMasterwork>
-        <factorLegendary>1.8</factorLegendary>
+        <factorLegendary>1.9</factorLegendary>
       </li>
     </parts>
   </StatDef>
@@ -86,6 +86,30 @@
     <description>Determines how sterile and easy to keep clean something made out of this can be. When used in beddings, it affects how much immunity gain speed it provides.</description>
     <category>StuffStatFactors</category>
     <defaultBaseValue>0.5</defaultBaseValue>
+    <minValue>0</minValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <showIfUndefined>False</showIfUndefined>
+  </StatDef>
+  
+	<!-- ==== HSK Beauty ==== -->
+	
+  <StatDef>
+    <defName>Bedding_Beauty</defName>
+    <label>Bedding Beauty</label>
+    <description>Determines how beautiful the bedding of this bed is.</description>
+    <category>Building</category>
+    <defaultBaseValue>5</defaultBaseValue>
+    <minValue>0</minValue>
+    <toStringStyle>Integer</toStringStyle>
+    <showIfUndefined>False</showIfUndefined>
+  </StatDef>
+  
+  <StatDef>
+    <defName>Bedding_Beauty_Stuff</defName>
+    <label>Bedding Material Beauty</label>
+    <description>Determines how beautiful this material is as a bedding.</description>
+    <category>StuffStatFactors</category>
+    <defaultBaseValue>1</defaultBaseValue>
     <minValue>0</minValue>
     <toStringStyle>PercentZero</toStringStyle>
     <showIfUndefined>False</showIfUndefined>

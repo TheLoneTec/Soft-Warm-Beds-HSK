@@ -168,7 +168,7 @@
     <tradeability>Sellable</tradeability>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>600</WorkToMake>
+      <WorkToMake>6000</WorkToMake>
       <Mass>10</Mass>
     </statBases>
     <thingCategories>
@@ -179,7 +179,7 @@
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
-        <li>CraftingSpot</li>
+        <li>LeatherworkerTable</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -200,7 +200,7 @@
     <tradeability>Sellable</tradeability>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>1000</WorkToMake>
+      <WorkToMake>10000</WorkToMake>
       <Mass>18</Mass>
     </statBases>
     <thingCategories>
@@ -211,7 +211,7 @@
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
-        <li>CraftingSpot</li>
+        <li>LeatherworkerTable</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>

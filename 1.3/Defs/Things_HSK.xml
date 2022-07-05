@@ -23,7 +23,7 @@
 	<techLevel>Neolithic</techLevel>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>400</WorkToMake>
+      <WorkToMake>4000</WorkToMake>
       <Mass>10</Mass>
     </statBases>
     <thingCategories>
@@ -34,7 +34,7 @@
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
-        <li>CraftingSpot</li>
+        <li>LeatherworkerTable</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -59,7 +59,7 @@
 	<techLevel>Neolithic</techLevel>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>700</WorkToMake>
+      <WorkToMake>7000</WorkToMake>
       <Mass>18</Mass>
     </statBases>
     <thingCategories>
@@ -70,7 +70,7 @@
       <recipeUsers>
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
-        <li>CraftingSpot</li>
+        <li>LeatherworkerTable</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -87,20 +87,21 @@
     </graphicData>
     <costStuffCount>60</costStuffCount>
     <stuffCategories>
+		<li>Leathery</li>
 		<li>Fabric</li>
 		<li>HF</li>
     </stuffCategories>
 	<costList>
 		<ComponentIndustrial>2</ComponentIndustrial>
-		<Rubber>4</Rubber>
-		<Plastic>7</Plastic>
-		<SyntheticFibers>1</SyntheticFibers>
+		<Rubber>10</Rubber>
+		<Plastic>15</Plastic>
+		<SyntheticFibers>3</SyntheticFibers>
 	</costList>
     <tradeability>Sellable</tradeability>
 	<techLevel>Spacer</techLevel>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>750</WorkToMake>
+      <WorkToMake>7500</WorkToMake>
       <Mass>10</Mass>
     </statBases>
     <thingCategories>
@@ -125,20 +126,21 @@
     </graphicData>
     <costStuffCount>100</costStuffCount>
     <stuffCategories>
+		<li>Leathery</li>
 		<li>Fabric</li>
 		<li>HF</li>
     </stuffCategories>
 	<costList>
 		<ComponentIndustrial>4</ComponentIndustrial>
-		<Rubber>8</Rubber>
-		<Plastic>15</Plastic>
-		<SyntheticFibers>2</SyntheticFibers>
+		<Rubber>20</Rubber>
+		<Plastic>25</Plastic>
+		<SyntheticFibers>6</SyntheticFibers>
 	</costList>
     <tradeability>Sellable</tradeability>
 	<techLevel>Spacer</techLevel>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>1200</WorkToMake>
+      <WorkToMake>12000</WorkToMake>
       <Mass>18</Mass>
     </statBases>
     <thingCategories>
@@ -165,21 +167,21 @@
     </graphicData>
     <costStuffCount>140</costStuffCount>
     <stuffCategories>
+		<li>Leathery</li>
 		<li>Fabric</li>
 		<li>HF</li>
     </stuffCategories>
 	<costList>
 		<ComponentIndustrial>4</ComponentIndustrial>
-		<Rubber>8</Rubber>
-		<Plastic>15</Plastic>
-		<SyntheticFibers>4</SyntheticFibers>
+		<Rubber>35</Rubber>
+		<SyntheticFibers>10</SyntheticFibers>
 		<Gold>50</Gold>
 	</costList>
     <tradeability>Sellable</tradeability>
 	<techLevel>Industrial</techLevel>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>1500</WorkToMake>
+      <WorkToMake>15000</WorkToMake>
       <Mass>18</Mass>
     </statBases>
     <thingCategories>
@@ -206,20 +208,21 @@
     </graphicData>
     <costStuffCount>60</costStuffCount>
     <stuffCategories>
+		<li>Leathery</li>
 		<li>Fabric</li>
 		<li>HF</li>
     </stuffCategories>
 	<costList>
 		<ComponentIndustrial>1</ComponentIndustrial>
-		<Rubber>4</Rubber>
-		<Plastic>7</Plastic>
+		<Rubber>10</Rubber>
+		<Plastic>15</Plastic>
 		<Neutroamine>5</Neutroamine>
 	</costList>
     <tradeability>Sellable</tradeability>
 	<techLevel>Industrial</techLevel>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>600</WorkToMake>
+      <WorkToMake>6000</WorkToMake>
       <Mass>10</Mass>
     </statBases>
     <thingCategories>
@@ -246,12 +249,13 @@
     </graphicData>
     <costStuffCount>80</costStuffCount>
     <stuffCategories>
+		<li>Leathery</li>
 		<li>Fabric</li>
 		<li>HF</li>
     </stuffCategories>
 	<costList>
 		<ComponentIndustrial>1</ComponentIndustrial>
-		<Rubber>8</Rubber>
+		<Rubber>10</Rubber>
 		<Plastic>15</Plastic>
 		<Neutroamine>8</Neutroamine>
 	</costList>
@@ -259,7 +263,7 @@
 	<techLevel>Industrial</techLevel>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <WorkToMake>800</WorkToMake>
+      <WorkToMake>8000</WorkToMake>
       <Mass>10</Mass>
     </statBases>
     <thingCategories>
