@@ -66,67 +66,6 @@
     </comps>
   </ThingDef>
 
-  <ThingDef ParentName="BlanketBase">
-    <defName>SingleBlanket</defName>
-    <label>single blanket</label>
-    <description>Keeps you warm</description>
-    <graphicData>
-      <texPath>Things/Building/SingleBlanket</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(2,2)</drawSize>
-      <damageData>
-        <rect>(0,0.05,1,1.95)</rect>
-      </damageData>
-    </graphicData>
-    <size>(1,2)</size>
-  </ThingDef>
-
-  <ThingDef ParentName="BlanketBase">
-    <defName>HospitalBlanket</defName>
-    <label>hospital blanket</label>
-    <graphicData>
-      <texPath>Things/Building/HospitalBlanket</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(2,2)</drawSize>
-      <damageData>
-        <rect>(0,0.05,1,1.95)</rect>
-      </damageData>
-    </graphicData>
-    <size>(1,2)</size>
-  </ThingDef>
-
-  <ThingDef ParentName="BlanketBase">
-    <defName>DoubleBlanket</defName>
-    <label>double blanket</label>
-    <graphicData>
-      <texPath>Things/Building/DoubleBlanket</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(2.05,2.05)</drawSize>
-      <damageData>
-        <rect>(0,0.05,1,1.95)</rect>
-      </damageData>
-    </graphicData>
-    <size>(2,2)</size>
-  </ThingDef>
-
-  <ThingDef ParentName="BlanketBase">
-    <defName>RoyalBlanket</defName>
-    <label>royal blanket</label>
-    <graphicData>
-      <texPath>Things/Building/RoyalBlanket</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(2.05,2.05)</drawSize>
-      <damageData>
-        <rect>(0,0.05,1,1.95)</rect>
-      </damageData>
-    </graphicData>
-    <size>(2,2)</size>
-  </ThingDef>
-
   <ThingDef Name="BeddingBase" Abstract="True">
     <thingClass>SoftWarmBeds.Bedding</thingClass>
     <category>Item</category>
