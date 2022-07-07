@@ -2497,6 +2497,24 @@
 				  </value>
 				</li>
 	
+				<!-- ==== Ideology Slab Bed Default Comfort ==== -->	
+		
+				<!--Comfort Settings-->
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="SlabBed" or defName="SlabDoubleBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+					<value>
+						<ImmunityGainSpeedFactor>0.95</ImmunityGainSpeedFactor>
+					</value>
+				</li>
+		
+				<!--Bed Rest Settings-->
+				<li Class="PatchOperationReplace">
+				  <xpath>Defs/ThingDef[defName="SlabBed" or defName="SlabDoubleBed"]/statBases/BedRestEffectiveness</xpath>
+				  <value>
+					<BedRestEffectiveness>0.65</BedRestEffectiveness>
+				  </value>
+				</li>
+	
 				<!-- ============ Max Bed Rest Value ============-->
 	
 				<li Class="PatchOperationAdd">

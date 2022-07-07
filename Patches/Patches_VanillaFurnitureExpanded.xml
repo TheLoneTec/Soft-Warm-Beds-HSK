@@ -168,7 +168,7 @@
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic"]/statBases/BedRestEffectiveness</xpath>
           <value>
-            <BedRestEffectiveness>0.5</BedRestEffectiveness>
+            <BedRestEffectiveness>0.48</BedRestEffectiveness>
           </value>
         </li>
         <li Class="PatchOperationReplace">
@@ -186,14 +186,14 @@
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="Bed_StoneSlab"]/statBases/BedRestEffectiveness</xpath>
           <value>
-            <BedRestEffectiveness>0.4</BedRestEffectiveness>
+            <BedRestEffectiveness>0.6</BedRestEffectiveness>
           </value>
         </li>
         <!--Comfort Settings-->
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic"]/statBases/Comfort</xpath>
           <value>
-            <Comfort>0.5</Comfort>
+            <Comfort>0.38</Comfort>
           </value>
         </li>
         <li Class="PatchOperationReplace">
@@ -233,6 +233,65 @@
             <BedStuffEffectMultiplierInsulation_Cold>0.1</BedStuffEffectMultiplierInsulation_Cold>
           </value>
         </li>
+        <!--Immunity Settings-->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic"]/statBases/ImmunityGainSpeedFactor</xpath>
+          <value>
+            <ImmunityGainSpeedFactor>0.45</ImmunityGainSpeedFactor>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Bed_Kingsize"]/statBases/ImmunityGainSpeedFactor</xpath>
+          <value>
+            <ImmunityGainSpeedFactor>0.45</ImmunityGainSpeedFactor>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Bed_Simple"]/statBases/ImmunityGainSpeedFactor</xpath>
+          <value>
+            <ImmunityGainSpeedFactor>0.7</ImmunityGainSpeedFactor>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Bed_StoneSlab"]/statBases/ImmunityGainSpeedFactor</xpath>
+          <value>
+            <ImmunityGainSpeedFactor>0.4</ImmunityGainSpeedFactor>
+          </value>
+        </li>
+        <!--Beauty Settings-->
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Bed_Ergonomic" or defName="Bed_DoubleErgonomic"]/statBases/ImmunityGainSpeedFactor</xpath>
+          <value>
+            <Bedding_Beauty>9</Bedding_Beauty>
+          </value>
+        </li>
+		<!--Increase Frame Beauty-->
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "Bed_Ergonomic"]/statBases/Beauty</xpath>
+			<value>
+				<Beauty>9</Beauty>
+			</value>
+		</li>
+		<!--Increase Frame Beauty-->
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "Bed_DoubleErgonomic"]/statBases/Beauty</xpath>
+			<value>
+				<Beauty>12</Beauty>
+			</value>
+		</li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName="Bed_Kingsize"]/statBases/ImmunityGainSpeedFactor</xpath>
+          <value>
+            <Bedding_Beauty>10</Bedding_Beauty>
+          </value>
+        </li>
+		<!--Increase Frame Beauty-->
+		<li Class="PatchOperationReplace">
+			<xpath>/Defs/ThingDef[defName = "Bed_Simple"]/statBases/Beauty</xpath>
+			<value>
+				<Beauty>2</Beauty>
+			</value>
+		</li>
       </operations>
     </match>
   </Operation>
