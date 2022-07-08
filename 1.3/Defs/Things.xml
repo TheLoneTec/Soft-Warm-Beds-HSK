@@ -112,7 +112,7 @@
     </statBases>
     <thingCategories>
       <li>Beddings</li>
-    </thingCategories>
+    </thingCategories><!--
     <recipeMaker>
       <researchPrerequisite>ComplexFurniture</researchPrerequisite>
       <recipeUsers>
@@ -120,7 +120,7 @@
         <li>HandTailoringBench</li>
         <li>LeatherworkerTable</li>
       </recipeUsers>
-    </recipeMaker>
+    </recipeMaker>-->
   </ThingDef>
 
   <ThingDef ParentName="BeddingBase">
@@ -130,12 +130,12 @@
     <graphicData>
       <texPath>Things/Beddings/beddingDouble</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
+    </graphicData><!--
     <costStuffCount>100</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
       <li>Leathery</li>
-    </stuffCategories>
+    </stuffCategories>-->
     <tradeability>Sellable</tradeability>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
@@ -145,6 +145,7 @@
     <thingCategories>
       <li>Beddings</li>
     </thingCategories>
+	<!--
     <recipeMaker>
       <researchPrerequisite>ComplexFurniture</researchPrerequisite>
       <recipeUsers>
@@ -152,7 +153,137 @@
         <li>HandTailoringBench</li>
         <li>LeatherworkerTable</li>
       </recipeUsers>
-    </recipeMaker>
+    </recipeMaker>-->
   </ThingDef>
+  
+   <!-- ==================== Recipes ========================== -->
+
+  <RecipeDef>
+    <defName>Make_SimpleBedding</defName>
+    <label>make Single Bedding</label>
+    <description>Craft 1 single bedding, for simple and industrial beds.</description>
+    <jobString>Making Single Bedding.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+			<li>BTextiles</li>
+			<li>Wools</li>
+			<li>Leathers</li>
+          </categories>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawCotton</li>
+			<li>WoolMegasloth</li>
+            <li>WoolMuffalo</li>
+            <li>WoolAlpaca</li>
+			<li>WoolSheep</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentMedieval</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	<categories>
+		<li>BTextiles</li>
+		<li>Wools</li>
+		<li>Leathers</li>
+	</categories>
+	<thingDefs>
+		<li>RawCotton</li>
+		<li>WoolMegasloth</li>
+		<li>WoolMuffalo</li>
+		<li>WoolAlpaca</li>
+		<li>WoolSheep</li>
+		<li>ComponentMedieval</li>
+	</thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SingleBedding>1</SingleBedding>
+    </products>
+    <workAmount>6000</workAmount>
+	<recipeUsers>
+		<li>ElectricTailoringBench</li>
+		<li>HandTailoringBench</li>
+		<li>LeatherworkerTable</li>
+	</recipeUsers>
+	<researchPrerequisite>Beds_B1</researchPrerequisite>
+  </RecipeDef>
+  
+   <RecipeDef>
+    <defName>Make_SimpleBeddingDouble</defName>
+    <label>make Double Bedding</label>
+    <description>Craft 1 double bedding, for simple and industrial beds.</description>
+    <jobString>Making Double Bedding.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+			<li>BTextiles</li>
+			<li>Wools</li>
+			<li>Leathers</li>
+          </categories>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawCotton</li>
+			<li>WoolMegasloth</li>
+            <li>WoolMuffalo</li>
+            <li>WoolAlpaca</li>
+			<li>WoolSheep</li>
+          </thingDefs>
+        </filter>
+        <count>120</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentMedieval</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	<categories>
+		<li>BTextiles</li>
+		<li>Wools</li>
+		<li>Leathers</li>
+	</categories>
+	<thingDefs>
+		<li>RawCotton</li>
+		<li>WoolMegasloth</li>
+		<li>WoolMuffalo</li>
+		<li>WoolAlpaca</li>
+		<li>WoolSheep</li>
+		<li>ComponentMedieval</li>
+	</thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DoubleBedding>1</DoubleBedding>
+    </products>
+    <workAmount>10000</workAmount>
+	<recipeUsers>
+		<li>ElectricTailoringBench</li>
+		<li>HandTailoringBench</li>
+		<li>LeatherworkerTable</li>
+	</recipeUsers>
+	<researchPrerequisite>Beds_B1</researchPrerequisite>
+  </RecipeDef>
   
 </Defs>
