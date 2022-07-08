@@ -159,14 +159,27 @@
 					<Textile_Softness>0.58</Textile_Softness>
 				</value>
 			</li>
+		
+			<!-- Android-->
 			
-			<li Class="PatchOperationAdd">
-			  <xpath>Defs/ThingDef[defName="Leather_ChJAndroid"]/statBases</xpath>
-			  <value>
-			  	<Bed_Immunity_Stuff>0.46</Bed_Immunity_Stuff>
-				<Textile_Softness>0.05</Textile_Softness>
-			  </value>
-			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Androids</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="PatchOperationAdd">
+			  		<xpath>Defs/ThingDef[defName="Leather_ChJAndroid"]/statBases</xpath>
+			  		<value>
+			  			<Bed_Immunity_Stuff>0.46</Bed_Immunity_Stuff>
+						<Textile_Softness>0.05</Textile_Softness>
+			  		</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>	
 			
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Leather_FireDragonskin"]/statBases</xpath>
