@@ -99,11 +99,13 @@
       <texPath>Things/Beddings/beddingSingle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<!--
     <costStuffCount>60</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
       <li>Leathery</li>
     </stuffCategories>
+	-->
     <tradeability>Sellable</tradeability>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
