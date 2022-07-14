@@ -99,13 +99,11 @@
       <texPath>Things/Beddings/beddingSingle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	<!--
     <costStuffCount>60</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
       <li>Leathery</li>
     </stuffCategories>
-	-->
     <tradeability>Sellable</tradeability>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
@@ -114,7 +112,7 @@
     </statBases>
     <thingCategories>
       <li>Beddings</li>
-    </thingCategories><!--
+    </thingCategories>
     <recipeMaker>
       <researchPrerequisite>ComplexFurniture</researchPrerequisite>
       <recipeUsers>
@@ -122,7 +120,7 @@
         <li>HandTailoringBench</li>
         <li>LeatherworkerTable</li>
       </recipeUsers>
-    </recipeMaker>-->
+    </recipeMaker>
   </ThingDef>
 
   <ThingDef ParentName="BeddingBase">
@@ -132,12 +130,12 @@
     <graphicData>
       <texPath>Things/Beddings/beddingDouble</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-    </graphicData><!--
+    </graphicData>
     <costStuffCount>100</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
       <li>Leathery</li>
-    </stuffCategories>-->
+    </stuffCategories>
     <tradeability>Sellable</tradeability>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
@@ -147,7 +145,6 @@
     <thingCategories>
       <li>Beddings</li>
     </thingCategories>
-	<!--
     <recipeMaker>
       <researchPrerequisite>ComplexFurniture</researchPrerequisite>
       <recipeUsers>
@@ -155,7 +152,7 @@
         <li>HandTailoringBench</li>
         <li>LeatherworkerTable</li>
       </recipeUsers>
-    </recipeMaker>-->
+    </recipeMaker>
   </ThingDef>
   
    <!-- ==================== Recipes ========================== -->
