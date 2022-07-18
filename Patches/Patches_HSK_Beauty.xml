@@ -594,6 +594,31 @@
 				</match>
 			</li>
 			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>[RF] Fishing-ReWork</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="PatchOperationAdd">
+			  		<xpath>Defs/ThingDef[defName="EelLeather"]/statBases</xpath>
+			  		<value>
+			  			<Bedding_Beauty_Stuff>1</Bedding_Beauty_Stuff>
+			  		</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+			  		<xpath>Defs/ThingDef[defName="SquidLeather"]/statBases</xpath>
+			  		<value>
+			  			<Bedding_Beauty_Stuff>0.5</Bedding_Beauty_Stuff>
+			  		</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>	
+			
 			<!-- ========== Leather ========== -->
 			<!--
 			<li Class="PatchOperationAdd">

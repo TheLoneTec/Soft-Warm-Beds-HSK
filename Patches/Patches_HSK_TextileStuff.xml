@@ -55,7 +55,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Leather_Panthera"]/statBases</xpath>
 				<value><!-- IGSF 1.1 -->
-					<Bed_Immunity_Stuff>0.55</Bed_Immunity_Stuff>
+					<Bed_Immunity_Stuff>0.35</Bed_Immunity_Stuff>
 					<Textile_Softness>0.44</Textile_Softness>
 				</value>
 			</li>
@@ -467,6 +467,33 @@
 					</operations>
 				</match>
 			</li>
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>[RF] Fishing-ReWork</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="PatchOperationAdd">
+			  		<xpath>Defs/ThingDef[defName="EelLeather"]/statBases</xpath>
+			  		<value>
+			  			<Bed_Immunity_Stuff>0.52</Bed_Immunity_Stuff>
+						<Textile_Softness>0.25</Textile_Softness>
+			  		</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+			  		<xpath>Defs/ThingDef[defName="SquidLeather"]/statBases</xpath>
+			  		<value>
+			  			<Bed_Immunity_Stuff>0.38</Bed_Immunity_Stuff>
+						<Textile_Softness>0.18</Textile_Softness>
+			  		</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>	
 			
 			</operations>
 		</match>
