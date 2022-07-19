@@ -181,6 +181,13 @@
 			  </value>
 			</li>
 			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "prison_single_bed_RT" or defName = "prison_single_bed_LB"]/statBases/ImmunityGainSpeedFactor</xpath>
+				<value>
+					<ImmunityGainSpeedFactor>0.4</ImmunityGainSpeedFactor>
+				</value>
+			</li>
+			
 			</operations>
 		</match>
 	</Operation>

@@ -2410,7 +2410,7 @@
 				</li>
 			
 				<!-- ==== Bedding ==== -->		
-
+	<!--
 				<li Class="PatchOperationInsert">
 					<xpath>/Defs/ThingDef[defName = "SingleBedding"]/stuffCategories</xpath>
 					<value>
@@ -2420,14 +2420,14 @@
 						</costList>
 					</value>
 				</li>
-				
+			
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "SingleBedding"]/recipeMaker/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisite>Beds_B1</researchPrerequisite>
 					</value>
 				</li>
-				
+	
 				<li Class="PatchOperationInsert">
 					<xpath>/Defs/ThingDef[defName = "DoubleBedding"]/stuffCategories</xpath>
 					<value>
@@ -2437,14 +2437,14 @@
 						</costList>
 					</value>
 				</li>
-		
+	
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "DoubleBedding"]/recipeMaker/researchPrerequisite</xpath>
 					<value>
 						<researchPrerequisite>Beds_B1</researchPrerequisite>
 					</value>
 				</li>
-		
+				-->
 				<!-- ==== Hi-Tech Fabrics Softness ==== -->	
 		
 				<li Class="PatchOperationAdd">
@@ -2467,7 +2467,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/ThingDef[defName = "prison_single_bed_RT" or defName = "prison_single_bed_LB"]/statBases/Comfort</xpath>
 					<value>
-						<Comfort>0.15</Comfort>
+						<Comfort>0.1</Comfort>
 					</value>
 				</li>
 		
@@ -2475,7 +2475,7 @@
 				<li Class="PatchOperationReplace">
 				  <xpath>Defs/ThingDef[defName = "prison_single_bed_RT" or defName = "prison_single_bed_LB"]/statBases/BedRestEffectiveness</xpath>
 				  <value>
-					<BedRestEffectiveness>0.45</BedRestEffectiveness>
+					<BedRestEffectiveness>0.25</BedRestEffectiveness>
 				  </value>
 				</li>
 	

@@ -496,6 +496,26 @@
 				</value>
 			</li>
 			
+			<!-- HSK more content-->
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>HSK more content</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="PatchOperationAdd">
+			  		<xpath>Defs/ThingDef[defName="Leather_Shark"]/statBases</xpath>
+			  		<value>
+			  			<Bedding_Beauty_Stuff>2</Bedding_Beauty_Stuff>
+			  		</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>	
+			
 			<!-- Insulator -->
 			
 			<li Class="PatchOperationFindMod">
