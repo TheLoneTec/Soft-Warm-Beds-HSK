@@ -169,7 +169,13 @@
           <categories>
 			<li>BTextiles</li>
 			<li>Wools</li>
-			<li>Leathers</li>
+			<li>Leathers</li><!--
+			<disallowedThingDefs>
+				<li>WoolMegasloth</li>
+				<li>WoolMuffalo</li>
+				<li>WoolAlpaca</li>
+				<li>WoolSheep</li>
+			</disallowedThingDefs>-->
           </categories>
         </filter>
         <count>60</count>
