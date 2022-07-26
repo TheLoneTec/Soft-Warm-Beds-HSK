@@ -139,7 +139,7 @@
 			<li Class="PatchOperationAdd">
 				<xpath>Defs/ThingDef[defName="Leather_Heavy"]/statBases</xpath>
 				<value><!-- IGSF 1.17 -->
-					<Bed_Immunity_Stuff>0.58</Bed_Immunity_Stuff>
+					<Bed_Immunity_Stuff>0.42</Bed_Immunity_Stuff>
 					<Textile_Softness>0.26</Textile_Softness>
 				</value>
 			</li>
