@@ -507,7 +507,26 @@
 			  		<xpath>Defs/ThingDef[defName="SquidLeather"]/statBases</xpath>
 			  		<value>
 			  			<Bed_Immunity_Stuff>0.38</Bed_Immunity_Stuff>
-						<Textile_Softness>0.18</Textile_Softness>
+						<Textile_Softness>0.30</Textile_Softness>
+			  		</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>	
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Moyo-From the depth HSK</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="PatchOperationAdd">
+			  		<xpath>Defs/ThingDef[defName="Moyo_Depthweave"]/statBases</xpath>
+			  		<value>
+			  			<Bed_Immunity_Stuff>0.55</Bed_Immunity_Stuff>
+						<!--<Textile_Softness>0.35</Textile_Softness>-->
 			  		</value>
 					</li>
 					
