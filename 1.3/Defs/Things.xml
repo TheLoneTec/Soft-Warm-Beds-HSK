@@ -156,7 +156,82 @@
     </recipeMaker>-->
   </ThingDef>
   
+  <ThingDef ParentName="SK_ResourceBase">
+    <defName>BeddingStuffing</defName>
+    <label>Bedding Stuffing</label>
+    <description>Stuffing for the inside of a matress.</description>
+    <graphicData>
+      <texPath>Things/Beddings/Stuffing</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<stackLimit>75</stackLimit>
+	<!--
+    <costStuffCount>100</costStuffCount>-->
+    <tradeability>Sellable</tradeability>
+    <statBases>
+		<MarketValue>5</MarketValue>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>500</WorkToMake>
+		<Mass>4</Mass>
+    </statBases>
+    <thingCategories>
+		<li>CTextiles</li>
+		<!--<li>Parts</li>-->
+	</thingCategories>
+	<tradeTags>
+		<li>ExoticMisc</li>
+	</tradeTags><!--
+    <recipeMaker>
+      <researchPrerequisite>ComplexFurniture</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>LeatherworkerTable</li>
+      </recipeUsers>
+    </recipeMaker>-->
+  </ThingDef>
+  
    <!-- ==================== Recipes ========================== -->
+
+   <RecipeDef>
+    <defName>Make_BeddingStuffing</defName>
+    <label>make Bedding Stuffing</label>
+    <description>Craft 60 bedding stuffing, for simple and industrial beds.</description>
+    <jobString>Making Bedding Stuffing.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawCotton</li>
+			<li>WoolMegasloth</li>
+            <li>WoolMuffalo</li>
+            <li>WoolAlpaca</li>
+			<li>WoolSheep</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	<thingDefs>
+		<li>RawCotton</li>
+		<li>WoolMegasloth</li>
+		<li>WoolMuffalo</li>
+		<li>WoolAlpaca</li>
+		<li>WoolSheep</li>
+	</thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BeddingStuffing>60</BeddingStuffing>
+    </products>
+    <workAmount>500</workAmount>
+	<recipeUsers>
+		<li>ElectricTailoringBench</li>
+		<li>HandTailoringBench</li>
+		<li>LeatherworkerTable</li>
+	</recipeUsers>
+	<researchPrerequisite>Beds_B1</researchPrerequisite>
+  </RecipeDef>
 
   <RecipeDef>
     <defName>Make_SimpleBedding</defName>
@@ -183,11 +258,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>RawCotton</li>
-			<li>WoolMegasloth</li>
-            <li>WoolMuffalo</li>
-            <li>WoolAlpaca</li>
-			<li>WoolSheep</li>
+            <li>BeddingStuffing</li>
           </thingDefs>
         </filter>
         <count>80</count>
@@ -208,11 +279,7 @@
 		<li>Leathers</li>
 	</categories>
 	<thingDefs>
-		<li>RawCotton</li>
-		<li>WoolMegasloth</li>
-		<li>WoolMuffalo</li>
-		<li>WoolAlpaca</li>
-		<li>WoolSheep</li>
+		<li>BeddingStuffing</li>
 		<li>ComponentMedieval</li>
 	</thingDefs>
     </fixedIngredientFilter>
@@ -247,11 +314,7 @@
       <li>
         <filter>
           <thingDefs>
-            <li>RawCotton</li>
-			<li>WoolMegasloth</li>
-            <li>WoolMuffalo</li>
-            <li>WoolAlpaca</li>
-			<li>WoolSheep</li>
+            <li>BeddingStuffing</li>
           </thingDefs>
         </filter>
         <count>120</count>
@@ -272,11 +335,7 @@
 		<li>Leathers</li>
 	</categories>
 	<thingDefs>
-		<li>RawCotton</li>
-		<li>WoolMegasloth</li>
-		<li>WoolMuffalo</li>
-		<li>WoolAlpaca</li>
-		<li>WoolSheep</li>
+		<li>BeddingStuffing</li>
 		<li>ComponentMedieval</li>
 	</thingDefs>
     </fixedIngredientFilter>
