@@ -496,6 +496,46 @@
 				</value>
 			</li>
 			
+			<!-- Ratkin -->
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>NewRatkinPlus</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="PatchOperationAdd">
+			  		<xpath>Defs/ThingDef[defName="RK_Wool_KingHamster"]/statBases</xpath>
+			  		<value>
+			  			<Bedding_Beauty_Stuff>3</Bedding_Beauty_Stuff>
+			  		</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>	
+	
+			<!-- Moyo -->
+			
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Moyo-From the depth</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<li Class="PatchOperationAdd">
+			  		<xpath>Defs/ThingDef[defName="Moyo_Depthweave"]/statBases</xpath>
+			  		<value>
+			  			<Bedding_Beauty_Stuff>2.5</Bedding_Beauty_Stuff>
+			  		</value>
+					</li>
+					
+					</operations>
+				</match>
+			</li>
+	
 			<!-- HSK more content-->
 			
 			<li Class="PatchOperationFindMod">
