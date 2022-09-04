@@ -228,9 +228,9 @@
 	<recipeUsers>
 		<li>ElectricTailoringBench</li>
 		<li>HandTailoringBench</li>
-		<li>LeatherworkerTable</li>
+		<!--<li>LeatherworkerTable</li>-->
 	</recipeUsers>
-	<researchPrerequisite>Beds_B1</researchPrerequisite>
+	<researchPrerequisite><!--Beds_B1-->Apparel_B1</researchPrerequisite>
   </RecipeDef>
 
   <RecipeDef>
@@ -290,9 +290,9 @@
 	<recipeUsers>
 		<li>ElectricTailoringBench</li>
 		<li>HandTailoringBench</li>
-		<li>LeatherworkerTable</li>
+		<!--<li>LeatherworkerTable</li>-->
 	</recipeUsers>
-	<researchPrerequisite>Beds_B1</researchPrerequisite>
+	<researchPrerequisite><!--Beds_B1-->Apparel_B1</researchPrerequisite>
   </RecipeDef>
   
    <RecipeDef>
@@ -346,9 +346,9 @@
 	<recipeUsers>
 		<li>ElectricTailoringBench</li>
 		<li>HandTailoringBench</li>
-		<li>LeatherworkerTable</li>
+		<!--<li>LeatherworkerTable</li>-->
 	</recipeUsers>
-	<researchPrerequisite>Beds_B1</researchPrerequisite>
+	<researchPrerequisite><!--Beds_B1-->Apparel_B1</researchPrerequisite>
   </RecipeDef>
   
 </Defs>
