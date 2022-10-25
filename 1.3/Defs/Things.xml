@@ -169,7 +169,7 @@
     <costStuffCount>100</costStuffCount>-->
     <tradeability>Sellable</tradeability>
     <statBases>
-		<MarketValue>5</MarketValue>
+		<MarketValue>2</MarketValue>
 		<MaxHitPoints>100</MaxHitPoints>
 		<WorkToMake>500</WorkToMake>
 		<Mass>4</Mass>
