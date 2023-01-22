@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- ==== Norbal Bedding ==== -->
+
+  <ThingDef ParentName="BeddingBase">
+    <defName>PrimitiveBedding</defName>
+    <label>primitive bedding set</label>
+    <description>A set of mattress, pillows, linen and blanket for a single bed. Provides comfort and insulates the user while in bed.</description>
+    <graphicData>
+      <texPath>Things/Beddings/FurBeddingSingle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+	<costList>
+		<ComponentMedieval>2</ComponentMedieval>
+		<Hay>40</Hay>
+	</costList>
+    <tradeability>Sellable</tradeability>
+	<techLevel>Neolithic</techLevel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>10</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Beddings</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>Beds_A1</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>LeatherworkerTable</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BeddingBase">
+    <defName>PrimitiveDoubleBedding</defName>
+    <label>primitive double bedding set</label>
+    <description>A set of mattress, pillows, linen and blanket for a double bed. Provides comfort and insulates the users while in bed.</description>
+    <graphicData>
+      <texPath>Things/Beddings/FurBeddingDouble</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+	<costList>
+		<ComponentMedieval>4</ComponentMedieval>
+		<Hay>80</Hay>
+	</costList>
+    <tradeability>Sellable</tradeability>
+	<techLevel>Neolithic</techLevel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>7000</WorkToMake>
+      <Mass>18</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Beddings</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>Beds_A1</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>LeatherworkerTable</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+	<!-- ==== Advanced Bedding ==== -->
+
+  <ThingDef ParentName="BeddingBase">
+    <defName>AdvancedBedding</defName>
+    <label>advanced bedding set</label>
+    <description>An advanced set of mattress, pillows, linen and blanket for a single bed. Provides comfort and insulates the user while in bed.</description>
+    <graphicData>
+      <texPath>Things/Beddings/AdvancedbeddingSingle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+		<li>Leathery</li>
+		<li>Fabric</li>
+		<li>HF</li>
+    </stuffCategories>
+	<costList>
+		<ComponentIndustrial>2</ComponentIndustrial>
+		<Rubber>10</Rubber>
+		<Plastic>15</Plastic>
+		<SyntheticFibers>3</SyntheticFibers>
+	</costList>
+    <tradeability>Sellable</tradeability>
+	<techLevel>Spacer</techLevel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>7500</WorkToMake>
+      <Mass>10</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Beddings</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>Beds_C3</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BeddingBase">
+    <defName>AdvancedDoubleBedding</defName>
+    <label>advanced double bedding set</label>
+    <description>An advanced set of mattress, pillows, linen and blanket for a double bed. Provides comfort and insulates the users while in bed.</description>
+    <graphicData>
+      <texPath>Things/Beddings/AdvancedbeddingDouble</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+		<li>Leathery</li>
+		<li>Fabric</li>
+		<li>HF</li>
+    </stuffCategories>
+	<costList>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<Rubber>20</Rubber>
+		<Plastic>25</Plastic>
+		<SyntheticFibers>6</SyntheticFibers>
+	</costList>
+    <tradeability>Sellable</tradeability>
+	<techLevel>Spacer</techLevel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>18</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Beddings</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>Beds_C3</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+	<!-- ==== Royal Bedding ==== -->
+
+  <ThingDef ParentName="BeddingBase">
+    <defName>RoyalDoubleBedding</defName>
+    <label>royal double bedding set</label>
+    <description>An high quality set of mattress, pillows, linen and blanket for a double bed. Provides comfort and insulates the users while in bed. Fit for royalty.</description>
+    <graphicData>
+      <texPath>Things/Beddings/RoyalbeddingDouble</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>140</costStuffCount>
+    <stuffCategories>
+		<li>Leathery</li>
+		<li>Fabric</li>
+		<li>HF</li>
+    </stuffCategories>
+	<costList>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<Rubber>35</Rubber>
+		<SyntheticFibers>10</SyntheticFibers>
+		<Gold>50</Gold>
+	</costList>
+    <tradeability>Sellable</tradeability>
+	<techLevel>Industrial</techLevel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>18</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Beddings</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>Beds_C2</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+	<!-- ==== Med Bedding ==== -->
+
+  <ThingDef ParentName="BeddingBase">
+    <defName>MedBedding</defName>
+    <label>medical bedding set</label>
+    <description>A sterile set of padding, pillows, linen and blanket for a single bed. Provides comfort and insulates the user while in bed. For hospital beds.</description>
+    <graphicData>
+      <texPath>Things/Beddings/Medbedding</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+		<li>Leathery</li>
+		<li>Fabric</li>
+		<li>HF</li>
+    </stuffCategories>
+	<costList>
+		<ComponentIndustrial>1</ComponentIndustrial>
+		<Rubber>10</Rubber>
+		<Plastic>15</Plastic>
+		<Neutroamine>5</Neutroamine>
+	</costList>
+    <tradeability>Sellable</tradeability>
+	<techLevel>Industrial</techLevel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>10</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Beddings</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>HospitalBed</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+	<!-- ==== Advanced Med Bedding ==== -->
+
+  <ThingDef ParentName="BeddingBase">
+    <defName>AdvancedMedBedding</defName>
+    <label>advanced medical bedding set</label>
+    <description>An advanced set of sterile padding, pillows, linen and blanket for a single bed. Provides comfort and insulates the user while in bed. For hospital beds.</description>
+    <graphicData>
+      <texPath>Things/Beddings/AdvancedMedBedding</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>80</costStuffCount>
+    <stuffCategories>
+		<li>Leathery</li>
+		<li>Fabric</li>
+		<li>HF</li>
+    </stuffCategories>
+	<costList>
+		<ComponentIndustrial>1</ComponentIndustrial>
+		<Rubber>10</Rubber>
+		<Plastic>15</Plastic>
+		<Neutroamine>8</Neutroamine>
+	</costList>
+    <tradeability>Sellable</tradeability>
+	<techLevel>Industrial</techLevel>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>10</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Beddings</li>
+    </thingCategories>
+    <recipeMaker>
+      <researchPrerequisite>Clinical_D1</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>
