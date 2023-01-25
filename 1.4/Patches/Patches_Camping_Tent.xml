@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--HSK-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Camping Tent</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+					<!--Extra Defs-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef ParentName="BlanketBase">
+								<defName>TentBedding</defName>
+								<label>bedding for tents</label>
+								<description>Keeps you warm</description>
+								<graphicData>
+									<texPath>Things/Building/CampingTent/Invisible_Bedding</texPath>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<!--<shaderType>CutoutComplex</shaderType>-->
+									<drawSize>(2,2)</drawSize>
+									<damageData>
+										<rect>(0,0.05,2,1.95)</rect>
+									</damageData>
+								</graphicData>
+								<size>(2,2)</size>
+							</ThingDef>
+						</value>
+					</li>
+
+					<!--Extra Defs-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef ParentName="BlanketBase">
+								<defName>TentDoubleBedding</defName>
+								<label>bedding for tents</label>
+								<description>Keeps you warm</description>
+								<graphicData>
+									<texPath>Things/Building/CampingTent/Invisible_Bedding</texPath>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<!--<shaderType>CutoutComplex</shaderType>-->
+									<drawSize>(2,2)</drawSize>
+									<damageData>
+										<rect>(0,0.05,2,1.95)</rect>
+									</damageData>
+								</graphicData>
+								<size>(2,2)</size>
+							</ThingDef>
+						</value>
+					</li>
+
+					<!-- ============== Canopy ============== -->
+				
+					<!--Beddings Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Canopy"]</xpath>
+						<value>
+							<comps>
+								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+									<blanketDef>TentBedding</blanketDef>
+									<beddingDef>PrimitiveBedding</beddingDef>
+								</li>
+							</comps>
+						</value>
+					</li>
+					
+					<!--Function Extension-->	
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Canopy"]</xpath>
+						<value>
+							<inspectorTabs>
+								<li>SoftWarmBeds.ITab_Bedding</li>
+							</inspectorTabs>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Canopy"]/building</xpath>
+						<value>
+							<fixedStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</fixedStorageSettings>
+							<defaultStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</defaultStorageSettings>
+						</value>
+					</li>
+					
+					<!--BedRestEffectiveness Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "Canopy"]/statBases/BedRestEffectiveness</xpath>
+						<value>
+							<BedRestEffectiveness>0.5</BedRestEffectiveness>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "Canopy"]/statBases/Comfort</xpath>
+						<value>
+							<Comfort>0.2</Comfort>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "Canopy"]/statBases/ImmunityGainSpeedFactor</xpath>
+						<value>
+							<ImmunityGainSpeedFactor>0.4</ImmunityGainSpeedFactor>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "Canopy"]/statBases/SurgerySuccessChanceFactor</xpath>
+						<value>
+							<SurgerySuccessChanceFactor>0.3</SurgerySuccessChanceFactor>
+						</value>
+					</li>
+					<!--Insulation Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Canopy"]/statBases</xpath>
+						<value>
+							<BedStuffEffectMultiplierInsulation_Cold>0.2</BedStuffEffectMultiplierInsulation_Cold>
+							<BedStuffEffectMultiplierInsulation_Heat>0.2</BedStuffEffectMultiplierInsulation_Heat>
+						</value>
+					</li>
+
+					<!-- ============== Wooden Canopy ============== -->
+				
+					<!--Beddings Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]</xpath>
+						<value>
+							<comps>
+								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+									<blanketDef>TentDoubleBedding</blanketDef>
+									<beddingDef>PrimitiveDoubleBedding</beddingDef>
+								</li>
+							</comps>
+						</value>
+					</li>
+					
+					<!--Function Extension-->	
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]</xpath>
+						<value>
+							<inspectorTabs>
+								<li>SoftWarmBeds.ITab_Bedding</li>
+							</inspectorTabs>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]/building</xpath>
+						<value>
+							<fixedStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</fixedStorageSettings>
+							<defaultStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</defaultStorageSettings>
+						</value>
+					</li>
+					
+					<!--BedRestEffectiveness Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]/statBases/BedRestEffectiveness</xpath>
+						<value>
+							<BedRestEffectiveness>0.55</BedRestEffectiveness>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]/statBases/Comfort</xpath>
+						<value>
+							<Comfort>0.3</Comfort>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]/statBases/ImmunityGainSpeedFactor</xpath>
+						<value>
+							<ImmunityGainSpeedFactor>0.5</ImmunityGainSpeedFactor>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]/statBases/SurgerySuccessChanceFactor</xpath>
+						<value>
+							<SurgerySuccessChanceFactor>0.4</SurgerySuccessChanceFactor>
+						</value>
+					</li>
+					<!--Insulation Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]/statBases</xpath>
+						<value>
+							<BedStuffEffectMultiplierInsulation_Cold>0.4</BedStuffEffectMultiplierInsulation_Cold>
+							<BedStuffEffectMultiplierInsulation_Heat>0.2</BedStuffEffectMultiplierInsulation_Heat>
+						</value>
+					</li>
+
+					<!-- ============== Teepee ============== -->
+				
+					<!--Beddings Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Teepee"]</xpath>
+						<value>
+							<comps>
+								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+									<blanketDef>TentDoubleBedding</blanketDef>
+									<beddingDef>PrimitiveDoubleBedding</beddingDef>
+								</li>
+							</comps>
+						</value>
+					</li>
+					
+					<!--Function Extension-->	
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Teepee"]</xpath>
+						<value>
+							<inspectorTabs>
+								<li>SoftWarmBeds.ITab_Bedding</li>
+							</inspectorTabs>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Teepee"]/building</xpath>
+						<value>
+							<fixedStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</fixedStorageSettings>
+							<defaultStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</defaultStorageSettings>
+						</value>
+					</li>
+					
+					<!--BedRestEffectiveness Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "Teepee"]/statBases/BedRestEffectiveness</xpath>
+						<value>
+							<BedRestEffectiveness>0.6</BedRestEffectiveness>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "Teepee"]/statBases/Comfort</xpath>
+						<value>
+							<Comfort>0.35</Comfort>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "Teepee"]/statBases/ImmunityGainSpeedFactor</xpath>
+						<value>
+							<ImmunityGainSpeedFactor>0.55</ImmunityGainSpeedFactor>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "Teepee"]/statBases/SurgerySuccessChanceFactor</xpath>
+						<value>
+							<SurgerySuccessChanceFactor>0.4</SurgerySuccessChanceFactor>
+						</value>
+					</li>
+					<!--Insulation Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Teepee"]/statBases</xpath>
+						<value>
+							<BedStuffEffectMultiplierInsulation_Cold>0.2</BedStuffEffectMultiplierInsulation_Cold>
+							<BedStuffEffectMultiplierInsulation_Heat>0.4</BedStuffEffectMultiplierInsulation_Heat>
+						</value>
+					</li>
+
+					<!-- ============== Tent ============== -->
+				
+					<!--Beddings Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Tent"]</xpath>
+						<value>
+							<comps>
+								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+									<blanketDef>TentDoubleBedding</blanketDef>
+									<beddingDef>DoubleBedding</beddingDef>
+								</li>
+							</comps>
+						</value>
+					</li>
+					
+					<!--Function Extension-->	
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Tent"]</xpath>
+						<value>
+							<inspectorTabs>
+								<li>SoftWarmBeds.ITab_Bedding</li>
+							</inspectorTabs>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Tent"]/building</xpath>
+						<value>
+							<fixedStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</fixedStorageSettings>
+							<defaultStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</defaultStorageSettings>
+						</value>
+					</li>
+					
+					<!--BedRestEffectiveness Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "Tent"]/statBases/BedRestEffectiveness</xpath>
+						<value>
+							<BedRestEffectiveness>0.65</BedRestEffectiveness>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "Tent"]/statBases/Comfort</xpath>
+						<value>
+							<Comfort>0.4</Comfort>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "Tent"]/statBases/ImmunityGainSpeedFactor</xpath>
+						<value>
+							<ImmunityGainSpeedFactor>0.6</ImmunityGainSpeedFactor>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "Tent"]/statBases/SurgerySuccessChanceFactor</xpath>
+						<value>
+							<SurgerySuccessChanceFactor>0.6</SurgerySuccessChanceFactor>
+						</value>
+					</li>
+					<!--Insulation Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "Tent"]/statBases</xpath>
+						<value>
+							<BedStuffEffectMultiplierInsulation_Cold>0.3</BedStuffEffectMultiplierInsulation_Cold>
+							<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
+						</value>
+					</li>
+	
+					<!-- ============== VikingTent ============== -->
+				
+					<!--Beddings Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "VikingTent"]</xpath>
+						<value>
+							<comps>
+								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+									<blanketDef>TentDoubleBedding</blanketDef>
+									<beddingDef>DoubleBedding</beddingDef>
+								</li>
+							</comps>
+						</value>
+					</li>
+					
+					<!--Function Extension-->	
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "VikingTent"]</xpath>
+						<value>
+							<inspectorTabs>
+								<li>SoftWarmBeds.ITab_Bedding</li>
+							</inspectorTabs>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "VikingTent"]/building</xpath>
+						<value>
+							<fixedStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</fixedStorageSettings>
+							<defaultStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</defaultStorageSettings>
+						</value>
+					</li>
+					
+					<!--BedRestEffectiveness Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "VikingTent"]/statBases/BedRestEffectiveness</xpath>
+						<value>
+							<BedRestEffectiveness>0.65</BedRestEffectiveness>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "VikingTent"]/statBases/Comfort</xpath>
+						<value>
+							<Comfort>0.4</Comfort>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "VikingTent"]/statBases/ImmunityGainSpeedFactor</xpath>
+						<value>
+							<ImmunityGainSpeedFactor>0.6</ImmunityGainSpeedFactor>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "VikingTent"]/statBases/SurgerySuccessChanceFactor</xpath>
+						<value>
+							<SurgerySuccessChanceFactor>0.6</SurgerySuccessChanceFactor>
+						</value>
+					</li>
+					<!--Insulation Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "VikingTent"]/statBases</xpath>
+						<value>
+							<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
+							<BedStuffEffectMultiplierInsulation_Heat>0.2</BedStuffEffectMultiplierInsulation_Heat>
+						</value>
+					</li>
+	
+					<!-- ============== ModernTent ============== -->
+				
+					<!--Beddings Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "ModernTent"]</xpath>
+						<value>
+							<comps>
+								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+									<blanketDef>TentDoubleBedding</blanketDef>
+									<beddingDef>DoubleBedding</beddingDef>
+								</li>
+							</comps>
+						</value>
+					</li>
+					
+					<!--Function Extension-->	
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "ModernTent"]</xpath>
+						<value>
+							<inspectorTabs>
+								<li>SoftWarmBeds.ITab_Bedding</li>
+							</inspectorTabs>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "ModernTent"]/building</xpath>
+						<value>
+							<fixedStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</fixedStorageSettings>
+							<defaultStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</defaultStorageSettings>
+						</value>
+					</li>
+					
+					<!--BedRestEffectiveness Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "ModernTent"]/statBases/BedRestEffectiveness</xpath>
+						<value>
+							<BedRestEffectiveness>0.65</BedRestEffectiveness>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "ModernTent"]/statBases/Comfort</xpath>
+						<value>
+							<Comfort>0.45</Comfort>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "ModernTent"]/statBases/ImmunityGainSpeedFactor</xpath>
+						<value>
+							<ImmunityGainSpeedFactor>0.8</ImmunityGainSpeedFactor>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "ModernTent"]/statBases/SurgerySuccessChanceFactor</xpath>
+						<value>
+							<SurgerySuccessChanceFactor>0.8</SurgerySuccessChanceFactor>
+						</value>
+					</li>
+					<!--Insulation Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "ModernTent"]/statBases</xpath>
+						<value>
+							<BedStuffEffectMultiplierInsulation_Cold>0.4</BedStuffEffectMultiplierInsulation_Cold>
+							<BedStuffEffectMultiplierInsulation_Heat>0.4</BedStuffEffectMultiplierInsulation_Heat>
+						</value>
+					</li>
+	
+					<!-- ============== FoldingTent ============== -->
+				
+					<!--Beddings Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "FoldingTent"]</xpath>
+						<value>
+							<comps>
+								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+									<blanketDef>TentDoubleBedding</blanketDef>
+									<beddingDef>DoubleBedding</beddingDef>
+								</li>
+							</comps>
+						</value>
+					</li>
+					
+					<!--Function Extension-->	
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "FoldingTent"]</xpath>
+						<value>
+							<inspectorTabs>
+								<li>SoftWarmBeds.ITab_Bedding</li>
+							</inspectorTabs>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "FoldingTent"]/building</xpath>
+						<value>
+							<fixedStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</fixedStorageSettings>
+							<defaultStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</defaultStorageSettings>
+						</value>
+					</li>
+					
+					<!--BedRestEffectiveness Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "FoldingTent"]/statBases/BedRestEffectiveness</xpath>
+						<value>
+							<BedRestEffectiveness>0.65</BedRestEffectiveness>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "FoldingTent"]/statBases/Comfort</xpath>
+						<value>
+							<Comfort>0.45</Comfort>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "FoldingTent"]/statBases/ImmunityGainSpeedFactor</xpath>
+						<value>
+							<ImmunityGainSpeedFactor>0.8</ImmunityGainSpeedFactor>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>/Defs/ThingDef[defName = "FoldingTent"]/statBases/SurgerySuccessChanceFactor</xpath>
+						<value>
+							<SurgerySuccessChanceFactor>0.8</SurgerySuccessChanceFactor>
+						</value>
+					</li>
+					<!--Insulation Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>/Defs/ThingDef[defName = "FoldingTent"]/statBases</xpath>
+						<value>
+							<BedStuffEffectMultiplierInsulation_Cold>0.4</BedStuffEffectMultiplierInsulation_Cold>
+							<BedStuffEffectMultiplierInsulation_Heat>0.4</BedStuffEffectMultiplierInsulation_Heat>
+						</value>
+					</li>
+	
+			</operations>
+		</match>
+	</Operation>
+</Patch>
