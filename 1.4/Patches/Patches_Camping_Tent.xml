@@ -8,7 +8,7 @@
 		<match Class="PatchOperationSequence">
 			<operations>
 
-					<!--Extra Defs
+					<!--Extra Defs-->
 					<li Class="PatchOperationAdd">
 						<xpath>Defs</xpath>
 						<value>
@@ -28,8 +28,8 @@
 							</ThingDef>
 						</value>
 					</li>
--->
-					<!--Extra Defs
+
+					<!--Extra Defs-->
 					<li Class="PatchOperationAdd">
 						<xpath>Defs</xpath>
 						<value>
@@ -49,10 +49,10 @@
 							</ThingDef>
 						</value>
 					</li>
--->
+
 					<!-- ============== Canopy ============== -->
 				
-					<!--Beddings Settings
+					<!--Beddings Settings-->
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "Canopy"]</xpath>
 						<value>
@@ -60,12 +60,13 @@
 								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 									<blanketDef>TentBedding</blanketDef>
 									<beddingDef>PrimitiveBedding</beddingDef>
+									<blanketInvisible>true</blanketInvisible>
 								</li>
 							</comps>
 						</value>
 					</li>
-					-->
-					<!--Function Extension	
+					
+					<!--Function Extension-->	
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "Canopy"]</xpath>
 						<value>
@@ -104,7 +105,7 @@
 							</defaultStorageSettings>
 						</value>
 					</li>
-					-->
+					
 					<!--BedRestEffectiveness Settings-->
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "Canopy"]/statBases/BedRestEffectiveness</xpath>
@@ -144,7 +145,7 @@
 
 					<!-- ============== Wooden Canopy ============== -->
 				
-					<!--Beddings Settings
+					<!--Beddings Settings-->
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]</xpath>
 						<value>
@@ -152,12 +153,13 @@
 								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 									<blanketDef>TentDoubleBedding</blanketDef>
 									<beddingDef>PrimitiveDoubleBedding</beddingDef>
+									<blanketInvisible>true</blanketInvisible>
 								</li>
 							</comps>
 						</value>
 					</li>
-					-->
-					<!--Function Extension	
+					
+					<!--Function Extension-->	
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]</xpath>
 						<value>
@@ -196,7 +198,7 @@
 							</defaultStorageSettings>
 						</value>
 					</li>
-					-->
+					
 					<!--BedRestEffectiveness Settings-->
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]/statBases/BedRestEffectiveness</xpath>
@@ -236,7 +238,7 @@
 
 					<!-- ============== Teepee ============== -->
 				
-					<!--Beddings Settings
+					<!--Beddings Settings-->
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "Teepee"]</xpath>
 						<value>
@@ -244,12 +246,13 @@
 								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 									<blanketDef>TentDoubleBedding</blanketDef>
 									<beddingDef>PrimitiveDoubleBedding</beddingDef>
+									<blanketInvisible>true</blanketInvisible>
 								</li>
 							</comps>
 						</value>
 					</li>
-					-->
-					<!--Function Extension	
+					
+					<!--Function Extension-->	
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "Teepee"]</xpath>
 						<value>
@@ -288,7 +291,7 @@
 							</defaultStorageSettings>
 						</value>
 					</li>
-					-->
+					
 					<!--BedRestEffectiveness Settings-->
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "Teepee"]/statBases/BedRestEffectiveness</xpath>
@@ -328,7 +331,7 @@
 
 					<!-- ============== Tent ============== -->
 				
-					<!--Beddings Settings
+					<!--Beddings Settings-->
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "Tent"]</xpath>
 						<value>
@@ -336,12 +339,13 @@
 								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 									<blanketDef>TentDoubleBedding</blanketDef>
 									<beddingDef>DoubleBedding</beddingDef>
+									<blanketInvisible>true</blanketInvisible>
 								</li>
 							</comps>
 						</value>
 					</li>
-					-->
-					<!--Function Extension	
+					
+					<!--Function Extension-->	
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "Tent"]</xpath>
 						<value>
@@ -380,7 +384,7 @@
 							</defaultStorageSettings>
 						</value>
 					</li>
-					-->
+					
 					<!--BedRestEffectiveness Settings-->
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "Tent"]/statBases/BedRestEffectiveness</xpath>
@@ -420,7 +424,7 @@
 	
 					<!-- ============== VikingTent ============== -->
 				
-					<!--Beddings Settings
+					<!--Beddings Settings-->
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "VikingTent"]</xpath>
 						<value>
@@ -428,12 +432,13 @@
 								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 									<blanketDef>TentDoubleBedding</blanketDef>
 									<beddingDef>DoubleBedding</beddingDef>
+									<blanketInvisible>true</blanketInvisible>
 								</li>
 							</comps>
 						</value>
 					</li>
-					-->
-					<!--Function Extension	
+					
+					<!--Function Extension-->	
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "VikingTent"]</xpath>
 						<value>
@@ -472,7 +477,7 @@
 							</defaultStorageSettings>
 						</value>
 					</li>
-					-->
+					
 					<!--BedRestEffectiveness Settings-->
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "VikingTent"]/statBases/BedRestEffectiveness</xpath>
@@ -512,7 +517,7 @@
 	
 					<!-- ============== ModernTent ============== -->
 				
-					<!--Beddings Settings
+					<!--Beddings Settings-->
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "ModernTent"]</xpath>
 						<value>
@@ -520,12 +525,13 @@
 								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 									<blanketDef>TentDoubleBedding</blanketDef>
 									<beddingDef>DoubleBedding</beddingDef>
+									<blanketInvisible>true</blanketInvisible>
 								</li>
 							</comps>
 						</value>
 					</li>
-					-->
-					<!--Function Extension	
+					
+					<!--Function Extension-->	
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "ModernTent"]</xpath>
 						<value>
@@ -564,7 +570,7 @@
 							</defaultStorageSettings>
 						</value>
 					</li>
-					-->
+					
 					<!--BedRestEffectiveness Settings-->
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "ModernTent"]/statBases/BedRestEffectiveness</xpath>
@@ -604,7 +610,7 @@
 	
 					<!-- ============== FoldingTent ============== -->
 				
-					<!--Beddings Settings
+					<!--Beddings Settings-->
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "FoldingTent"]</xpath>
 						<value>
@@ -612,12 +618,13 @@
 								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 									<blanketDef>TentDoubleBedding</blanketDef>
 									<beddingDef>DoubleBedding</beddingDef>
+									<blanketInvisible>true</blanketInvisible>
 								</li>
 							</comps>
 						</value>
 					</li>
-					-->
-					<!--Function Extension	
+					
+					<!--Function Extension-->	
 					<li Class="PatchOperationAdd">
 						<xpath>/Defs/ThingDef[defName = "FoldingTent"]</xpath>
 						<value>
@@ -656,7 +663,7 @@
 							</defaultStorageSettings>
 						</value>
 					</li>
-					-->
+					
 					<!--BedRestEffectiveness Settings-->
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "FoldingTent"]/statBases/BedRestEffectiveness</xpath>
