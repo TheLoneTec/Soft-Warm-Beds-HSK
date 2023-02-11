@@ -110,7 +110,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "Canopy"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.3</BedRestEffectiveness>
+							<BedRestEffectiveness>0.5</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -131,7 +131,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "Canopy"]/statBases/SurgerySuccessChanceFactor</xpath>
 						<value>
-							<SurgerySuccessChanceFactor>0.4</SurgerySuccessChanceFactor>
+							<SurgerySuccessChanceFactor>0.7</SurgerySuccessChanceFactor>
 						</value>
 					</li>
 					<!--Insulation Settings-->
@@ -203,7 +203,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.35</BedRestEffectiveness>
+							<BedRestEffectiveness>0.55</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -224,7 +224,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "WoodenCanopy"]/statBases/SurgerySuccessChanceFactor</xpath>
 						<value>
-							<SurgerySuccessChanceFactor>0.45</SurgerySuccessChanceFactor>
+							<SurgerySuccessChanceFactor>0.75</SurgerySuccessChanceFactor>
 						</value>
 					</li>
 					<!--Insulation Settings-->
@@ -296,7 +296,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "Teepee"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.4</BedRestEffectiveness>
+							<BedRestEffectiveness>0.6</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -317,7 +317,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "Teepee"]/statBases/SurgerySuccessChanceFactor</xpath>
 						<value>
-							<SurgerySuccessChanceFactor>0.5</SurgerySuccessChanceFactor>
+							<SurgerySuccessChanceFactor>0.75</SurgerySuccessChanceFactor>
 						</value>
 					</li>
 					<!--Insulation Settings-->
@@ -389,7 +389,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "Tent"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.45</BedRestEffectiveness>
+							<BedRestEffectiveness>0.65</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -410,7 +410,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "Tent"]/statBases/SurgerySuccessChanceFactor</xpath>
 						<value>
-							<SurgerySuccessChanceFactor>0.6</SurgerySuccessChanceFactor>
+							<SurgerySuccessChanceFactor>0.8</SurgerySuccessChanceFactor>
 						</value>
 					</li>
 					<!--Insulation Settings-->
@@ -482,7 +482,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "VikingTent"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.45</BedRestEffectiveness>
+							<BedRestEffectiveness>0.65</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -503,7 +503,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "VikingTent"]/statBases/SurgerySuccessChanceFactor</xpath>
 						<value>
-							<SurgerySuccessChanceFactor>0.6</SurgerySuccessChanceFactor>
+							<SurgerySuccessChanceFactor>0.85</SurgerySuccessChanceFactor>
 						</value>
 					</li>
 					<!--Insulation Settings-->
@@ -575,7 +575,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "ModernTent"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.5</BedRestEffectiveness>
+							<BedRestEffectiveness>0.7</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -596,7 +596,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "ModernTent"]/statBases/SurgerySuccessChanceFactor</xpath>
 						<value>
-							<SurgerySuccessChanceFactor>0.7</SurgerySuccessChanceFactor>
+							<SurgerySuccessChanceFactor>0.9</SurgerySuccessChanceFactor>
 						</value>
 					</li>
 					<!--Insulation Settings-->
@@ -668,7 +668,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "FoldingTent"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.5</BedRestEffectiveness>
+							<BedRestEffectiveness>0.7</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -689,7 +689,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>/Defs/ThingDef[defName = "FoldingTent"]/statBases/SurgerySuccessChanceFactor</xpath>
 						<value>
-							<SurgerySuccessChanceFactor>0.7</SurgerySuccessChanceFactor>
+							<SurgerySuccessChanceFactor>0.9</SurgerySuccessChanceFactor>
 						</value>
 					</li>
 					<!--Insulation Settings-->
