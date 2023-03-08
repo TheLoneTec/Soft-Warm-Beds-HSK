@@ -41,7 +41,7 @@
 					
 					<!--Description-->
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]/description</xpath>
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/description</xpath>
 						<value>
 							<description>A primitive crib filled with hay. A high quality crib will make a baby happy. Multiple cribs can be placed in a bedroom without turning it into a barracks.</description>
 						</value>
@@ -49,7 +49,7 @@
 					
 					<!--Fix Visual Glitch-->
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
 						<value>
 							<drawerType>MapMeshAndRealTime</drawerType>
 						</value>
@@ -57,7 +57,7 @@
 					
 					<!--Function Extension-->	
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
 						<value>
 							<inspectorTabs>
 								<li>SoftWarmBeds.ITab_Bedding</li>
@@ -66,7 +66,7 @@
 					</li>
 					
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]/building</xpath>
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/building</xpath>
 						<value>
 							<fixedStorageSettings>
 								<filter>
@@ -85,7 +85,7 @@
 						</value>
 					</li>
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
 						<value>
 							<tickerType>Normal</tickerType>
 						</value>
@@ -93,7 +93,7 @@
 					
 					<!--Graphic Modifications -->	
 					<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]/graphicData</xpath>
+					<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/graphicData</xpath>
 						<value>
 							<graphicData>
 								<texPath>Things/Building/HSK/HayCrib/BasicCrib</texPath>
@@ -109,47 +109,60 @@
 					
 					<!--Peserving Menu Icon-->
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
 						<value>
 							<uiIconPath/>
 						</value>
 					</li>
 
 					<li Class="JPTools.PatchOperationCopy">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]/graphicData/texPath</xpath>
-						<toXpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]/uiIconPath</toXpath>
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/graphicData/texPath</xpath>
+						<toXpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/uiIconPath</toXpath>
 						<append>_south</append>
 					</li>
 					
 					<!--Beddings Settings-->
-					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
-						<value>
-							<comps>
+					<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/comps</xpath>
+							<value>
 								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 									<blanketDef>NorbalBlanketSingle</blanketDef>
 									<beddingDef>PrimitiveBedding</beddingDef>
 								</li>
-							</comps>
-						</value>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
+							<value>
+								<comps>
+									<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+										<blanketDef>NorbalBlanketSingle</blanketDef>
+										<beddingDef>PrimitiveBedding</beddingDef>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
 					</li>
+
 					<!--BedRestEffectiveness Settings-->
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]/statBases/BedRestEffectiveness</xpath>
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/statBases/BedRestEffectiveness</xpath>
 						<value>
 							<BedRestEffectiveness>0.45</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]/statBases</xpath>
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/statBases</xpath>
 						<value>
 							<Comfort>0.4</Comfort>
 						</value>
 					</li>
 					<!--Insulation Settings-->
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]/statBases</xpath>
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/statBases</xpath>
 						<value>
 							<BedStuffEffectMultiplierInsulation_Cold>0.4</BedStuffEffectMultiplierInsulation_Cold>
 							<BedStuffEffectMultiplierInsulation_Heat>0.2</BedStuffEffectMultiplierInsulation_Heat>
@@ -158,7 +171,7 @@
 				
 					<!--Recipe
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]/stuffCategories</xpath>
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/stuffCategories</xpath>
 						<value>
 							<stuffCategories>
 								<li>Stony</li>
@@ -169,7 +182,7 @@
 				
 					<!--Recipe-->
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]/costList</xpath>
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/costList</xpath>
 						<value>
 							<stuffCategories>
 								<li>Stony</li>
@@ -185,7 +198,7 @@
 				
 					<!--Hide Body Under bedding
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[defName = "Nej_TribalCrib"]/building/bed_showSleeperBody</xpath>
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/building/bed_showSleeperBody</xpath>
 						<value>
 							<bed_showSleeperBody>True</bed_showSleeperBody>
 						</value>
@@ -217,7 +230,7 @@
 					
 					<!--Fix Visual Glitch-->
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Crib"]</xpath>
+						<xpath>Defs/ThingDef[defName = "Crib"]</xpath>
 						<value>
 							<drawerType>MapMeshAndRealTime</drawerType>
 						</value>
@@ -225,7 +238,7 @@
 					
 					<!--Function Extension-->	
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Crib"]</xpath>
+						<xpath>Defs/ThingDef[defName = "Crib"]</xpath>
 						<value>
 							<inspectorTabs>
 								<li>SoftWarmBeds.ITab_Bedding</li>
@@ -234,7 +247,7 @@
 					</li>
 					
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Crib"]/building</xpath>
+						<xpath>Defs/ThingDef[defName = "Crib"]/building</xpath>
 						<value>
 							<fixedStorageSettings>
 								<filter>
@@ -263,61 +276,74 @@
 						</value>
 					</li>
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Crib"]</xpath>
+						<xpath>Defs/ThingDef[defName = "Crib"]</xpath>
 						<value>
 							<tickerType>Normal</tickerType>
 						</value>
 					</li>
 					<!--Peserving Menu Icon-->
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Crib"]</xpath>
+						<xpath>Defs/ThingDef[defName = "Crib"]</xpath>
 						<value>
 							<uiIconPath/>
 						</value>
 					</li>
 					<li Class="JPTools.PatchOperationCopy">
-						<xpath>/Defs/ThingDef[defName = "Crib"]/graphicData/texPath</xpath>
-						<toXpath>/Defs/ThingDef[defName = "Crib"]/uiIconPath</toXpath>
+						<xpath>Defs/ThingDef[defName = "Crib"]/graphicData/texPath</xpath>
+						<toXpath>Defs/ThingDef[defName = "Crib"]/uiIconPath</toXpath>
 						<append>_south</append>
 					</li>
 					
 					<!--Graphic Modifications -->	
 					<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName = "Crib"]/graphicData/texPath</xpath>
+					<xpath>Defs/ThingDef[defName = "Crib"]/graphicData/texPath</xpath>
 						<value>
 						  <texPath>Things/Building/HSK/Crib/Crib</texPath>
 						</value>
 					</li>
 					
 					<!--Beddings Settings-->
-					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Crib"]</xpath>
-						<value>
-							<comps>
+					<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "Crib"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName = "Crib"]/comps</xpath>
+							<value>
 								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 									<blanketDef>NormalBlanketSingle</blanketDef>
 									<beddingDef>SingleBedding</beddingDef>
 								</li>
-							</comps>
-						</value>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName = "Crib"]</xpath>
+							<value>
+								<comps>
+									<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+										<blanketDef>NormalBlanketSingle</blanketDef>
+										<beddingDef>SingleBedding</beddingDef>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
 					</li>
+
 					<!--BedRestEffectiveness Settings-->
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[defName = "Crib"]/statBases/BedRestEffectiveness</xpath>
+						<xpath>Defs/ThingDef[defName = "Crib"]/statBases/BedRestEffectiveness</xpath>
 						<value>
 							<BedRestEffectiveness>0.45</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Crib"]/statBases</xpath>
+						<xpath>Defs/ThingDef[defName = "Crib"]/statBases</xpath>
 						<value>
 							<Comfort>0.35</Comfort>
 						</value>
 					</li>
 					<!--Insulation Settings-->
 					<li Class="PatchOperationAdd">
-						<xpath>/Defs/ThingDef[defName = "Crib"]/statBases</xpath>
+						<xpath>Defs/ThingDef[defName = "Crib"]/statBases</xpath>
 						<value>
 							<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
 							<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
@@ -326,7 +352,7 @@
 				
 					<!--Recipe-->
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[defName = "Crib"]/stuffCategories</xpath>
+						<xpath>Defs/ThingDef[defName = "Crib"]/stuffCategories</xpath>
 						<value>
 							<stuffCategories>
 								<li>Metallic</li>
@@ -342,7 +368,7 @@
 				
 					<!--Recipe-->
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[defName = "Crib"]/costList</xpath>
+						<xpath>Defs/ThingDef[defName = "Crib"]/costList</xpath>
 						<value>
 							<costList>
 								<ComponentMedieval>4</ComponentMedieval>
@@ -353,7 +379,7 @@
 					<!-- ======== Baby Sleeping Spot ========= -->
 
 					<li Class="PatchOperationReplace">
-						<xpath>/Defs/ThingDef[defName = "BabySleepingSpot"]/statBases/Comfort</xpath>
+						<xpath>Defs/ThingDef[defName = "BabySleepingSpot"]/statBases/Comfort</xpath>
 						<value>
 						  <Comfort>0.2</Comfort>
 						</value>
