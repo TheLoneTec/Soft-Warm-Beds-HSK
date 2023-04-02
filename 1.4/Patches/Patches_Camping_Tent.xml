@@ -123,7 +123,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName = "Canopy"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.5</BedRestEffectiveness>
+							<BedRestEffectiveness>0.3</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -229,7 +229,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName = "WoodenCanopy"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.55</BedRestEffectiveness>
+							<BedRestEffectiveness>0.35</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -335,7 +335,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName = "Teepee"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.6</BedRestEffectiveness>
+							<BedRestEffectiveness>0.4</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -441,7 +441,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName = "Tent"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.65</BedRestEffectiveness>
+							<BedRestEffectiveness>0.45</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -455,7 +455,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName = "Tent"]/statBases/ImmunityGainSpeedFactor</xpath>
 						<value>
-							<ImmunityGainSpeedFactor>0.6</ImmunityGainSpeedFactor>
+							<ImmunityGainSpeedFactor>0.5</ImmunityGainSpeedFactor>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -547,7 +547,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName = "VikingTent"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.65</BedRestEffectiveness>
+							<BedRestEffectiveness>0.55</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -561,7 +561,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName = "VikingTent"]/statBases/ImmunityGainSpeedFactor</xpath>
 						<value>
-							<ImmunityGainSpeedFactor>0.7</ImmunityGainSpeedFactor>
+							<ImmunityGainSpeedFactor>0.45</ImmunityGainSpeedFactor>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -653,7 +653,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName = "ModernTent"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.7</BedRestEffectiveness>
+							<BedRestEffectiveness>0.6</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -667,7 +667,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName = "ModernTent"]/statBases/ImmunityGainSpeedFactor</xpath>
 						<value>
-							<ImmunityGainSpeedFactor>0.7</ImmunityGainSpeedFactor>
+							<ImmunityGainSpeedFactor>0.5</ImmunityGainSpeedFactor>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -759,7 +759,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName = "FoldingTent"]/statBases/BedRestEffectiveness</xpath>
 						<value>
-							<BedRestEffectiveness>0.7</BedRestEffectiveness>
+							<BedRestEffectiveness>0.6</BedRestEffectiveness>
 						</value>
 					</li>
 					<!--Comfort Settings-->
@@ -773,7 +773,7 @@
 					<li Class="PatchOperationReplace">
 						<xpath>Defs/ThingDef[defName = "FoldingTent"]/statBases/ImmunityGainSpeedFactor</xpath>
 						<value>
-							<ImmunityGainSpeedFactor>0.7</ImmunityGainSpeedFactor>
+							<ImmunityGainSpeedFactor>0.5</ImmunityGainSpeedFactor>
 						</value>
 					</li>
 					<!--Comfort Settings-->
