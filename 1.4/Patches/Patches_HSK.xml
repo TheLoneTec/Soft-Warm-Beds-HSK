@@ -2181,28 +2181,16 @@
 				
 				<!--Beddings Settings-->
 
-				<li Class="PatchOperationConditional">
-				<xpath>Defs/ThingDef[defName = "BedrollDouble"]/comps</xpath>
-					<match Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName = "BedrollDouble"]/comps</xpath>
-						<value>
-							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-								<blanketDef>NorbalBlanketDouble</blanketDef>
-								<beddingDef>PrimitiveDoubleBedding</beddingDef>
-							</li>
-						</value>
-					</match>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName = "BedrollDouble"]</xpath>
-						<value>
-						<comps>
-							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-								<blanketDef>NorbalBlanketDouble</blanketDef>
-								<beddingDef>PrimitiveDoubleBedding</beddingDef>
-							</li>
-						</comps>
-						</value>
-					</nomatch>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "BedrollDouble"]</xpath>
+					<value>
+					<comps>
+						<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+							<blanketDef>NorbalBlanketDouble</blanketDef>
+							<beddingDef>PrimitiveDoubleBedding</beddingDef>
+						</li>
+					</comps>
+					</value>
 				</li>
 
 				<!--BedRestEffectiveness Settings-->
@@ -2347,28 +2335,17 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				<li Class="PatchOperationConditional">
-				<xpath>Defs/ThingDef[defName = "Bedroll"]/comps</xpath>
-					<match Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName = "Bedroll"]/comps</xpath>
-						<value>
-							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-								<blanketDef>NorbalBlanketSingle</blanketDef>
-								<beddingDef>PrimitiveBedding</beddingDef>
-							</li>
-						</value>
-					</match>
-					<nomatch Class="PatchOperationAdd">
-						<xpath>Defs/ThingDef[defName = "Bedroll"]</xpath>
-						<value>
-						<comps>
-							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-								<blanketDef>NorbalBlanketSingle</blanketDef>
-								<beddingDef>PrimitiveBedding</beddingDef>
-							</li>
-						</comps>
-						</value>
-					</nomatch>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "Bedroll"]</xpath>
+					<value>
+					<comps>
+						<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+							<blanketDef>NorbalBlanketSingle</blanketDef>
+							<beddingDef>PrimitiveBedding</beddingDef>
+						</li>
+					</comps>
+					</value>
 				</li>
 
 				<!--BedRestEffectiveness Settings-->
