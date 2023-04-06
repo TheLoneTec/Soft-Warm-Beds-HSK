@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SoftWarmBeds</RootNamespace>
+    <AssemblyName>SoftWarmBeds</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\1.3\Assemblies\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <NoWarn>
+    </NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RimWorldPath>..\..\References\RimWorld 1.3\Assembly-CSharp.dll</RimWorldPath>
+    <HugsLibPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\818773962\v1.3\Assemblies\HugsLib.dll</HugsLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\1.4\Assemblies\</OutputPath>
+    <DefineConstants />
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RimWorldPath>..\..\References\RimWorld 1.3\Assembly-CSharp.dll</RimWorldPath>
+    <HugsLibPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\818773962\v1.3\Assemblies\HugsLib.dll</HugsLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '1.0|AnyCPU'">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\1.0\Assemblies\</OutputPath>
+    <DefineConstants />
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RimWorldPath>..\..\References\RimWorld 1.0\Assembly-CSharp.dll</RimWorldPath>
+    <HugsLibPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\818773962\Assemblies\HugsLib.dll</HugsLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '1.1|AnyCPU'">
+    <OutputPath>..\1.1\Assemblies\</OutputPath>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <RimWorldPath>..\..\References\RimWorld 1.1\Assembly-CSharp.dll</RimWorldPath>
+    <HugsLibPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\818773962\v1.1\Assemblies\HugsLib.dll</HugsLibPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '1.2|AnyCPU'">
+    <OutputPath>..\1.2\Assemblies\</OutputPath>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <RimWorldPath>..\..\References\RimWorld 1.2\Assembly-CSharp.dll</RimWorldPath>
+    <HugsLibPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\818773962\v1.2\Assemblies\HugsLib.dll</HugsLibPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ArchitectSense">
+      <HintPath>E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\Assemblies\ArchitectSense.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\Assemblies\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HugsLib">
+      <HintPath>E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\Assemblies\HugsLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\Assemblies\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bedding.cs" />
+    <Compile Include="BedMakingWorkGiverUtility.cs" />
+    <Compile Include="Building_Blanket.cs" />
+    <Compile Include="CompProperties_MakeableBed.cs" />
+    <Compile Include="DefOfs.cs" />
+    <Compile Include="Harmony\ComfortableTemperatureRange_Patch.cs" />
+    <Compile Include="Harmony\Compatibility\Hospitality_Patch_1.3.cs" />
+    <Compile Include="Harmony\DeSpawn_Patch.cs" />
+    <Compile Include="Harmony\DrawColorTwo_Patch.cs" />
+    <Compile Include="Harmony\ExplanationPart_Patch.cs" />
+    <Compile Include="Harmony\GetInspectString_Patch.cs" />
+    <Compile Include="Harmony\Need_Rest_Patch.cs" />
+    <Compile Include="Harmony\Notify_ColorChanged_Patch.cs" />
+    <Compile Include="Harmony\Patch_SpecialThingFilterWorker_DeadmansApparel.cs" />
+    <Compile Include="Harmony\Patch_SpecialThingFilterWorkerMatches.cs" />
+    <Compile Include="Harmony\StatsToDraw_Patch.cs" />
+    <Compile Include="Harmony\SymbolResolver_SingleThing+ThingMaker_MakeThing.cs" />
+    <Compile Include="Harmony\Compatibility\VFEV_Patch.cs" />
+    <Compile Include="ITab_bedding.cs" />
+    <Compile Include="JobDriver_MakeBed.cs" />
+    <Compile Include="ModBaseSoftWarmBeds.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SoftnessInjector.cs" />
+    <Compile Include="StatPart_BedStuff.cs" />
+    <Compile Include="WorkGiver_MakeBeds.cs" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' != '1.0'">
+    <Compile Include="Harmony\GetInfoCardHyperlinks_Patch.cs" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' != '1.0' AND '$(Configuration)' != '1.1' AND '$(Configuration)' != '1.2'">
+    <Compile Include="CompMakeableBed.cs" />
+    <Compile Include="Harmony\TryGainMemory_Patch.cs" />
+    <Compile Include="Harmony\GetBodyPos_Patch.cs" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == '1.0' OR '$(Configuration)' == '1.1' OR '$(Configuration)' == '1.2'">
+    <Compile Include="Legacy\CompMakeableBed.cs" />
+    <Compile Include="Legacy\Draw_Patch.cs" />
+    <Compile Include="Legacy\PawnOnBedRenderer_Patch.cs" />
+    <Compile Include="Legacy\TryGainMemory_Patch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(SolutionDir)..\..\RimWorldWin64.exe</StartProgram>
+  </PropertyGroup>
+  <!--Script to copy files to RimWorld's mod folder after build
+  <PropertyGroup>
+    <ModFolder>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods</ModFolder>
+  </PropertyGroup>
+  <Target Name="ModFiles" AfterTargets="Build">
+    <ItemGroup>
+      <Assembly Include="..\*.*\**\*.dll" />
+      <About Include="..\About\*.*" />
+      <Defs Include="..\1.3\Defs\**\*.*" />
+      <Defs Include="..\Defs\**\*.*" />
+      <Languages Include="..\Languages\**\*.*" />
+      <News Include="..\News\*.*" />
+      <Patches Include="..\Patches\*.*" />
+      <Patches Include="..\1.3\Patches\*.*" />
+      <Textures Include="..\Textures\**\*.*" />
+    </ItemGroup>
+    <Message Text="Updating mod files @ $(ModFolder)" Importance="High" />
+    <Message Text="Updating assemblies..." Importance="High" />
+    <Copy SourceFiles="@(Assembly)" DestinationFolder="$(ModFolder)\$(SolutionName)\%(RecursiveDir)" SkipUnchangedFiles="true" />
+    <Message Text="Updating 'About' folder..." Importance="High" />
+    <Copy SourceFiles="@(About)" DestinationFolder="$(ModFolder)\$(SolutionName)\About\" SkipUnchangedFiles="true" />
+    <Message Text="Updating 'Defs' folder..." Importance="High" />
+    <Copy SourceFiles="@(Defs)" DestinationFolder="$(ModFolder)\$(SolutionName)\Defs\%(RecursiveDir)" SkipUnchangedFiles="true" />
+    <Message Text="Updating 'Languages' folder..." Importance="High" />
+    <Copy SourceFiles="@(Languages)" DestinationFolder="$(ModFolder)\$(SolutionName)\Languages\%(RecursiveDir)" SkipUnchangedFiles="true" />
+    <Message Text="Updating 'News' folder..." Importance="High" />
+    <Copy SourceFiles="@(News)" DestinationFolder="$(ModFolder)\$(SolutionName)\News\" SkipUnchangedFiles="true" />
+    <Message Text="Updating 'Patches' folder..." Importance="High" />
+    <Copy SourceFiles="@(Patches)" DestinationFolder="$(ModFolder)\$(SolutionName)\Patches\" SkipUnchangedFiles="true" />
+    <Message Text="Updating 'Textures' folder..." Importance="High" />
+    <Copy SourceFiles="@(Textures)" DestinationFolder="$(ModFolder)\$(SolutionName)\Textures\%(RecursiveDir)" SkipUnchangedFiles="true" />
+    <Message Text="Updating license file..." Importance="High" />
+    <Copy SourceFiles="..\LICENSE" DestinationFolder="$(ModFolder)\$(SolutionName)\" SkipUnchangedFiles="true" />
+    <Message Text="Mod files updated." Importance="High" />
+  </Target>-->
+</Project>

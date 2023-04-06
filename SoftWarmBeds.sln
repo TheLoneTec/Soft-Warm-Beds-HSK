@@ -1,0 +1,795 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.32912.340
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftWarmBeds", "Source\SoftWarmBeds.csproj", "{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "About", "About", "{0A658597-EC25-4D13-A2DE-FC17261B7346}"
+	ProjectSection(SolutionItems) = preProject
+		About\About.xml = About\About.xml
+		About\Preview.png = About\Preview.png
+		About\PublishedFileId.txt = About\PublishedFileId.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Defs", "Defs", "{5112442D-F6EE-4658-82D5-C2DCF9CFAB8F}"
+	ProjectSection(SolutionItems) = preProject
+		Defs\Jobs.xml = Defs\Jobs.xml
+		Defs\Stats.xml = Defs\Stats.xml
+		Defs\ThingCategories.xml = Defs\ThingCategories.xml
+		Defs\Things.xml = Defs\Things.xml
+		Defs\WorkGiver.xml = Defs\WorkGiver.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patches", "Patches", "{24D48765-C33C-4B3D-8E18-4FDB6184A046}"
+	ProjectSection(SolutionItems) = preProject
+		Patches\Patches.xml = Patches\Patches.xml
+		Patches\Patches_BabyAndChildren.xml = Patches\Patches_BabyAndChildren.xml
+		Patches\Patches_GloomyFurniture.xml = Patches\Patches_GloomyFurniture.xml
+		Patches\Patches_GloomyVanilla.xml = Patches\Patches_GloomyVanilla.xml
+		Patches\Patches_Ideology.xml = Patches\Patches_Ideology.xml
+		Patches\Patches_NanoRepairTech.xml = Patches\Patches_NanoRepairTech.xml
+		Patches\Patches_RiceCultivatingCivilization.xml = Patches\Patches_RiceCultivatingCivilization.xml
+		Patches\Patches_RIMkea.xml = Patches\Patches_RIMkea.xml
+		Patches\Patches_SparklingWorlds.xml = Patches\Patches_SparklingWorlds.xml
+		Patches\Patches_VanillaFactionExpandedVikings.xml = Patches\Patches_VanillaFactionExpandedVikings.xml
+		Patches\Patches_VanillaFurnitureExpanded.xml = Patches\Patches_VanillaFurnitureExpanded.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "News", "News", "{2EF2EBAD-6419-434A-963F-D0EF22EF4164}"
+	ProjectSection(SolutionItems) = preProject
+		News\MiyuriMode.png = News\MiyuriMode.png
+		News\Quarantine.png = News\Quarantine.png
+		News\SoftWarmBeds_UpdateFeatures.xml = News\SoftWarmBeds_UpdateFeatures.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Textures", "Textures", "{083E1096-5587-491F-BE8F-0126126B012F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Things", "Things", "{5F69B790-4B0F-45EF-92F4-FBAB696121BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Beddings", "Beddings", "{6E030C35-6A0B-47C9-9DFC-59EBA0D02780}"
+	ProjectSection(SolutionItems) = preProject
+		Textures\Things\Beddings\beddingDouble.png = Textures\Things\Beddings\beddingDouble.png
+		Textures\Things\Beddings\beddingSingle.png = Textures\Things\Beddings\beddingSingle.png
+		Textures\Things\Beddings\TribalBeddingDouble.png = Textures\Things\Beddings\TribalBeddingDouble.png
+		Textures\Things\Beddings\TribalBeddingSingle.png = Textures\Things\Beddings\TribalBeddingSingle.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Building", "Building", "{420F45EC-2105-4D31-8296-76C7EC371CD5}"
+	ProjectSection(SolutionItems) = preProject
+		Textures\Things\Building\Bed_east.png = Textures\Things\Building\Bed_east.png
+		Textures\Things\Building\Bed_eastm.png = Textures\Things\Building\Bed_eastm.png
+		Textures\Things\Building\Bed_north.png = Textures\Things\Building\Bed_north.png
+		Textures\Things\Building\Bed_northm.png = Textures\Things\Building\Bed_northm.png
+		Textures\Things\Building\Bed_south.png = Textures\Things\Building\Bed_south.png
+		Textures\Things\Building\Bed_southm.png = Textures\Things\Building\Bed_southm.png
+		Textures\Things\Building\DoubleBed_east.png = Textures\Things\Building\DoubleBed_east.png
+		Textures\Things\Building\DoubleBed_eastm.png = Textures\Things\Building\DoubleBed_eastm.png
+		Textures\Things\Building\DoubleBed_north.png = Textures\Things\Building\DoubleBed_north.png
+		Textures\Things\Building\DoubleBed_northm.png = Textures\Things\Building\DoubleBed_northm.png
+		Textures\Things\Building\DoubleBed_south.png = Textures\Things\Building\DoubleBed_south.png
+		Textures\Things\Building\DoubleBed_southm.png = Textures\Things\Building\DoubleBed_southm.png
+		Textures\Things\Building\DoubleBlanket_east.png = Textures\Things\Building\DoubleBlanket_east.png
+		Textures\Things\Building\DoubleBlanket_eastm.png = Textures\Things\Building\DoubleBlanket_eastm.png
+		Textures\Things\Building\DoubleBlanket_north.png = Textures\Things\Building\DoubleBlanket_north.png
+		Textures\Things\Building\DoubleBlanket_northm.png = Textures\Things\Building\DoubleBlanket_northm.png
+		Textures\Things\Building\DoubleBlanket_south.png = Textures\Things\Building\DoubleBlanket_south.png
+		Textures\Things\Building\DoubleBlanket_southm.png = Textures\Things\Building\DoubleBlanket_southm.png
+		Textures\Things\Building\HospitalBed_east.png = Textures\Things\Building\HospitalBed_east.png
+		Textures\Things\Building\HospitalBed_eastm.png = Textures\Things\Building\HospitalBed_eastm.png
+		Textures\Things\Building\HospitalBed_north.png = Textures\Things\Building\HospitalBed_north.png
+		Textures\Things\Building\HospitalBed_northm.png = Textures\Things\Building\HospitalBed_northm.png
+		Textures\Things\Building\HospitalBed_south.png = Textures\Things\Building\HospitalBed_south.png
+		Textures\Things\Building\HospitalBed_southm.png = Textures\Things\Building\HospitalBed_southm.png
+		Textures\Things\Building\HospitalBlanket_east.png = Textures\Things\Building\HospitalBlanket_east.png
+		Textures\Things\Building\HospitalBlanket_eastm.png = Textures\Things\Building\HospitalBlanket_eastm.png
+		Textures\Things\Building\HospitalBlanket_north.png = Textures\Things\Building\HospitalBlanket_north.png
+		Textures\Things\Building\HospitalBlanket_northm.png = Textures\Things\Building\HospitalBlanket_northm.png
+		Textures\Things\Building\HospitalBlanket_south.png = Textures\Things\Building\HospitalBlanket_south.png
+		Textures\Things\Building\HospitalBlanket_southm.png = Textures\Things\Building\HospitalBlanket_southm.png
+		Textures\Things\Building\Rede_east.png = Textures\Things\Building\Rede_east.png
+		Textures\Things\Building\Rede_eastm.png = Textures\Things\Building\Rede_eastm.png
+		Textures\Things\Building\Rede_north.png = Textures\Things\Building\Rede_north.png
+		Textures\Things\Building\Rede_northm.png = Textures\Things\Building\Rede_northm.png
+		Textures\Things\Building\Rede_south.png = Textures\Things\Building\Rede_south.png
+		Textures\Things\Building\Rede_southm.png = Textures\Things\Building\Rede_southm.png
+		Textures\Things\Building\Rede_west.png = Textures\Things\Building\Rede_west.png
+		Textures\Things\Building\Rede_westm.png = Textures\Things\Building\Rede_westm.png
+		Textures\Things\Building\RoyalBed_east.png = Textures\Things\Building\RoyalBed_east.png
+		Textures\Things\Building\RoyalBed_eastm.png = Textures\Things\Building\RoyalBed_eastm.png
+		Textures\Things\Building\RoyalBed_north.png = Textures\Things\Building\RoyalBed_north.png
+		Textures\Things\Building\RoyalBed_northm.png = Textures\Things\Building\RoyalBed_northm.png
+		Textures\Things\Building\RoyalBed_south.png = Textures\Things\Building\RoyalBed_south.png
+		Textures\Things\Building\RoyalBed_southm.png = Textures\Things\Building\RoyalBed_southm.png
+		Textures\Things\Building\RoyalBlanket_east.png = Textures\Things\Building\RoyalBlanket_east.png
+		Textures\Things\Building\RoyalBlanket_eastm.png = Textures\Things\Building\RoyalBlanket_eastm.png
+		Textures\Things\Building\RoyalBlanket_north.png = Textures\Things\Building\RoyalBlanket_north.png
+		Textures\Things\Building\RoyalBlanket_northm.png = Textures\Things\Building\RoyalBlanket_northm.png
+		Textures\Things\Building\RoyalBlanket_south.png = Textures\Things\Building\RoyalBlanket_south.png
+		Textures\Things\Building\RoyalBlanket_southm.png = Textures\Things\Building\RoyalBlanket_southm.png
+		Textures\Things\Building\SingleBlanket_east.png = Textures\Things\Building\SingleBlanket_east.png
+		Textures\Things\Building\SingleBlanket_eastm.png = Textures\Things\Building\SingleBlanket_eastm.png
+		Textures\Things\Building\SingleBlanket_north.png = Textures\Things\Building\SingleBlanket_north.png
+		Textures\Things\Building\SingleBlanket_northm.png = Textures\Things\Building\SingleBlanket_northm.png
+		Textures\Things\Building\SingleBlanket_south.png = Textures\Things\Building\SingleBlanket_south.png
+		Textures\Things\Building\SingleBlanket_southm.png = Textures\Things\Building\SingleBlanket_southm.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GloomyFurniture", "GloomyFurniture", "{D3C02DAD-F228-479B-A1EA-81866A6B7077}"
+	ProjectSection(SolutionItems) = preProject
+		Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBed_east.png = Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBed_east.png
+		Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBed_eastm.png = Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBed_eastm.png
+		Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBed_north.png = Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBed_north.png
+		Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBed_northm.png = Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBed_northm.png
+		Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBed_south.png = Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBed_south.png
+		Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBed_southm.png = Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBed_southm.png
+		Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBlanket_east.png = Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBlanket_east.png
+		Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBlanket_eastm.png = Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBlanket_eastm.png
+		Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBlanket_north.png = Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBlanket_north.png
+		Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBlanket_northm.png = Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBlanket_northm.png
+		Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBlanket_south.png = Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBlanket_south.png
+		Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBlanket_southm.png = Textures\Things\Building\GloomyFurniture\GL_ClassyDoubleBlanket_southm.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedDouble2_east.png = Textures\Things\Building\GloomyFurniture\RGK_bedDouble2_east.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedDouble2_eastm.png = Textures\Things\Building\GloomyFurniture\RGK_bedDouble2_eastm.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedDouble2_north.png = Textures\Things\Building\GloomyFurniture\RGK_bedDouble2_north.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedDouble2_northm.png = Textures\Things\Building\GloomyFurniture\RGK_bedDouble2_northm.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedDouble2_south.png = Textures\Things\Building\GloomyFurniture\RGK_bedDouble2_south.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedDouble2_southm.png = Textures\Things\Building\GloomyFurniture\RGK_bedDouble2_southm.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedDouble_east.png = Textures\Things\Building\GloomyFurniture\RGK_bedDouble_east.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedDouble_eastm.png = Textures\Things\Building\GloomyFurniture\RGK_bedDouble_eastm.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedDouble_north.png = Textures\Things\Building\GloomyFurniture\RGK_bedDouble_north.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedDouble_northm.png = Textures\Things\Building\GloomyFurniture\RGK_bedDouble_northm.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedDouble_south.png = Textures\Things\Building\GloomyFurniture\RGK_bedDouble_south.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedDouble_southm.png = Textures\Things\Building\GloomyFurniture\RGK_bedDouble_southm.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedSingle2_east.png = Textures\Things\Building\GloomyFurniture\RGK_bedSingle2_east.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedSingle2_eastm.png = Textures\Things\Building\GloomyFurniture\RGK_bedSingle2_eastm.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedSingle2_north.png = Textures\Things\Building\GloomyFurniture\RGK_bedSingle2_north.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedSingle2_northm.png = Textures\Things\Building\GloomyFurniture\RGK_bedSingle2_northm.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedSingle2_south.png = Textures\Things\Building\GloomyFurniture\RGK_bedSingle2_south.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedSingle2_southm.png = Textures\Things\Building\GloomyFurniture\RGK_bedSingle2_southm.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedSingle_east.png = Textures\Things\Building\GloomyFurniture\RGK_bedSingle_east.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedSingle_eastm.png = Textures\Things\Building\GloomyFurniture\RGK_bedSingle_eastm.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedSingle_north.png = Textures\Things\Building\GloomyFurniture\RGK_bedSingle_north.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedSingle_northm.png = Textures\Things\Building\GloomyFurniture\RGK_bedSingle_northm.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedSingle_south.png = Textures\Things\Building\GloomyFurniture\RGK_bedSingle_south.png
+		Textures\Things\Building\GloomyFurniture\RGK_bedSingle_southm.png = Textures\Things\Building\GloomyFurniture\RGK_bedSingle_southm.png
+		Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket2_east.png = Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket2_east.png
+		Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket2_eastm.png = Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket2_eastm.png
+		Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket2_north.png = Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket2_north.png
+		Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket2_northm.png = Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket2_northm.png
+		Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket2_south.png = Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket2_south.png
+		Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket2_southm.png = Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket2_southm.png
+		Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket_east.png = Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket_east.png
+		Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket_eastm.png = Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket_eastm.png
+		Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket_north.png = Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket_north.png
+		Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket_northm.png = Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket_northm.png
+		Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket_south.png = Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket_south.png
+		Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket_southm.png = Textures\Things\Building\GloomyFurniture\RGK_DoubleBlanket_southm.png
+		Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket2_east.png = Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket2_east.png
+		Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket2_eastm.png = Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket2_eastm.png
+		Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket2_north.png = Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket2_north.png
+		Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket2_northm.png = Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket2_northm.png
+		Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket2_south.png = Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket2_south.png
+		Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket2_southm.png = Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket2_southm.png
+		Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket_east.png = Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket_east.png
+		Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket_eastm.png = Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket_eastm.png
+		Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket_north.png = Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket_north.png
+		Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket_northm.png = Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket_northm.png
+		Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket_south.png = Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket_south.png
+		Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket_southm.png = Textures\Things\Building\GloomyFurniture\RGK_SingleBlanket_southm.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RIMkea", "RIMkea", "{DC1C07CC-DD52-45B0-9A37-83AA7B3DF948}"
+	ProjectSection(SolutionItems) = preProject
+		Textures\Things\Building\RIMkea\KRUDNEPPSingleBlanket_east.png = Textures\Things\Building\RIMkea\KRUDNEPPSingleBlanket_east.png
+		Textures\Things\Building\RIMkea\KRUDNEPPSingleBlanket_eastm.png = Textures\Things\Building\RIMkea\KRUDNEPPSingleBlanket_eastm.png
+		Textures\Things\Building\RIMkea\KRUDNEPPSingleBlanket_north.png = Textures\Things\Building\RIMkea\KRUDNEPPSingleBlanket_north.png
+		Textures\Things\Building\RIMkea\KRUDNEPPSingleBlanket_northm.png = Textures\Things\Building\RIMkea\KRUDNEPPSingleBlanket_northm.png
+		Textures\Things\Building\RIMkea\KRUDNEPPSingleBlanket_south.png = Textures\Things\Building\RIMkea\KRUDNEPPSingleBlanket_south.png
+		Textures\Things\Building\RIMkea\KRUDNEPPSingleBlanket_southm.png = Textures\Things\Building\RIMkea\KRUDNEPPSingleBlanket_southm.png
+		Textures\Things\Building\RIMkea\KRUDNEPPSingle_east.png = Textures\Things\Building\RIMkea\KRUDNEPPSingle_east.png
+		Textures\Things\Building\RIMkea\KRUDNEPPSingle_eastm.png = Textures\Things\Building\RIMkea\KRUDNEPPSingle_eastm.png
+		Textures\Things\Building\RIMkea\KRUDNEPPSingle_north.png = Textures\Things\Building\RIMkea\KRUDNEPPSingle_north.png
+		Textures\Things\Building\RIMkea\KRUDNEPPSingle_northm.png = Textures\Things\Building\RIMkea\KRUDNEPPSingle_northm.png
+		Textures\Things\Building\RIMkea\KRUDNEPPSingle_south.png = Textures\Things\Building\RIMkea\KRUDNEPPSingle_south.png
+		Textures\Things\Building\RIMkea\KRUDNEPPSingle_southm.png = Textures\Things\Building\RIMkea\KRUDNEPPSingle_southm.png
+		Textures\Things\Building\RIMkea\SLABNEPPDoubleBlanket_east.png = Textures\Things\Building\RIMkea\SLABNEPPDoubleBlanket_east.png
+		Textures\Things\Building\RIMkea\SLABNEPPDoubleBlanket_eastm.png = Textures\Things\Building\RIMkea\SLABNEPPDoubleBlanket_eastm.png
+		Textures\Things\Building\RIMkea\SLABNEPPDoubleBlanket_north.png = Textures\Things\Building\RIMkea\SLABNEPPDoubleBlanket_north.png
+		Textures\Things\Building\RIMkea\SLABNEPPDoubleBlanket_northm.png = Textures\Things\Building\RIMkea\SLABNEPPDoubleBlanket_northm.png
+		Textures\Things\Building\RIMkea\SLABNEPPDoubleBlanket_south.png = Textures\Things\Building\RIMkea\SLABNEPPDoubleBlanket_south.png
+		Textures\Things\Building\RIMkea\SLABNEPPDoubleBlanket_southm.png = Textures\Things\Building\RIMkea\SLABNEPPDoubleBlanket_southm.png
+		Textures\Things\Building\RIMkea\SLABNEPPDouble_east.png = Textures\Things\Building\RIMkea\SLABNEPPDouble_east.png
+		Textures\Things\Building\RIMkea\SLABNEPPDouble_eastm.png = Textures\Things\Building\RIMkea\SLABNEPPDouble_eastm.png
+		Textures\Things\Building\RIMkea\SLABNEPPDouble_north.png = Textures\Things\Building\RIMkea\SLABNEPPDouble_north.png
+		Textures\Things\Building\RIMkea\SLABNEPPDouble_northm.png = Textures\Things\Building\RIMkea\SLABNEPPDouble_northm.png
+		Textures\Things\Building\RIMkea\SLABNEPPDouble_south.png = Textures\Things\Building\RIMkea\SLABNEPPDouble_south.png
+		Textures\Things\Building\RIMkea\SLABNEPPDouble_southm.png = Textures\Things\Building\RIMkea\SLABNEPPDouble_southm.png
+		Textures\Things\Building\RIMkea\SNOREGGDoubleBlanket_east.png = Textures\Things\Building\RIMkea\SNOREGGDoubleBlanket_east.png
+		Textures\Things\Building\RIMkea\SNOREGGDoubleBlanket_eastm.png = Textures\Things\Building\RIMkea\SNOREGGDoubleBlanket_eastm.png
+		Textures\Things\Building\RIMkea\SNOREGGDoubleBlanket_north.png = Textures\Things\Building\RIMkea\SNOREGGDoubleBlanket_north.png
+		Textures\Things\Building\RIMkea\SNOREGGDoubleBlanket_northm.png = Textures\Things\Building\RIMkea\SNOREGGDoubleBlanket_northm.png
+		Textures\Things\Building\RIMkea\SNOREGGDoubleBlanket_south.png = Textures\Things\Building\RIMkea\SNOREGGDoubleBlanket_south.png
+		Textures\Things\Building\RIMkea\SNOREGGDoubleBlanket_southm.png = Textures\Things\Building\RIMkea\SNOREGGDoubleBlanket_southm.png
+		Textures\Things\Building\RIMkea\SNOREGGDouble_east.png = Textures\Things\Building\RIMkea\SNOREGGDouble_east.png
+		Textures\Things\Building\RIMkea\SNOREGGDouble_eastm.png = Textures\Things\Building\RIMkea\SNOREGGDouble_eastm.png
+		Textures\Things\Building\RIMkea\SNOREGGDouble_north.png = Textures\Things\Building\RIMkea\SNOREGGDouble_north.png
+		Textures\Things\Building\RIMkea\SNOREGGDouble_northm.png = Textures\Things\Building\RIMkea\SNOREGGDouble_northm.png
+		Textures\Things\Building\RIMkea\SNOREGGDouble_south.png = Textures\Things\Building\RIMkea\SNOREGGDouble_south.png
+		Textures\Things\Building\RIMkea\SNOREGGDouble_southm.png = Textures\Things\Building\RIMkea\SNOREGGDouble_southm.png
+		Textures\Things\Building\RIMkea\SNOREGGSingleBlanket_east.png = Textures\Things\Building\RIMkea\SNOREGGSingleBlanket_east.png
+		Textures\Things\Building\RIMkea\SNOREGGSingleBlanket_eastm.png = Textures\Things\Building\RIMkea\SNOREGGSingleBlanket_eastm.png
+		Textures\Things\Building\RIMkea\SNOREGGSingleBlanket_north.png = Textures\Things\Building\RIMkea\SNOREGGSingleBlanket_north.png
+		Textures\Things\Building\RIMkea\SNOREGGSingleBlanket_northm.png = Textures\Things\Building\RIMkea\SNOREGGSingleBlanket_northm.png
+		Textures\Things\Building\RIMkea\SNOREGGSingleBlanket_south.png = Textures\Things\Building\RIMkea\SNOREGGSingleBlanket_south.png
+		Textures\Things\Building\RIMkea\SNOREGGSingleBlanket_southm.png = Textures\Things\Building\RIMkea\SNOREGGSingleBlanket_southm.png
+		Textures\Things\Building\RIMkea\SNOREGGSingle_east.png = Textures\Things\Building\RIMkea\SNOREGGSingle_east.png
+		Textures\Things\Building\RIMkea\SNOREGGSingle_eastm.png = Textures\Things\Building\RIMkea\SNOREGGSingle_eastm.png
+		Textures\Things\Building\RIMkea\SNOREGGSingle_north.png = Textures\Things\Building\RIMkea\SNOREGGSingle_north.png
+		Textures\Things\Building\RIMkea\SNOREGGSingle_northm.png = Textures\Things\Building\RIMkea\SNOREGGSingle_northm.png
+		Textures\Things\Building\RIMkea\SNOREGGSingle_south.png = Textures\Things\Building\RIMkea\SNOREGGSingle_south.png
+		Textures\Things\Building\RIMkea\SNOREGGSingle_southm.png = Textures\Things\Building\RIMkea\SNOREGGSingle_southm.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VanillaFurnitureExpanded", "VanillaFurnitureExpanded", "{964EBF8F-3FF9-4FE3-9EB3-A92AC1F939D9}"
+	ProjectSection(SolutionItems) = preProject
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedBlanket_east.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedBlanket_east.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedBlanket_eastm.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedBlanket_eastm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedBlanket_north.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedBlanket_north.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedBlanket_northm.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedBlanket_northm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedBlanket_south.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedBlanket_south.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedBlanket_southm.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedBlanket_southm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDoubleBlanket_east.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDoubleBlanket_east.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDoubleBlanket_eastm.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDoubleBlanket_eastm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDoubleBlanket_north.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDoubleBlanket_north.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDoubleBlanket_northm.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDoubleBlanket_northm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDoubleBlanket_south.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDoubleBlanket_south.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDoubleBlanket_southm.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDoubleBlanket_southm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDouble_east.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDouble_east.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDouble_eastm.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDouble_eastm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDouble_north.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDouble_north.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDouble_northm.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDouble_northm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDouble_south.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDouble_south.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDouble_southm.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBedDouble_southm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBed_east.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBed_east.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBed_eastm.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBed_eastm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBed_north.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBed_north.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBed_northm.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBed_northm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBed_south.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBed_south.png
+		Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBed_southm.png = Textures\Things\Building\VanillaFurnitureExpanded\AdvancedBed_southm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBedBlanket_east.png = Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBedBlanket_east.png
+		Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBedBlanket_eastm.png = Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBedBlanket_eastm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBedBlanket_north.png = Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBedBlanket_north.png
+		Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBedBlanket_northm.png = Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBedBlanket_northm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBedBlanket_south.png = Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBedBlanket_south.png
+		Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBedBlanket_southm.png = Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBedBlanket_southm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBed_east.png = Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBed_east.png
+		Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBed_eastm.png = Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBed_eastm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBed_north.png = Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBed_north.png
+		Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBed_northm.png = Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBed_northm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBed_south.png = Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBed_south.png
+		Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBed_southm.png = Textures\Things\Building\VanillaFurnitureExpanded\KingsizeBed_southm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerBedBlanket_east.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerBedBlanket_east.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerBedBlanket_eastm.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerBedBlanket_eastm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerBedBlanket_north.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerBedBlanket_north.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerBedBlanket_northm.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerBedBlanket_northm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerBedBlanket_south.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerBedBlanket_south.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerBedBlanket_southm.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerBedBlanket_southm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerBed_east.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerBed_east.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerBed_eastm.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerBed_eastm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerBed_north.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerBed_north.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerBed_northm.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerBed_northm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerBed_south.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerBed_south.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerBed_southm.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerBed_southm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBedBlanket_east.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBedBlanket_east.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBedBlanket_eastm.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBedBlanket_eastm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBedBlanket_north.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBedBlanket_north.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBedBlanket_northm.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBedBlanket_northm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBedBlanket_south.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBedBlanket_south.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBedBlanket_southm.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBedBlanket_southm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBed_east.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBed_east.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBed_eastm.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBed_eastm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBed_north.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBed_north.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBed_northm.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBed_northm.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBed_south.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBed_south.png
+		Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBed_southm.png = Textures\Things\Building\VanillaFurnitureExpanded\SpacerDoubleBed_southm.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VFEVikings", "VFEVikings", "{3CF50FE2-38D0-4E6C-A037-87BE8CF9B2D3}"
+	ProjectSection(SolutionItems) = preProject
+		Textures\Things\Building\VFEVikings\DoubleFurBedBlanket_east.png = Textures\Things\Building\VFEVikings\DoubleFurBedBlanket_east.png
+		Textures\Things\Building\VFEVikings\DoubleFurBedBlanket_eastm.png = Textures\Things\Building\VFEVikings\DoubleFurBedBlanket_eastm.png
+		Textures\Things\Building\VFEVikings\DoubleFurBedBlanket_north.png = Textures\Things\Building\VFEVikings\DoubleFurBedBlanket_north.png
+		Textures\Things\Building\VFEVikings\DoubleFurBedBlanket_northm.png = Textures\Things\Building\VFEVikings\DoubleFurBedBlanket_northm.png
+		Textures\Things\Building\VFEVikings\DoubleFurBedBlanket_south.png = Textures\Things\Building\VFEVikings\DoubleFurBedBlanket_south.png
+		Textures\Things\Building\VFEVikings\DoubleFurBedBlanket_southm.png = Textures\Things\Building\VFEVikings\DoubleFurBedBlanket_southm.png
+		Textures\Things\Building\VFEVikings\DoubleFurBed_east.png = Textures\Things\Building\VFEVikings\DoubleFurBed_east.png
+		Textures\Things\Building\VFEVikings\DoubleFurBed_eastm.png = Textures\Things\Building\VFEVikings\DoubleFurBed_eastm.png
+		Textures\Things\Building\VFEVikings\DoubleFurBed_north.png = Textures\Things\Building\VFEVikings\DoubleFurBed_north.png
+		Textures\Things\Building\VFEVikings\DoubleFurBed_northm.png = Textures\Things\Building\VFEVikings\DoubleFurBed_northm.png
+		Textures\Things\Building\VFEVikings\DoubleFurBed_south.png = Textures\Things\Building\VFEVikings\DoubleFurBed_south.png
+		Textures\Things\Building\VFEVikings\DoubleFurBed_southm.png = Textures\Things\Building\VFEVikings\DoubleFurBed_southm.png
+		Textures\Things\Building\VFEVikings\FurBed_east.png = Textures\Things\Building\VFEVikings\FurBed_east.png
+		Textures\Things\Building\VFEVikings\FurBed_eastm.png = Textures\Things\Building\VFEVikings\FurBed_eastm.png
+		Textures\Things\Building\VFEVikings\FurBed_north.png = Textures\Things\Building\VFEVikings\FurBed_north.png
+		Textures\Things\Building\VFEVikings\FurBed_northm.png = Textures\Things\Building\VFEVikings\FurBed_northm.png
+		Textures\Things\Building\VFEVikings\FurBed_south.png = Textures\Things\Building\VFEVikings\FurBed_south.png
+		Textures\Things\Building\VFEVikings\FurBed_southm.png = Textures\Things\Building\VFEVikings\FurBed_southm.png
+		Textures\Things\Building\VFEVikings\SingleFurBedBlanket_east.png = Textures\Things\Building\VFEVikings\SingleFurBedBlanket_east.png
+		Textures\Things\Building\VFEVikings\SingleFurBedBlanket_eastm.png = Textures\Things\Building\VFEVikings\SingleFurBedBlanket_eastm.png
+		Textures\Things\Building\VFEVikings\SingleFurBedBlanket_north.png = Textures\Things\Building\VFEVikings\SingleFurBedBlanket_north.png
+		Textures\Things\Building\VFEVikings\SingleFurBedBlanket_northm.png = Textures\Things\Building\VFEVikings\SingleFurBedBlanket_northm.png
+		Textures\Things\Building\VFEVikings\SingleFurBedBlanket_south.png = Textures\Things\Building\VFEVikings\SingleFurBedBlanket_south.png
+		Textures\Things\Building\VFEVikings\SingleFurBedBlanket_southm.png = Textures\Things\Building\VFEVikings\SingleFurBedBlanket_southm.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{1AC7186C-4E19-40BF-94FE-BE47807F9BC6}"
+	ProjectSection(SolutionItems) = preProject
+		Textures\UI\beddingDouble.png = Textures\UI\beddingDouble.png
+		Textures\UI\beddingSingle.png = Textures\UI\beddingSingle.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Languages", "Languages", "{D99CC676-7C61-4952-9C81-3464B1C62A5C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChineseSimplified", "ChineseSimplified", "{95EC8257-BE13-49D3-9593-24D7DE4362AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefInjected", "DefInjected", "{B355346D-3849-4C03-93EA-D08F71BFA8E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JobDef", "JobDef", "{E894F42D-C7B5-4B1A-8B4B-F7A35F67D1C2}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\ChineseSimplified\DefInjected\JobDef\Jobs.xml = Languages\ChineseSimplified\DefInjected\JobDef\Jobs.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StatDef", "StatDef", "{A3431054-D337-426C-873F-21021D5DC633}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\ChineseSimplified\DefInjected\StatDef\Stats.xml = Languages\ChineseSimplified\DefInjected\StatDef\Stats.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingCategoryDef", "ThingCategoryDef", "{CA770A39-F59B-47D3-8FCF-5502D92A57A7}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\ChineseSimplified\DefInjected\ThingCategoryDef\ThingCategories.xml = Languages\ChineseSimplified\DefInjected\ThingCategoryDef\ThingCategories.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingDef", "ThingDef", "{E587843A-72FF-4E7C-93FD-F495C6C3D3C8}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\ChineseSimplified\DefInjected\ThingDef\Things.xml = Languages\ChineseSimplified\DefInjected\ThingDef\Things.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkGiverDef", "WorkGiverDef", "{0A8A47F2-4ACD-4A31-8D7A-6FB787D6D52B}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\ChineseSimplified\DefInjected\WorkGiverDef\WorkGiver.xml = Languages\ChineseSimplified\DefInjected\WorkGiverDef\WorkGiver.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keyed", "Keyed", "{167B27A3-F939-43EA-9307-8152C8D8945E}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\ChineseSimplified\Keyed\SoftWarmBeds_keys.xml = Languages\ChineseSimplified\Keyed\SoftWarmBeds_keys.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChineseTraditional", "ChineseTraditional", "{4B2EE444-D89D-4A33-8258-712A54D3F583}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefInjected", "DefInjected", "{ECEDFD69-C082-4682-ADEA-9037A97FDE02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JobDef", "JobDef", "{590D60BF-6F4C-4497-9D91-5555842ECD27}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\ChineseTraditional\DefInjected\JobDef\Jobs.xml = Languages\ChineseTraditional\DefInjected\JobDef\Jobs.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StatDef", "StatDef", "{40763B13-AE72-410C-80BC-D4E316042C87}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\ChineseTraditional\DefInjected\StatDef\Stats.xml = Languages\ChineseTraditional\DefInjected\StatDef\Stats.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingCategoryDef", "ThingCategoryDef", "{4861E1B9-1371-4702-B233-A362783A0A12}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\ChineseTraditional\DefInjected\ThingCategoryDef\ThingCategories.xml = Languages\ChineseTraditional\DefInjected\ThingCategoryDef\ThingCategories.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingDef", "ThingDef", "{4CB0F8CC-F11B-440B-97A7-5C111EC7573C}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\ChineseTraditional\DefInjected\ThingDef\Things.xml = Languages\ChineseTraditional\DefInjected\ThingDef\Things.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkGiverDef", "WorkGiverDef", "{07BE5C57-EB84-4304-9369-1188F0DDBD2C}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\ChineseTraditional\DefInjected\WorkGiverDef\WorkGiver.xml = Languages\ChineseTraditional\DefInjected\WorkGiverDef\WorkGiver.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keyed", "Keyed", "{0FA8EAD4-1EB0-4795-B452-04A89D7268A5}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\ChineseTraditional\Keyed\SoftWarmBeds_keys.xml = Languages\ChineseTraditional\Keyed\SoftWarmBeds_keys.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "English", "English", "{80329314-6D14-4D47-8F8B-E247CB8E01FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keyed", "Keyed", "{05FDB2E5-4776-47B4-8126-4D10130E5E9E}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\English\Keyed\SoftWarmBeds_keys.xml = Languages\English\Keyed\SoftWarmBeds_keys.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "French", "French", "{5600BCB6-DCB3-4BCF-80AF-F47717364628}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefInjected", "DefInjected", "{408464A3-4077-40C6-9870-4DFE0CE3F588}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JobDef", "JobDef", "{344F64D5-DECA-40B7-9E66-694183443756}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\French\DefInjected\JobDef\TranslateJobs.xml = Languages\French\DefInjected\JobDef\TranslateJobs.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StatDef", "StatDef", "{72D4CE38-2901-40D5-A09B-F243605C93B0}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\French\DefInjected\StatDef\TranslateStats.xml = Languages\French\DefInjected\StatDef\TranslateStats.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingCategoryDef", "ThingCategoryDef", "{6036C025-FDAE-4E7D-9D37-EBD89E9BEE1C}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\French\DefInjected\ThingCategoryDef\TranslateThingCategories.xml = Languages\French\DefInjected\ThingCategoryDef\TranslateThingCategories.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingDef", "ThingDef", "{259A99A2-A2B6-4561-809E-F7623B97B244}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\French\DefInjected\ThingDef\TranslateThings.xml = Languages\French\DefInjected\ThingDef\TranslateThings.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkGiverDef", "WorkGiverDef", "{9B090190-5F9F-474A-A289-85789AC1D4A0}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\French\DefInjected\WorkGiverDef\TranslateWorkGiver.xml = Languages\French\DefInjected\WorkGiverDef\TranslateWorkGiver.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keyed", "Keyed", "{98F41800-9BF7-48CA-9912-EEEACA491AFF}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\French\Keyed\SoftWarmBeds_keys.xml = Languages\French\Keyed\SoftWarmBeds_keys.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Italian", "Italian", "{9F593F52-C857-4738-9DBD-53624250A464}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefInjected", "DefInjected", "{ABD4844A-BF2C-4F55-B893-E32505348840}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JobDef", "JobDef", "{0E1A6AE8-C9AC-4103-AA6D-36A2C08BE12E}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Italian\DefInjected\JobDef\TranslateJobs.xml = Languages\Italian\DefInjected\JobDef\TranslateJobs.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StatDef", "StatDef", "{BBD61751-8CEF-4E35-B7A2-DD355CF27E06}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Italian\DefInjected\StatDef\TranslateStats.xml = Languages\Italian\DefInjected\StatDef\TranslateStats.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingCategoryDef", "ThingCategoryDef", "{8E7015AD-8D3A-4AF7-9D2B-B8F8AB16F921}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Italian\DefInjected\ThingCategoryDef\TranslateThingCategories.xml = Languages\Italian\DefInjected\ThingCategoryDef\TranslateThingCategories.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingDef", "ThingDef", "{6A08AB03-CAE8-4991-8E0E-8C5C1AF5EED7}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Italian\DefInjected\ThingDef\TranslateThings.xml = Languages\Italian\DefInjected\ThingDef\TranslateThings.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkGiverDef", "WorkGiverDef", "{620FDD2C-443F-45B0-9580-8426BED07B99}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Italian\DefInjected\WorkGiverDef\TranslateWorkGiver.xml = Languages\Italian\DefInjected\WorkGiverDef\TranslateWorkGiver.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keyed", "Keyed", "{45B11D33-21BB-4AF6-851E-E2D30BE57A12}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Italian\Keyed\SoftWarmBeds_keys.xml = Languages\Italian\Keyed\SoftWarmBeds_keys.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Japanese", "Japanese", "{D8651B7B-2B61-4138-95ED-C2FAACF492DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefInjected", "DefInjected", "{ADB71050-2F84-4BFB-A7FF-BCF2A9EEF9C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JobDef", "JobDef", "{02D6E17B-90F5-4D56-8279-C07127A9076E}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Japanese\DefInjected\JobDef\Jobs.xml = Languages\Japanese\DefInjected\JobDef\Jobs.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StatDef", "StatDef", "{ADBF3367-5435-4C2F-8F59-3842472EC357}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Japanese\DefInjected\StatDef\Stats.xml = Languages\Japanese\DefInjected\StatDef\Stats.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingCategoryDef", "ThingCategoryDef", "{E73031B1-E729-4F8D-9E81-F49786AC2A72}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Japanese\DefInjected\ThingCategoryDef\ThingCategories.xml = Languages\Japanese\DefInjected\ThingCategoryDef\ThingCategories.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingDef", "ThingDef", "{C60DC91B-509C-4DC1-9CD8-410A3760FCFF}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Japanese\DefInjected\ThingDef\Things.xml = Languages\Japanese\DefInjected\ThingDef\Things.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkGiverDef", "WorkGiverDef", "{209496D9-1F90-49BB-B998-E5229F42076D}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Japanese\DefInjected\WorkGiverDef\WorkGiver.xml = Languages\Japanese\DefInjected\WorkGiverDef\WorkGiver.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keyed", "Keyed", "{02A0386C-AB18-4730-AA2F-E2930E4145B0}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Japanese\Keyed\SoftWarmBeds_keys.xml = Languages\Japanese\Keyed\SoftWarmBeds_keys.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Portuguese", "Portuguese", "{39DD6395-6E56-45F3-AD37-90732BAF8938}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefInjected", "DefInjected", "{713EAF86-B6BC-44CA-B367-FEA2D37B90F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JobDef", "JobDef", "{2ABB7A38-AF92-49F5-8D24-669A8F78DEBE}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Portuguese\DefInjected\JobDef\TranslateJobs.xml = Languages\Portuguese\DefInjected\JobDef\TranslateJobs.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StatDef", "StatDef", "{97583F81-8416-4F81-A69E-48BFE53AA573}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Portuguese\DefInjected\StatDef\TranslateStats.xml = Languages\Portuguese\DefInjected\StatDef\TranslateStats.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingCategoryDef", "ThingCategoryDef", "{B9FC7F4A-26AB-44F5-894A-7B4C6BAF86FB}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Portuguese\DefInjected\ThingCategoryDef\TranslateThingCategories.xml = Languages\Portuguese\DefInjected\ThingCategoryDef\TranslateThingCategories.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingDef", "ThingDef", "{E66958EF-DD4F-4AC6-B673-FCB16319220E}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Portuguese\DefInjected\ThingDef\TranslateThings.xml = Languages\Portuguese\DefInjected\ThingDef\TranslateThings.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkGiverDef", "WorkGiverDef", "{2DBBAE63-D0E2-406C-9474-D4FE71BC4EF2}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Portuguese\DefInjected\WorkGiverDef\TranslateWorkGivers.xml = Languages\Portuguese\DefInjected\WorkGiverDef\TranslateWorkGivers.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keyed", "Keyed", "{2460532D-8187-41E6-B816-20131A3C9C9D}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Portuguese\Keyed\SoftWarmBeds_keys.xml = Languages\Portuguese\Keyed\SoftWarmBeds_keys.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PortugueseBrazilian", "PortugueseBrazilian", "{F6C07BDD-B15A-4D29-A306-92F1687FDACC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefInjected", "DefInjected", "{EA55D9D3-2248-4A69-986E-AC0B73D9CA41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JobDef", "JobDef", "{905EA93A-5011-4AC0-B759-90D543682794}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\PortugueseBrazilian\DefInjected\JobDef\TranslateJobs.xml = Languages\PortugueseBrazilian\DefInjected\JobDef\TranslateJobs.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StatDef", "StatDef", "{1EF2866A-47C9-495A-8F65-2C23A839A592}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\PortugueseBrazilian\DefInjected\StatDef\TranslateStats.xml = Languages\PortugueseBrazilian\DefInjected\StatDef\TranslateStats.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingCategoryDef", "ThingCategoryDef", "{F46A7FC6-BAA4-4AB0-9BD3-A38F4F9A2E01}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\PortugueseBrazilian\DefInjected\ThingCategoryDef\TranslateThingCategories.xml = Languages\PortugueseBrazilian\DefInjected\ThingCategoryDef\TranslateThingCategories.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingDef", "ThingDef", "{041E6FDB-142E-43B5-BCFB-49255B0445C8}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\PortugueseBrazilian\DefInjected\ThingDef\TranslateThings.xml = Languages\PortugueseBrazilian\DefInjected\ThingDef\TranslateThings.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkGiverDef", "WorkGiverDef", "{FDB15537-CF12-4D03-BA2D-0BE1B7127282}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\PortugueseBrazilian\DefInjected\WorkGiverDef\TranslateWorkGiver.xml = Languages\PortugueseBrazilian\DefInjected\WorkGiverDef\TranslateWorkGiver.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keyed", "Keyed", "{EA4838D9-21B2-497E-917B-4203B0B77A35}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\PortugueseBrazilian\Keyed\SoftWarmBeds_keys.xml = Languages\PortugueseBrazilian\Keyed\SoftWarmBeds_keys.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Russian", "Russian", "{67DC10A1-373D-41CB-8082-D531F60FEE3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefInjected", "DefInjected", "{465468C5-3C4F-4C98-9A4E-8D8BE2FF9DAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JobDef", "JobDef", "{419837E2-3680-4C0D-B763-CC85F5703FD3}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Russian\DefInjected\JobDef\Jobs.xml = Languages\Russian\DefInjected\JobDef\Jobs.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RecipeDef", "RecipeDef", "{945CAA33-C6F1-4442-A257-588F08BEAA62}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Russian\DefInjected\RecipeDef\Recipes_Add_Make.xml = Languages\Russian\DefInjected\RecipeDef\Recipes_Add_Make.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StatDef", "StatDef", "{E046B734-C3A2-4B90-BFFA-54ACBD524800}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Russian\DefInjected\StatDef\Stats.xml = Languages\Russian\DefInjected\StatDef\Stats.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingCategoryDef", "ThingCategoryDef", "{AB2D423C-7F48-4812-9EFB-3A547C6D089B}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Russian\DefInjected\ThingCategoryDef\ThingCategories.xml = Languages\Russian\DefInjected\ThingCategoryDef\ThingCategories.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingDef", "ThingDef", "{AC85523F-7202-4B7E-9647-945135283917}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Russian\DefInjected\ThingDef\Defs_GloomyFurniture.xml = Languages\Russian\DefInjected\ThingDef\Defs_GloomyFurniture.xml
+		Languages\Russian\DefInjected\ThingDef\Defs_RIMkea.xml = Languages\Russian\DefInjected\ThingDef\Defs_RIMkea.xml
+		Languages\Russian\DefInjected\ThingDef\Defs_VanillaFurnitureExpanded.xml = Languages\Russian\DefInjected\ThingDef\Defs_VanillaFurnitureExpanded.xml
+		Languages\Russian\DefInjected\ThingDef\Things.xml = Languages\Russian\DefInjected\ThingDef\Things.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkGiverDef", "WorkGiverDef", "{19C2A5FC-2AD6-4F8B-8F33-1A59D5F2CC84}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Russian\DefInjected\WorkGiverDef\WorkGiver.xml = Languages\Russian\DefInjected\WorkGiverDef\WorkGiver.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keyed", "Keyed", "{488F3406-2DE5-485F-8EE8-C53EE1CEEDE9}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\Russian\Keyed\SoftWarmBeds_keys.xml = Languages\Russian\Keyed\SoftWarmBeds_keys.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SpanishLatin", "SpanishLatin", "{4536FB35-4DC3-494D-A36C-BD824DE40432}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DefInjected", "DefInjected", "{AEA2BCAB-3768-4483-9B06-5EA1D7772FC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JobDef", "JobDef", "{BB7CD7BB-C610-4D3F-BA48-44D0FC5300F4}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\SpanishLatin\DefInjected\JobDef\Jobs.xml = Languages\SpanishLatin\DefInjected\JobDef\Jobs.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RecipeDef", "RecipeDef", "{FE981A3A-EB5E-4EEC-8D8A-CBE6372E24CC}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\SpanishLatin\DefInjected\RecipeDef\Recipes_Add_Make.xml = Languages\SpanishLatin\DefInjected\RecipeDef\Recipes_Add_Make.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StatDef", "StatDef", "{F055DF08-E71E-4E60-A0C3-8F86B1529DEE}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\SpanishLatin\DefInjected\StatDef\Stats.xml = Languages\SpanishLatin\DefInjected\StatDef\Stats.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingCategoryDef", "ThingCategoryDef", "{EDBDA078-4528-4A70-BDC6-AE943805E7D1}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\SpanishLatin\DefInjected\ThingCategoryDef\ThingCategories.xml = Languages\SpanishLatin\DefInjected\ThingCategoryDef\ThingCategories.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ThingDef", "ThingDef", "{7F626DC1-ED0D-4D36-93BC-BEF23EFD9573}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\SpanishLatin\DefInjected\ThingDef\Defs_GloomyFurniture.xml = Languages\SpanishLatin\DefInjected\ThingDef\Defs_GloomyFurniture.xml
+		Languages\SpanishLatin\DefInjected\ThingDef\Defs_RIMkea.xml = Languages\SpanishLatin\DefInjected\ThingDef\Defs_RIMkea.xml
+		Languages\SpanishLatin\DefInjected\ThingDef\Defs_VanillaFurnitureExpanded.xml = Languages\SpanishLatin\DefInjected\ThingDef\Defs_VanillaFurnitureExpanded.xml
+		Languages\SpanishLatin\DefInjected\ThingDef\Things.xml = Languages\SpanishLatin\DefInjected\ThingDef\Things.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkGiverDef", "WorkGiverDef", "{8A85653B-25B4-43DE-8CC6-9734A20498BF}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\SpanishLatin\DefInjected\WorkGiverDef\WorkGiver.xml = Languages\SpanishLatin\DefInjected\WorkGiverDef\WorkGiver.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Keyed", "Keyed", "{D7E1ACAD-56A2-4324-9E12-EE47E749B038}"
+	ProjectSection(SolutionItems) = preProject
+		Languages\SpanishLatin\Keyed\SoftWarmBeds_keys.xml = Languages\SpanishLatin\Keyed\SoftWarmBeds_keys.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.3", "1.3", "{B470C671-8E71-41F9-80DE-44FEB2881188}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assemblies", "Assemblies", "{A324D346-A630-41F9-97D8-FA84116B81B7}"
+	ProjectSection(SolutionItems) = preProject
+		1.3\Assemblies\SoftWarmBeds.dll = 1.3\Assemblies\SoftWarmBeds.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Defs", "Defs", "{BAFE9276-8F8B-438E-A51A-D2963094BE8C}"
+	ProjectSection(SolutionItems) = preProject
+		1.3\Defs\Things.xml = 1.3\Defs\Things.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patches", "Patches", "{D430DCB1-21BF-48F6-B6BD-951988701B50}"
+	ProjectSection(SolutionItems) = preProject
+		1.3\Patches\Patches_bedsDrawerType.xml = 1.3\Patches\Patches_bedsDrawerType.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		1.0|Any CPU = 1.0|Any CPU
+		1.1|Any CPU = 1.1|Any CPU
+		1.2|Any CPU = 1.2|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.1.0|Any CPU.ActiveCfg = 1.0|Any CPU
+		{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.1.0|Any CPU.Build.0 = 1.0|Any CPU
+		{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.1.1|Any CPU.ActiveCfg = 1.1|Any CPU
+		{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.1.1|Any CPU.Build.0 = 1.1|Any CPU
+		{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.1.2|Any CPU.ActiveCfg = 1.2|Any CPU
+		{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.1.2|Any CPU.Build.0 = 1.2|Any CPU
+		{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7D21B4A-1DA7-41D8-B202-C58CA8FA62AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5F69B790-4B0F-45EF-92F4-FBAB696121BB} = {083E1096-5587-491F-BE8F-0126126B012F}
+		{6E030C35-6A0B-47C9-9DFC-59EBA0D02780} = {5F69B790-4B0F-45EF-92F4-FBAB696121BB}
+		{420F45EC-2105-4D31-8296-76C7EC371CD5} = {5F69B790-4B0F-45EF-92F4-FBAB696121BB}
+		{D3C02DAD-F228-479B-A1EA-81866A6B7077} = {420F45EC-2105-4D31-8296-76C7EC371CD5}
+		{DC1C07CC-DD52-45B0-9A37-83AA7B3DF948} = {420F45EC-2105-4D31-8296-76C7EC371CD5}
+		{964EBF8F-3FF9-4FE3-9EB3-A92AC1F939D9} = {420F45EC-2105-4D31-8296-76C7EC371CD5}
+		{3CF50FE2-38D0-4E6C-A037-87BE8CF9B2D3} = {420F45EC-2105-4D31-8296-76C7EC371CD5}
+		{1AC7186C-4E19-40BF-94FE-BE47807F9BC6} = {083E1096-5587-491F-BE8F-0126126B012F}
+		{95EC8257-BE13-49D3-9593-24D7DE4362AA} = {D99CC676-7C61-4952-9C81-3464B1C62A5C}
+		{B355346D-3849-4C03-93EA-D08F71BFA8E4} = {95EC8257-BE13-49D3-9593-24D7DE4362AA}
+		{E894F42D-C7B5-4B1A-8B4B-F7A35F67D1C2} = {B355346D-3849-4C03-93EA-D08F71BFA8E4}
+		{A3431054-D337-426C-873F-21021D5DC633} = {B355346D-3849-4C03-93EA-D08F71BFA8E4}
+		{CA770A39-F59B-47D3-8FCF-5502D92A57A7} = {B355346D-3849-4C03-93EA-D08F71BFA8E4}
+		{E587843A-72FF-4E7C-93FD-F495C6C3D3C8} = {B355346D-3849-4C03-93EA-D08F71BFA8E4}
+		{0A8A47F2-4ACD-4A31-8D7A-6FB787D6D52B} = {B355346D-3849-4C03-93EA-D08F71BFA8E4}
+		{167B27A3-F939-43EA-9307-8152C8D8945E} = {95EC8257-BE13-49D3-9593-24D7DE4362AA}
+		{4B2EE444-D89D-4A33-8258-712A54D3F583} = {D99CC676-7C61-4952-9C81-3464B1C62A5C}
+		{ECEDFD69-C082-4682-ADEA-9037A97FDE02} = {4B2EE444-D89D-4A33-8258-712A54D3F583}
+		{590D60BF-6F4C-4497-9D91-5555842ECD27} = {ECEDFD69-C082-4682-ADEA-9037A97FDE02}
+		{40763B13-AE72-410C-80BC-D4E316042C87} = {ECEDFD69-C082-4682-ADEA-9037A97FDE02}
+		{4861E1B9-1371-4702-B233-A362783A0A12} = {ECEDFD69-C082-4682-ADEA-9037A97FDE02}
+		{4CB0F8CC-F11B-440B-97A7-5C111EC7573C} = {ECEDFD69-C082-4682-ADEA-9037A97FDE02}
+		{07BE5C57-EB84-4304-9369-1188F0DDBD2C} = {ECEDFD69-C082-4682-ADEA-9037A97FDE02}
+		{0FA8EAD4-1EB0-4795-B452-04A89D7268A5} = {4B2EE444-D89D-4A33-8258-712A54D3F583}
+		{80329314-6D14-4D47-8F8B-E247CB8E01FB} = {D99CC676-7C61-4952-9C81-3464B1C62A5C}
+		{05FDB2E5-4776-47B4-8126-4D10130E5E9E} = {80329314-6D14-4D47-8F8B-E247CB8E01FB}
+		{5600BCB6-DCB3-4BCF-80AF-F47717364628} = {D99CC676-7C61-4952-9C81-3464B1C62A5C}
+		{408464A3-4077-40C6-9870-4DFE0CE3F588} = {5600BCB6-DCB3-4BCF-80AF-F47717364628}
+		{344F64D5-DECA-40B7-9E66-694183443756} = {408464A3-4077-40C6-9870-4DFE0CE3F588}
+		{72D4CE38-2901-40D5-A09B-F243605C93B0} = {408464A3-4077-40C6-9870-4DFE0CE3F588}
+		{6036C025-FDAE-4E7D-9D37-EBD89E9BEE1C} = {408464A3-4077-40C6-9870-4DFE0CE3F588}
+		{259A99A2-A2B6-4561-809E-F7623B97B244} = {408464A3-4077-40C6-9870-4DFE0CE3F588}
+		{9B090190-5F9F-474A-A289-85789AC1D4A0} = {408464A3-4077-40C6-9870-4DFE0CE3F588}
+		{98F41800-9BF7-48CA-9912-EEEACA491AFF} = {5600BCB6-DCB3-4BCF-80AF-F47717364628}
+		{9F593F52-C857-4738-9DBD-53624250A464} = {D99CC676-7C61-4952-9C81-3464B1C62A5C}
+		{ABD4844A-BF2C-4F55-B893-E32505348840} = {9F593F52-C857-4738-9DBD-53624250A464}
+		{0E1A6AE8-C9AC-4103-AA6D-36A2C08BE12E} = {ABD4844A-BF2C-4F55-B893-E32505348840}
+		{BBD61751-8CEF-4E35-B7A2-DD355CF27E06} = {ABD4844A-BF2C-4F55-B893-E32505348840}
+		{8E7015AD-8D3A-4AF7-9D2B-B8F8AB16F921} = {ABD4844A-BF2C-4F55-B893-E32505348840}
+		{6A08AB03-CAE8-4991-8E0E-8C5C1AF5EED7} = {ABD4844A-BF2C-4F55-B893-E32505348840}
+		{620FDD2C-443F-45B0-9580-8426BED07B99} = {ABD4844A-BF2C-4F55-B893-E32505348840}
+		{45B11D33-21BB-4AF6-851E-E2D30BE57A12} = {9F593F52-C857-4738-9DBD-53624250A464}
+		{D8651B7B-2B61-4138-95ED-C2FAACF492DD} = {D99CC676-7C61-4952-9C81-3464B1C62A5C}
+		{ADB71050-2F84-4BFB-A7FF-BCF2A9EEF9C6} = {D8651B7B-2B61-4138-95ED-C2FAACF492DD}
+		{02D6E17B-90F5-4D56-8279-C07127A9076E} = {ADB71050-2F84-4BFB-A7FF-BCF2A9EEF9C6}
+		{ADBF3367-5435-4C2F-8F59-3842472EC357} = {ADB71050-2F84-4BFB-A7FF-BCF2A9EEF9C6}
+		{E73031B1-E729-4F8D-9E81-F49786AC2A72} = {ADB71050-2F84-4BFB-A7FF-BCF2A9EEF9C6}
+		{C60DC91B-509C-4DC1-9CD8-410A3760FCFF} = {ADB71050-2F84-4BFB-A7FF-BCF2A9EEF9C6}
+		{209496D9-1F90-49BB-B998-E5229F42076D} = {ADB71050-2F84-4BFB-A7FF-BCF2A9EEF9C6}
+		{02A0386C-AB18-4730-AA2F-E2930E4145B0} = {D8651B7B-2B61-4138-95ED-C2FAACF492DD}
+		{39DD6395-6E56-45F3-AD37-90732BAF8938} = {D99CC676-7C61-4952-9C81-3464B1C62A5C}
+		{713EAF86-B6BC-44CA-B367-FEA2D37B90F1} = {39DD6395-6E56-45F3-AD37-90732BAF8938}
+		{2ABB7A38-AF92-49F5-8D24-669A8F78DEBE} = {713EAF86-B6BC-44CA-B367-FEA2D37B90F1}
+		{97583F81-8416-4F81-A69E-48BFE53AA573} = {713EAF86-B6BC-44CA-B367-FEA2D37B90F1}
+		{B9FC7F4A-26AB-44F5-894A-7B4C6BAF86FB} = {713EAF86-B6BC-44CA-B367-FEA2D37B90F1}
+		{E66958EF-DD4F-4AC6-B673-FCB16319220E} = {713EAF86-B6BC-44CA-B367-FEA2D37B90F1}
+		{2DBBAE63-D0E2-406C-9474-D4FE71BC4EF2} = {713EAF86-B6BC-44CA-B367-FEA2D37B90F1}
+		{2460532D-8187-41E6-B816-20131A3C9C9D} = {39DD6395-6E56-45F3-AD37-90732BAF8938}
+		{F6C07BDD-B15A-4D29-A306-92F1687FDACC} = {D99CC676-7C61-4952-9C81-3464B1C62A5C}
+		{EA55D9D3-2248-4A69-986E-AC0B73D9CA41} = {F6C07BDD-B15A-4D29-A306-92F1687FDACC}
+		{905EA93A-5011-4AC0-B759-90D543682794} = {EA55D9D3-2248-4A69-986E-AC0B73D9CA41}
+		{1EF2866A-47C9-495A-8F65-2C23A839A592} = {EA55D9D3-2248-4A69-986E-AC0B73D9CA41}
+		{F46A7FC6-BAA4-4AB0-9BD3-A38F4F9A2E01} = {EA55D9D3-2248-4A69-986E-AC0B73D9CA41}
+		{041E6FDB-142E-43B5-BCFB-49255B0445C8} = {EA55D9D3-2248-4A69-986E-AC0B73D9CA41}
+		{FDB15537-CF12-4D03-BA2D-0BE1B7127282} = {EA55D9D3-2248-4A69-986E-AC0B73D9CA41}
+		{EA4838D9-21B2-497E-917B-4203B0B77A35} = {F6C07BDD-B15A-4D29-A306-92F1687FDACC}
+		{67DC10A1-373D-41CB-8082-D531F60FEE3F} = {D99CC676-7C61-4952-9C81-3464B1C62A5C}
+		{465468C5-3C4F-4C98-9A4E-8D8BE2FF9DAE} = {67DC10A1-373D-41CB-8082-D531F60FEE3F}
+		{419837E2-3680-4C0D-B763-CC85F5703FD3} = {465468C5-3C4F-4C98-9A4E-8D8BE2FF9DAE}
+		{945CAA33-C6F1-4442-A257-588F08BEAA62} = {465468C5-3C4F-4C98-9A4E-8D8BE2FF9DAE}
+		{E046B734-C3A2-4B90-BFFA-54ACBD524800} = {465468C5-3C4F-4C98-9A4E-8D8BE2FF9DAE}
+		{AB2D423C-7F48-4812-9EFB-3A547C6D089B} = {465468C5-3C4F-4C98-9A4E-8D8BE2FF9DAE}
+		{AC85523F-7202-4B7E-9647-945135283917} = {465468C5-3C4F-4C98-9A4E-8D8BE2FF9DAE}
+		{19C2A5FC-2AD6-4F8B-8F33-1A59D5F2CC84} = {465468C5-3C4F-4C98-9A4E-8D8BE2FF9DAE}
+		{488F3406-2DE5-485F-8EE8-C53EE1CEEDE9} = {67DC10A1-373D-41CB-8082-D531F60FEE3F}
+		{4536FB35-4DC3-494D-A36C-BD824DE40432} = {D99CC676-7C61-4952-9C81-3464B1C62A5C}
+		{AEA2BCAB-3768-4483-9B06-5EA1D7772FC6} = {4536FB35-4DC3-494D-A36C-BD824DE40432}
+		{BB7CD7BB-C610-4D3F-BA48-44D0FC5300F4} = {AEA2BCAB-3768-4483-9B06-5EA1D7772FC6}
+		{FE981A3A-EB5E-4EEC-8D8A-CBE6372E24CC} = {AEA2BCAB-3768-4483-9B06-5EA1D7772FC6}
+		{F055DF08-E71E-4E60-A0C3-8F86B1529DEE} = {AEA2BCAB-3768-4483-9B06-5EA1D7772FC6}
+		{EDBDA078-4528-4A70-BDC6-AE943805E7D1} = {AEA2BCAB-3768-4483-9B06-5EA1D7772FC6}
+		{7F626DC1-ED0D-4D36-93BC-BEF23EFD9573} = {AEA2BCAB-3768-4483-9B06-5EA1D7772FC6}
+		{8A85653B-25B4-43DE-8CC6-9734A20498BF} = {AEA2BCAB-3768-4483-9B06-5EA1D7772FC6}
+		{D7E1ACAD-56A2-4324-9E12-EE47E749B038} = {4536FB35-4DC3-494D-A36C-BD824DE40432}
+		{A324D346-A630-41F9-97D8-FA84116B81B7} = {B470C671-8E71-41F9-80DE-44FEB2881188}
+		{BAFE9276-8F8B-438E-A51A-D2963094BE8C} = {B470C671-8E71-41F9-80DE-44FEB2881188}
+		{D430DCB1-21BF-48F6-B6BD-951988701B50} = {B470C671-8E71-41F9-80DE-44FEB2881188}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28CF9A73-5333-4EB3-BFCC-3FBEDDA19200}
+	EndGlobalSection
+EndGlobal
