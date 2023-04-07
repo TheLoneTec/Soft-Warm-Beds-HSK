@@ -24,7 +24,7 @@ namespace SoftWarmBeds
                     }
                     else
                     {
-                        stringBuilder.AppendLine("BedNotMade".Translate());
+                        stringBuilder.AppendLine("BedNotMade".Translate(bedComp.allowedBedding.label));
                     }
                     __result += stringBuilder.ToString().TrimEndNewlines();
                 }
