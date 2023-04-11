@@ -2351,7 +2351,7 @@
 				<!--Beddings Settings-->
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "BedrollDouble"]</xpath>
+					<xpath>Defs/ThingDef[defName = "BedrollDouble" and label="mattress double bed"]</xpath>
 					<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
@@ -2506,7 +2506,7 @@
 				<!--Beddings Settings-->
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "Bedroll"]</xpath>
+					<xpath>Defs/ThingDef[defName = "Bedroll" and label="mattress bed"]</xpath>
 					<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
