@@ -190,17 +190,31 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "cryo_double_bed"]</xpath>
-					<value>
+				
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "cryo_double_bed"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "cryo_double_bed"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>FuturisticBlanketDouble</blanketDef>
+								<beddingDef>AdvancedDoubleBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "cryo_double_bed"]</xpath>
+						<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 								<blanketDef>FuturisticBlanketDouble</blanketDef>
 								<beddingDef>AdvancedDoubleBedding</beddingDef>
 							</li>
 						</comps>
-					</value>
+						</value>
+					</nomatch>
 				</li>
+
 				<!--BedRestEffectiveness Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "cryo_double_bed"]/statBases/BedRestEffectiveness</xpath>
@@ -323,17 +337,31 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "cryo_single_bed"]</xpath>
-					<value>
+				
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "cryo_single_bed"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "cryo_single_bed"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>FuturisticBlanket</blanketDef>
+								<beddingDef>AdvancedBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "cryo_single_bed"]</xpath>
+						<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 								<blanketDef>FuturisticBlanket</blanketDef>
 								<beddingDef>AdvancedBedding</beddingDef>
 							</li>
 						</comps>
-					</value>
+						</value>
+					</nomatch>
 				</li>
+
 				<!--BedRestEffectiveness Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "cryo_single_bed"]/statBases/BedRestEffectiveness</xpath>
@@ -456,17 +484,31 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "space_double_bed"]</xpath>
-					<value>
+				
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "space_double_bed"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "space_double_bed"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>PodBedBlanketDouble</blanketDef>
+								<beddingDef>AdvancedDoubleBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "space_double_bed"]</xpath>
+						<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 								<blanketDef>PodBedBlanketDouble</blanketDef>
 								<beddingDef>AdvancedDoubleBedding</beddingDef>
 							</li>
 						</comps>
-					</value>
+						</value>
+					</nomatch>
 				</li>
+
 				<!--BedRestEffectiveness Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "space_double_bed"]/statBases/BedRestEffectiveness</xpath>
@@ -601,17 +643,31 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "PodBed"]</xpath>
-					<value>
+				
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "PodBed"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "PodBed"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>PodBedBlanket</blanketDef>
+								<beddingDef>AdvancedBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "PodBed"]</xpath>
+						<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 								<blanketDef>PodBedBlanket</blanketDef>
 								<beddingDef>AdvancedBedding</beddingDef>
 							</li>
 						</comps>
-					</value>
+						</value>
+					</nomatch>
 				</li>
+
 				<!--BedRestEffectiveness Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "PodBed"]/statBases/BedRestEffectiveness</xpath>
@@ -746,17 +802,31 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "AdvHospitalBed"]</xpath>
-					<value>
+				
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "AdvHospitalBed"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "AdvHospitalBed"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>AdvMedBlanket</blanketDef>
+								<beddingDef>AdvancedMedBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "AdvHospitalBed"]</xpath>
+						<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 								<blanketDef>AdvMedBlanket</blanketDef>
 								<beddingDef>AdvancedMedBedding</beddingDef>
 							</li>
 						</comps>
-					</value>
+						</value>
+					</nomatch>
 				</li>
+
 				<!--BedRestEffectiveness Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "AdvHospitalBed"]/statBases/BedRestEffectiveness</xpath>
@@ -1080,17 +1150,31 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "industrial_double_bed"]</xpath>
-					<value>
+				
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "industrial_double_bed"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "industrial_double_bed"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>IndustrialBlanketDouble</blanketDef>
+								<beddingDef>DoubleBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "industrial_double_bed"]</xpath>
+						<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 								<blanketDef>IndustrialBlanketDouble</blanketDef>
 								<beddingDef>DoubleBedding</beddingDef>
 							</li>
 						</comps>
-					</value>
+						</value>
+					</nomatch>
 				</li>
+
 				<!--BedRestEffectiveness Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "industrial_double_bed"]/statBases/BedRestEffectiveness</xpath>
@@ -1172,7 +1256,8 @@
 					</value>
 				</li>
 				
-				<!--Function Extension-->	
+				<!--Function Extension-->
+				
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "industrial_single_bed"]</xpath>
 					<value>
@@ -1239,17 +1324,31 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "industrial_single_bed"]</xpath>
-					<value>
+				
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "industrial_single_bed"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "industrial_single_bed"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>IndustrialBlanketSingle</blanketDef>
+								<beddingDef>SingleBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "industrial_single_bed"]</xpath>
+						<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 								<blanketDef>IndustrialBlanketSingle</blanketDef>
 								<beddingDef>SingleBedding</beddingDef>
 							</li>
 						</comps>
-					</value>
+						</value>
+					</nomatch>
 				</li>
+
 				<!--BedRestEffectiveness Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "industrial_single_bed"]/statBases/BedRestEffectiveness</xpath>
@@ -1398,17 +1497,31 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "MilleniumDoubleBed"]</xpath>
-					<value>
+				
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "MilleniumDoubleBed"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "MilleniumDoubleBed"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>MilleniumBlanketDouble</blanketDef>
+								<beddingDef>AdvancedDoubleBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "MilleniumDoubleBed"]</xpath>
+						<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 								<blanketDef>MilleniumBlanketDouble</blanketDef>
 								<beddingDef>AdvancedDoubleBedding</beddingDef>
 							</li>
 						</comps>
-					</value>
+						</value>
+					</nomatch>
 				</li>
+
 				<!--BedRestEffectiveness Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "MilleniumDoubleBed"]/statBases/BedRestEffectiveness</xpath>
@@ -1556,17 +1669,31 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "MilleniumBed"]</xpath>
-					<value>
+				
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "MilleniumBed"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "MilleniumBed"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>MilleniumBlanketSingle</blanketDef>
+								<beddingDef>AdvancedBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "MilleniumBed"]</xpath>
+						<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 								<blanketDef>MilleniumBlanketSingle</blanketDef>
 								<beddingDef>AdvancedBedding</beddingDef>
 							</li>
 						</comps>
-					</value>
+						</value>
+					</nomatch>
 				</li>
+
 				<!--BedRestEffectiveness Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "MilleniumBed"]/statBases/BedRestEffectiveness</xpath>
@@ -1714,17 +1841,31 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "RoyalBed"]</xpath>
-					<value>
+				
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "RoyalBed"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "RoyalBed"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>RoyalLoversBlanketDouble</blanketDef>
+								<beddingDef>RoyalDoubleBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "RoyalBed"]</xpath>
+						<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 								<blanketDef>RoyalLoversBlanketDouble</blanketDef>
 								<beddingDef>RoyalDoubleBedding</beddingDef>
 							</li>
 						</comps>
-					</value>
+						</value>
+					</nomatch>
 				</li>
+
 				<!--BedRestEffectiveness Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "RoyalBed"]/statBases/BedRestEffectiveness</xpath>
@@ -1872,17 +2013,31 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "DoubleBed"]</xpath>
-					<value>
+				
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "DoubleBed"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "DoubleBed"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>NormalBlanketDouble</blanketDef>
+								<beddingDef>DoubleBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "DoubleBed"]</xpath>
+						<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 								<blanketDef>NormalBlanketDouble</blanketDef>
 								<beddingDef>DoubleBedding</beddingDef>
 							</li>
 						</comps>
-					</value>
+						</value>
+					</nomatch>
 				</li>
+
 				<!--BedRestEffectiveness Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "DoubleBed"]/statBases/BedRestEffectiveness</xpath>
@@ -2031,17 +2186,31 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "Bed"]</xpath>
-					<value>
+				
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "Bed"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Bed"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>NormalBlanketSingle</blanketDef>
+								<beddingDef>SingleBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Bed"]</xpath>
+						<value>
 						<comps>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 								<blanketDef>NormalBlanketSingle</blanketDef>
 								<beddingDef>SingleBedding</beddingDef>
 							</li>
 						</comps>
-					</value>
+						</value>
+					</nomatch>
 				</li>
+
 				<!--BedRestEffectiveness Settings-->
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "Bed"]/statBases/BedRestEffectiveness</xpath>
@@ -2181,16 +2350,28 @@
 				
 				<!--Beddings Settings-->
 
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "BedrollDouble"]</xpath>
-					<value>
-					<comps>
-						<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-							<blanketDef>NorbalBlanketDouble</blanketDef>
-							<beddingDef>PrimitiveDoubleBedding</beddingDef>
-						</li>
-					</comps>
-					</value>
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "BedrollDouble"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "BedrollDouble"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>NorbalBlanketDouble</blanketDef>
+								<beddingDef>PrimitiveDoubleBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "BedrollDouble"]</xpath>
+						<value>
+						<comps>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>NorbalBlanketDouble</blanketDef>
+								<beddingDef>PrimitiveDoubleBedding</beddingDef>
+							</li>
+						</comps>
+						</value>
+					</nomatch>
 				</li>
 
 				<!--BedRestEffectiveness Settings-->
@@ -2336,16 +2517,28 @@
 				
 				<!--Beddings Settings-->
 
-				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "Bedroll"]</xpath>
-					<value>
-					<comps>
-						<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-							<blanketDef>NorbalBlanketSingle</blanketDef>
-							<beddingDef>PrimitiveBedding</beddingDef>
-						</li>
-					</comps>
-					</value>
+				<li Class="PatchOperationConditional">
+				<xpath>Defs/ThingDef[defName = "Bedroll"]/comps</xpath>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Bedroll"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>NorbalBlanketSingle</blanketDef>
+								<beddingDef>PrimitiveBedding</beddingDef>
+							</li>
+						</value>
+					</match>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Bedroll"]</xpath>
+						<value>
+						<comps>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>NorbalBlanketSingle</blanketDef>
+								<beddingDef>PrimitiveBedding</beddingDef>
+							</li>
+						</comps>
+						</value>
+					</nomatch>
 				</li>
 
 				<!--BedRestEffectiveness Settings-->
