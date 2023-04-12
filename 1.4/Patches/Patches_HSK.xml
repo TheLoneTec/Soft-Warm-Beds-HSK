@@ -464,12 +464,12 @@
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "space_double_bed"]</xpath>
 					<value>
-					<comps>
-						<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-							<blanketDef>PodBedBlanketDouble</blanketDef>
-							<beddingDef>AdvancedDoubleBedding</beddingDef>
-						</li>
-					</comps>
+						<comps>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>PodBedBlanketDouble</blanketDef>
+								<beddingDef>AdvancedDoubleBedding</beddingDef>
+							</li>
+						</comps>
 					</value>
 				</li>
 
@@ -1402,7 +1402,7 @@
 				
 				<!--Beddings Settings-->
 				
-				<nomatch Class="PatchOperationAdd">
+				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "MilleniumDoubleBed"]</xpath>
 					<value>
 						<comps>
@@ -1412,7 +1412,7 @@
 							</li>
 						</comps>
 					</value>
-				</nomatch>
+				</li>
 
 				<!--BedRestEffectiveness Settings-->
 				<li Class="PatchOperationReplace">
