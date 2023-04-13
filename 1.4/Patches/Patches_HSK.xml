@@ -915,16 +915,24 @@
 					</value>
 				</li>
 				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "HospitalBed"]/comps</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "HospitalBed"]</xpath>
+						<value>
+							<comps/>
+						</value>
+					</nomatch>
+				</li>
+				
 				<!--Beddings Settings-->
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "HospitalBed"]</xpath>
+					<xpath>Defs/ThingDef[defName = "HospitalBed"]/comps</xpath>
 					<value>
-						<comps>
-							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-								<blanketDef>HospitalBedBlanket</blanketDef>
-								<beddingDef>MedBedding</beddingDef>
-							</li>
-						</comps>
+						<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+							<blanketDef>HospitalBedBlanket</blanketDef>
+							<beddingDef>MedBedding</beddingDef>
+						</li>
 					</value>
 				</li>
 

@@ -18,7 +18,7 @@
   <!--ui-->
   <TabBedding>Make Bed</TabBedding>
   <BedMade>This bed is made in {1_label}.</BedMade>
-  <BedNotMade>This bed isn't made.</BedNotMade>
+  <BedNotMade>This bed isn't made. (Requires {0})</BedNotMade>
   <NoBeddings>No Beddings</NoBeddings>
   <NoSuitableBedding>There are no suitable beddings available.</NoSuitableBedding>
   <CommandUnmakeBed>Unmake</CommandUnmakeBed>
