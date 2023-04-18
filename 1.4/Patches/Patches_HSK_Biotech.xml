@@ -303,28 +303,26 @@
 					</li>
 					
 					<!--Beddings Settings-->
+					
 					<li Class="PatchOperationConditional">
-					<xpath>Defs/ThingDef[defName = "Crib"]/comps</xpath>
-						<match Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName = "Crib"]/comps</xpath>
-							<value>
-								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-									<blanketDef>NormalBlanketSingle</blanketDef>
-									<beddingDef>SingleBedding</beddingDef>
-								</li>
-							</value>
-						</match>
+						<xpath>Defs/ThingDef[defName = "Crib" and @ParentName="SK_SansComfortBedBase"]/comps</xpath>
 						<nomatch Class="PatchOperationAdd">
-							<xpath>Defs/ThingDef[defName = "Crib"]</xpath>
+							<xpath>Defs/ThingDef[defName = "Crib" and @ParentName="SK_SansComfortBedBase"]</xpath>
 							<value>
-								<comps>
-									<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-										<blanketDef>NormalBlanketSingle</blanketDef>
-										<beddingDef>SingleBedding</beddingDef>
-									</li>
-								</comps>
+								<comps/>
 							</value>
 						</nomatch>
+					</li>
+					
+					<!--Beddings Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Crib" and @ParentName="SK_SansComfortBedBase"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>NormalBlanketSingle</blanketDef>
+								<beddingDef>SingleBedding</beddingDef>
+							</li>
+						</value>
 					</li>
 
 					<!--BedRestEffectiveness Settings-->
