@@ -2443,7 +2443,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>Defs/ThingDef[defName = "SleepingSpot" or defName = "DoubleSleepingSpot"]/statBases/BedRestEffectiveness</xpath>
 					<value>
-					  <BedRestEffectiveness>0.5</BedRestEffectiveness>
+					  <BedRestEffectiveness>0.45</BedRestEffectiveness>
 					</value>
 				</li>
 	

@@ -15,8 +15,8 @@
     <statBases>
       <Flammability>1.0</Flammability>
       <Mass>4.5</Mass>
-      <BedRestEffectiveness>0.15</BedRestEffectiveness>
-      <ImmunityGainSpeedFactor>0.1</ImmunityGainSpeedFactor>
+      <BedRestEffectiveness>0.55</BedRestEffectiveness>
+      <ImmunityGainSpeedFactor>0.35</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>0.2</SurgerySuccessChanceFactor>
       <Comfort>0.2</Comfort>
       <WorkToBuild>750</WorkToBuild>
