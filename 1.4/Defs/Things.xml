@@ -18,7 +18,7 @@
       <BedRestEffectiveness>0.55</BedRestEffectiveness>
       <ImmunityGainSpeedFactor>0.35</ImmunityGainSpeedFactor>
       <SurgerySuccessChanceFactor>0.2</SurgerySuccessChanceFactor>
-      <Comfort>0.2</Comfort>
+      <Comfort>0.3</Comfort>
       <WorkToBuild>750</WorkToBuild>
       <BedStuffEffectMultiplierInsulation_Heat>0.5</BedStuffEffectMultiplierInsulation_Heat>
     </statBases>
