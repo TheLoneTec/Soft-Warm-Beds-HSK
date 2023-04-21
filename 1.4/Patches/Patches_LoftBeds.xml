@@ -217,6 +217,215 @@
 					</value>
 				</li>
 
+				<!-- ============== Double Loft Bed ============== -->
+				
+				<li Class="PatchOperationAttributeSet">
+				<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]</xpath>
+				<value>SK_BedBase</value>
+				<attribute>ParentName</attribute>
+				</li>
+				
+				<!--Extra Defs-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs</xpath>
+					<value>
+						<ThingDef ParentName="BlanketBase">
+							<defName>LoftBlanketDouble</defName>
+							<label>Simple Matress and Blanket for a double loft bed.</label>
+							<description>Keeps you warm.</description>
+							<graphicData>
+								<texPath>Things/Building/LoftBed/DoubleLoftBlanket</texPath>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+								<drawSize>(3,3)</drawSize>
+								<damageData>
+									<rect>(0,0.05,2,1.95)</rect>
+								</damageData>
+							</graphicData>
+							<size>(2,2)</size>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationInsert">
+					<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName = "SubCategory_StandartBeds"]/defNames/li[text()="LoftBed"]</xpath>
+					<value>
+						<li>DoubleLoftBed</li>
+					</value>
+				</li>
+				
+				<!--Fix Visual Glitch-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]</xpath>
+					<value>
+						<drawerType>MapMeshAndRealTime</drawerType>
+					</value>
+				</li>
+				
+				<!--Function Extension-->	
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]</xpath>
+					<value>
+						<inspectorTabs>
+							<li>SoftWarmBeds.ITab_Bedding</li>
+						</inspectorTabs>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]/building</xpath>
+					<value>
+						<fixedStorageSettings>
+							<filter>
+								<categories>
+									<li>Textiles</li>
+									<li>HTextiles</li>
+								</categories>
+								<thingDefs>
+									<li>AlphaPoly</li>
+									<li>BetaPoly</li>
+								</thingDefs>
+							</filter>
+						</fixedStorageSettings>
+						<defaultStorageSettings>
+							<filter>
+								<categories>
+									<li>Textiles</li>
+									<li>HTextiles</li>
+								</categories>
+								<thingDefs>
+									<li>AlphaPoly</li>
+									<li>BetaPoly</li>
+								</thingDefs>
+							</filter>
+						</defaultStorageSettings>
+					</value>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]</xpath>
+					<value>
+						<tickerType>Normal</tickerType>
+					</value>
+				</li>
+				<!--Peserving Menu Icon-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]/uiIconPath</xpath>
+					<value>
+						<uiIconPath>Things/Building/LoftBed/DoubleLoftBed_MenuIcon</uiIconPath>
+					</value>
+				</li>
+
+			    <!--Graphic Modifications -->	
+				<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName = "LoftBed"]/graphicData/texPath</xpath>
+					<value>
+					  <texPath>Things/Building/LoftBed/DoubleLoftBed</texPath>
+					</value>
+				</li>
+				
+				<!--Beddings Settings-->
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]</xpath>
+					<value>
+						<comps>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>LoftBlanketDouble</blanketDef>
+								<beddingDef>DoubleBedding</beddingDef>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<!--BedRestEffectiveness Settings-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]/statBases/BedRestEffectiveness</xpath>
+					<value>
+						<BedRestEffectiveness>0.4</BedRestEffectiveness>
+					</value>
+				</li>
+				<!--Comfort Settings-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]/statBases/Comfort</xpath>
+					<value>
+						<Comfort>0.3</Comfort>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+				  <xpath>Defs/ThingDef[defName="DoubleLoftBed"]/statBases</xpath>
+				  <value>
+					<ImmunityGainSpeedFactor>0.35</ImmunityGainSpeedFactor>
+				  </value>
+				</li>
+		
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]/statBases/SurgerySuccessChanceFactor</xpath>
+					<value>
+						<SurgerySuccessChanceFactor>0.5</SurgerySuccessChanceFactor>
+					</value>
+				</li>
+		
+				<!--Half Frame Beauty-->
+		
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName = "DoubleLoftBed"]/statBases</xpath>
+					<value>
+						<Bedding_Beauty>4</Bedding_Beauty>
+					</value>
+				</li>
+				
+				<!--Insulation Settings-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]/statBases</xpath>
+					<value>
+						<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
+						<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
+					</value>
+				</li>
+			
+				<!--Recipe-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]</xpath>
+					<value>
+						<stuffCategories>
+							<li>Metallic</li>
+							<li>StrongMetallic</li>
+							<li>RuggedMetallic</li>
+							<li>HeavyMetallic</li>
+							<li>Precious</li>
+							<li>Plastic</li>
+							<li>Woody</li>
+						</stuffCategories>
+					</value>
+				</li>
+				<!--
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]</xpath>
+					<value>
+						<costStuffCount>65</costStuffCount>
+					</value>
+				</li>
+				-->
+				<!--Recipe-->
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]</xpath>
+					<value>
+						<costList>
+							<ComponentMedieval>8</ComponentMedieval>
+						</costList>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]</xpath>
+					<value>
+						<researchPrerequisites Inherit="False">
+							<li>Beds_B1</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+
 			</operations>
 		</match>
 	</Operation>
