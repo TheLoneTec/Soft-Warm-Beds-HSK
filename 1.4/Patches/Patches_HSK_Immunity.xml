@@ -180,7 +180,21 @@
 				<ImmunityGainSpeedFactor>0.65</ImmunityGainSpeedFactor>
 			  </value>
 			</li>
+		
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="HospitalBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.65</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
 			
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="AdvHospitalBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.8</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+		
 			<li Class="PatchOperationReplace">
 				<xpath>/Defs/ThingDef[defName = "prison_single_bed_RT" or defName = "prison_single_bed_LB"]/statBases/ImmunityGainSpeedFactor</xpath>
 				<value>
