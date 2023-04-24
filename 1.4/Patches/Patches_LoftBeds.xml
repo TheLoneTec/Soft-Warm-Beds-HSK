@@ -115,16 +115,14 @@
 				</li>
 				
 				<!--Beddings Settings-->
-				
+		
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "LoftBed"]</xpath>
+					<xpath>Defs/ThingDef[defName = "LoftBed"]/comps</xpath>
 					<value>
-						<comps>
-							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-								<blanketDef>LoftBlanketSingle</blanketDef>
-								<beddingDef>SingleBedding</beddingDef>
-							</li>
-						</comps>
+						<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+							<blanketDef>LoftBlanketSingle</blanketDef>
+							<beddingDef>SingleBedding</beddingDef>
+						</li>
 					</value>
 				</li>
 
@@ -326,14 +324,12 @@
 				<!--Beddings Settings-->
 				
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]</xpath>
+					<xpath>Defs/ThingDef[defName = "DoubleLoftBed"]/comps</xpath>
 					<value>
-						<comps>
-							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-								<blanketDef>LoftBlanketDouble</blanketDef>
-								<beddingDef>DoubleBedding</beddingDef>
-							</li>
-						</comps>
+						<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+							<blanketDef>LoftBlanketDouble</blanketDef>
+							<beddingDef>DoubleBedding</beddingDef>
+						</li>
 					</value>
 				</li>
 
