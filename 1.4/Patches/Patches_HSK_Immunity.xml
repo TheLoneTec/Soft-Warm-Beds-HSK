@@ -65,7 +65,7 @@
 			<li Class="PatchOperationReplace">
 			  <xpath>Defs/ThingDef[defName="HayBed"]/statBases/ImmunityGainSpeedFactor</xpath>
 			  <value>
-				<ImmunityGainSpeedFactor>0.2</ImmunityGainSpeedFactor>
+				<ImmunityGainSpeedFactor>0.5</ImmunityGainSpeedFactor>
 			  </value>
 			</li>
 
