@@ -319,7 +319,7 @@
 						<xpath>Defs/ThingDef[defName = "Crib" and @ParentName="SK_SansComfortBedBase"]/comps</xpath>
 						<value>
 							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-								<blanketDef>NormalBlanketSingle</blanketDef>
+								<blanketDef>NormalCribBlanketSingle</blanketDef>
 								<beddingDef>SingleBedding</beddingDef>
 							</li>
 						</value>
