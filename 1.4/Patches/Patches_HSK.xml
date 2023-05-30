@@ -2575,7 +2575,7 @@
 				<li Class="PatchOperationAdd">
 					<xpath>*/StatDef[defName = "BedRestEffectiveness"]</xpath>
 					<value>
-					  <maxValue>1.4</maxValue>
+					  <maxValue>1.8</maxValue>
 					</value>
 				</li>
 				
