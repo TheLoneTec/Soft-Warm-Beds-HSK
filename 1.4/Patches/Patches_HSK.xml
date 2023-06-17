@@ -2437,7 +2437,22 @@
 						<Comfort>0.4</Comfort>
 					</value>
 				</li>
-			
+	
+				<!--BedRestEffectiveness Settings-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "HayBedDouble"]/statBases/BedRestEffectiveness</xpath>
+					<value>
+						<BedRestEffectiveness>0.5</BedRestEffectiveness>
+					</value>
+				</li>
+				<!--Comfort Settings-->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "HayBedDouble"]/statBases/Comfort</xpath>
+					<value>
+						<Comfort>0.4</Comfort>
+					</value>
+				</li>
+	
 				<!-- ==== Sleeping Spot ==== -->
 			
 				<li Class="PatchOperationReplace">
