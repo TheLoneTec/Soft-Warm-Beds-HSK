@@ -41,4 +41,15 @@ namespace SoftWarmBeds
             DefOfHelper.EnsureInitializedInCtor(typeof(Softness));
         }
     }
+
+    [DefOf]
+    public static class StuffCategoryDefOfLocal
+    {
+        public static StuffCategoryDef HF;
+
+        static StuffCategoryDefOfLocal()
+        {
+            DefOfHelper.EnsureInitializedInCtor(typeof(StuffCategoryDefOfLocal));
+        }
+    }
 }

@@ -2505,7 +2505,7 @@
 					</value>
 				</li>
 				-->
-				<!-- ==== Hi-Tech Fabrics Softness ==== -->	
+				<!-- ==== Hi-Tech Fabrics Softness ==== 	
 		
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "DevilstrandCloth" or defName = "Synthread" or defName = "Hyperweave" or defName = "Kevlar" or defName = "AlphaPoly" or defName = "BetaPoly"]/stuffProps/categories</xpath>
@@ -2513,7 +2513,7 @@
 						<li>Fabric</li>
 					</value>
 				</li>
-		
+		-->
 				<li Class="PatchOperationAdd">
 					<xpath>Defs/ThingDef[defName = "ChitinPlating"]/stuffProps/categories</xpath>
 					<value>

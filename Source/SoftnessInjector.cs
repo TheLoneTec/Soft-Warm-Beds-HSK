@@ -18,7 +18,7 @@ namespace SoftWarmBeds
 
         public void Inject()
         {
-            IEnumerable<ThingDef> texDefs = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.stuffProps != null && (x.stuffProps.categories.Contains(StuffCategoryDefOf.Leathery) || x.stuffProps.categories.Contains(StuffCategoryDefOf.Fabric)));
+            IEnumerable<ThingDef> texDefs = DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.stuffProps != null && (x.stuffProps.categories.Contains(StuffCategoryDefOf.Leathery) || x.stuffProps.categories.Contains(StuffCategoryDefOf.Fabric) || x.stuffProps.categories.Contains(StuffCategoryDefOfLocal.HF)));
             InjectStatBase(texDefs);
         }
 
