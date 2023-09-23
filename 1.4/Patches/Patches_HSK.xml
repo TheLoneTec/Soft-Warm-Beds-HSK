@@ -755,15 +755,23 @@
 				
 				<!--Beddings Settings-->
 				
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "AdvHospitalBed" and @ParentName="SK_BedWithQualityBase"]/comps</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "AdvHospitalBed" and @ParentName="SK_BedWithQualityBase"]</xpath>
+						<value>
+							<comps/>
+						</value>
+					</nomatch>
+				</li>
+				
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "AdvHospitalBed"]</xpath>
+					<xpath>Defs/ThingDef[defName = "AdvHospitalBed" and @ParentName="SK_BedWithQualityBase"]</xpath>
 					<value>
-					<comps>
 						<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 							<blanketDef>AdvMedBlanket</blanketDef>
 							<beddingDef>AdvancedMedBedding</beddingDef>
 						</li>
-					</comps>
 					</value>
 				</li>
 
