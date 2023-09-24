@@ -766,7 +766,7 @@
 				</li>
 				
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName = "AdvHospitalBed" and @ParentName="SK_BedWithQualityBase"]</xpath>
+					<xpath>Defs/ThingDef[defName = "AdvHospitalBed" and @ParentName="SK_BedWithQualityBase"]/comps</xpath>
 					<value>
 						<li Class="SoftWarmBeds.CompProperties_MakeableBed">
 							<blanketDef>AdvMedBlanket</blanketDef>
