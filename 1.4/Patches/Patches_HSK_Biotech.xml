@@ -128,7 +128,7 @@
 							<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/comps</xpath>
 							<value>
 								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-									<blanketDef>NorbalBlanketSingle</blanketDef>
+									<blanketDef>NorbalCribBlanketSingle</blanketDef>
 									<beddingDef>PrimitiveBedding</beddingDef>
 								</li>
 							</value>
@@ -138,7 +138,7 @@
 							<value>
 								<comps>
 									<li Class="SoftWarmBeds.CompProperties_MakeableBed">
-										<blanketDef>NorbalBlanketSingle</blanketDef>
+										<blanketDef>NorbalCribBlanketSingle</blanketDef>
 										<beddingDef>PrimitiveBedding</beddingDef>
 									</li>
 								</comps>
