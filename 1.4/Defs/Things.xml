@@ -192,6 +192,27 @@
     </recipeMaker>-->
   </ThingDef>
   
+  	<ThingDef ParentName="SK_UnfinishedBase">
+		<defName>UnfinishedBedding</defName>
+		<label>unfinished bedding</label>
+		<description>An unfinished piece of bedding.</description>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedApparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+			<li>Metallic</li>
+			<li>HF</li>
+		</stuffCategories>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+  
    <!-- ==================== Recipes ========================== -->
 
    <RecipeDef>
@@ -294,6 +315,7 @@
 		<!--<li>LeatherworkerTable</li>-->
 	</recipeUsers>
 	<researchPrerequisite><!--Beds_B1-->Apparel_B1</researchPrerequisite>
+	<unfinishedThingDef>UnfinishedBedding</unfinishedThingDef>
   </RecipeDef>
   
    <RecipeDef>
@@ -350,6 +372,7 @@
 		<!--<li>LeatherworkerTable</li>-->
 	</recipeUsers>
 	<researchPrerequisite><!--Beds_B1-->Apparel_B1</researchPrerequisite>
+	<unfinishedThingDef>UnfinishedBedding</unfinishedThingDef>
   </RecipeDef>
   
 </Defs>

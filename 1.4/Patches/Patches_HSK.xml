@@ -2596,7 +2596,7 @@
 				<!-- ============ Max Bed Rest Value ============-->
 	
 				<li Class="PatchOperationAdd">
-					<xpath>*/StatDef[defName = "BedRestEffectiveness"]</xpath>
+					<xpath>Defs/StatDef[defName = "BedRestEffectiveness"]</xpath>
 					<value>
 					  <maxValue>1.8</maxValue>
 					</value>

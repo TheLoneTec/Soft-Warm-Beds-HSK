@@ -36,6 +36,7 @@
         <li>HandTailoringBench</li>
         <li>LeatherworkerTable</li>
       </recipeUsers>
+	  <unfinishedThingDef>UnfinishedBedding</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
 
@@ -72,6 +73,7 @@
         <li>HandTailoringBench</li>
         <li>LeatherworkerTable</li>
       </recipeUsers>
+	  <unfinishedThingDef>UnfinishedBedding</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
 
@@ -113,6 +115,7 @@
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
       </recipeUsers>
+	  <unfinishedThingDef>UnfinishedBedding</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
 
@@ -152,6 +155,7 @@
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
       </recipeUsers>
+	  <unfinishedThingDef>UnfinishedBedding</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
 
@@ -193,6 +197,7 @@
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
       </recipeUsers>
+	  <unfinishedThingDef>UnfinishedBedding</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
 
@@ -234,6 +239,7 @@
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
       </recipeUsers>
+	  <unfinishedThingDef>UnfinishedBedding</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
 
@@ -275,6 +281,7 @@
         <li>ElectricTailoringBench</li>
         <li>HandTailoringBench</li>
       </recipeUsers>
+	  <unfinishedThingDef>UnfinishedBedding</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
 
