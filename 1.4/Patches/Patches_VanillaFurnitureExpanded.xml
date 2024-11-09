@@ -180,7 +180,7 @@
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="Bed_Simple"]/statBases/BedRestEffectiveness</xpath>
           <value>
-            <BedRestEffectiveness>0.45</BedRestEffectiveness>
+            <BedRestEffectiveness>0.35</BedRestEffectiveness>
           </value>
         </li>
         <li Class="PatchOperationReplace">
@@ -249,7 +249,7 @@
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="Bed_Simple"]/statBases/ImmunityGainSpeedFactor</xpath>
           <value>
-            <ImmunityGainSpeedFactor>0.7</ImmunityGainSpeedFactor>
+            <ImmunityGainSpeedFactor>0.3</ImmunityGainSpeedFactor>
           </value>
         </li>
         <li Class="PatchOperationReplace">
