@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>Rede</defName>
+    <label>Hammock</label>
+    <description>The simplest and most practical bed ever invented, made from just some cloth or leather and strings. You can hang it anywhere, even take it with you for a good nap when travelling. Hanging in the air, it keeps you cool, which is perfect for a tropical weather! Not as comfortable as a regular bed, though.</description>
+    <graphicData>
+      <texPath>Things/Building/Rede</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2.15,2.15)</drawSize>
+    </graphicData>
+    <castEdgeShadows>False</castEdgeShadows>
+    <statBases>
+      <Flammability>1.0</Flammability>
+      <Mass>4.5</Mass>
+      <BedRestEffectiveness>0.4</BedRestEffectiveness>
+      <ImmunityGainSpeedFactor>0.2</ImmunityGainSpeedFactor>
+      <SurgerySuccessChanceFactor>0.2</SurgerySuccessChanceFactor>
+      <Comfort>0.4</Comfort>
+      <WorkToBuild>750</WorkToBuild>
+      <BedStuffEffectMultiplierInsulation_Heat>0.5</BedStuffEffectMultiplierInsulation_Heat>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>Dresser</li>
+          <li>EndTable</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>35</costStuffCount>
+    <building>
+      <bed_showSleeperBody>true</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+      <bed_caravansCanUse>true</bed_caravansCanUse>
+    </building>
+    <pathCost>50</pathCost>
+    <passability>Standable</passability>
+  </ThingDef>
+
+  <ThingDef Name="BlanketBase" ParentName="BuildingBase" Abstract="True">
+    <category>Building</category>
+    <selectable>false</selectable>
+    <thingClass>SoftWarmBeds.Building_Blanket</thingClass>
+    <label>bedding error</label>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <tickerType>Never</tickerType>
+    <destroyOnDrop>True</destroyOnDrop>
+    <tradeability>None</tradeability>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+	  <li>HF</li>
+    </stuffCategories>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="BeddingBase" Abstract="True">
+    <thingClass>SoftWarmBeds.Bedding</thingClass>
+    <category>Item</category>
+    <selectable>True</selectable>
+    <pathCost>10</pathCost>
+    <useHitPoints>True</useHitPoints>
+    <techLevel>Medieval</techLevel>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Beauty>-3</Beauty>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>True</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BeddingBase">
+    <defName>SingleBedding</defName>
+    <label>single bedding set</label>
+    <description>A set of mattress, pillows, linen and blanket for a single bed. Provides comfort and insulates the user while in bed.</description>
+    <graphicData>
+      <texPath>Things/Beddings/beddingSingle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData><!--
+    <costStuffCount>60</costStuffCount>-->
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>10</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Beddings</li>
+    </thingCategories><!--
+    <recipeMaker>
+      <researchPrerequisite>ComplexFurniture</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>LeatherworkerTable</li>
+      </recipeUsers>
+    </recipeMaker>-->
+  </ThingDef>
+
+  <ThingDef ParentName="BeddingBase">
+    <defName>DoubleBedding</defName>
+    <label>double bedding set</label>
+    <description>A set of mattress, pillows, linen and blanket for a double bed. Provides comfort and insulates the users while in bed.</description>
+    <graphicData>
+      <texPath>Things/Beddings/beddingDouble</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<!--
+    <costStuffCount>100</costStuffCount>-->
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>18</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Beddings</li>
+    </thingCategories><!--
+    <recipeMaker>
+      <researchPrerequisite>ComplexFurniture</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>LeatherworkerTable</li>
+      </recipeUsers>
+    </recipeMaker>-->
+  </ThingDef>
+  
+  <ThingDef ParentName="SK_ResourceBase">
+    <defName>BeddingStuffing</defName>
+    <label>Bedding Stuffing</label>
+    <description>Stuffing for the inside of a matress.</description>
+    <graphicData>
+      <texPath>Things/Beddings/Stuffing</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+	<stackLimit>75</stackLimit>
+	<!--
+    <costStuffCount>100</costStuffCount>-->
+    <tradeability>Sellable</tradeability>
+    <statBases>
+		<MarketValue>2</MarketValue>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>500</WorkToMake>
+		<Mass>4</Mass>
+    </statBases>
+    <thingCategories>
+		<li>CTextiles</li>
+		<!--<li>Parts</li>-->
+	</thingCategories>
+	<tradeTags>
+		<li>ExoticMisc</li>
+	</tradeTags><!--
+    <recipeMaker>
+      <researchPrerequisite>ComplexFurniture</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li>LeatherworkerTable</li>
+      </recipeUsers>
+    </recipeMaker>-->
+  </ThingDef>
+  
+  	<ThingDef ParentName="SK_UnfinishedBase">
+		<defName>UnfinishedBedding</defName>
+		<label>unfinished bedding</label>
+		<description>An unfinished piece of bedding.</description>
+		<graphicData>
+			<texPath>Things/Item/Unfinished/UnfinishedApparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+			<li>Metallic</li>
+			<li>HF</li>
+		</stuffCategories>
+		<comps>
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+  
+   <!-- ==================== Recipes ========================== -->
+
+   <RecipeDef>
+    <defName>Make_BeddingStuffing</defName>
+    <label>make Bedding Stuffing</label>
+    <description>Craft 60 bedding stuffing, for simple and industrial beds.</description>
+    <jobString>Making Bedding Stuffing.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RawCotton</li>
+			<li>WoolMegasloth</li>
+            <li>WoolMuffalo</li>
+            <li>WoolAlpaca</li>
+			<li>WoolSheep</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	<thingDefs>
+		<li>RawCotton</li>
+		<li>WoolMegasloth</li>
+		<li>WoolMuffalo</li>
+		<li>WoolAlpaca</li>
+		<li>WoolSheep</li>
+	</thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <BeddingStuffing>60</BeddingStuffing>
+    </products>
+    <workAmount>500</workAmount>
+	<recipeUsers>
+		<li>ElectricTailoringBench</li>
+		<li>HandTailoringBench</li>
+		<!--<li>LeatherworkerTable</li>-->
+	</recipeUsers>
+	<researchPrerequisite><!--Beds_B1-->Apparel_B1</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Make_SimpleBedding</defName>
+    <label>make Single Bedding</label>
+    <description>Craft 1 single bedding, for simple and industrial beds.</description>
+    <jobString>Making Single Bedding.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+			<li>BTextiles</li>
+			<li>Wools</li>
+			<li>Leathers</li><!--
+			<disallowedThingDefs>
+				<li>WoolMegasloth</li>
+				<li>WoolMuffalo</li>
+				<li>WoolAlpaca</li>
+				<li>WoolSheep</li>
+			</disallowedThingDefs>-->
+          </categories>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BeddingStuffing</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentMedieval</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	<categories>
+		<li>BTextiles</li>
+		<li>Wools</li>
+		<li>Leathers</li>
+	</categories>
+	<thingDefs>
+		<li>BeddingStuffing</li>
+		<li>ComponentMedieval</li>
+	</thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SingleBedding>1</SingleBedding>
+    </products>
+    <workAmount>6000</workAmount>
+	<recipeUsers>
+		<li>ElectricTailoringBench</li>
+		<li>HandTailoringBench</li>
+		<!--<li>LeatherworkerTable</li>-->
+	</recipeUsers>
+	<researchPrerequisite><!--Beds_B1-->Apparel_B1</researchPrerequisite>
+	<unfinishedThingDef>UnfinishedBedding</unfinishedThingDef>
+  </RecipeDef>
+  
+   <RecipeDef>
+    <defName>Make_SimpleBeddingDouble</defName>
+    <label>make Double Bedding</label>
+    <description>Craft 1 double bedding, for simple and industrial beds.</description>
+    <jobString>Making Double Bedding.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+			<li>BTextiles</li>
+			<li>Wools</li>
+			<li>Leathers</li>
+          </categories>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BeddingStuffing</li>
+          </thingDefs>
+        </filter>
+        <count>120</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentMedieval</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+	<categories>
+		<li>BTextiles</li>
+		<li>Wools</li>
+		<li>Leathers</li>
+	</categories>
+	<thingDefs>
+		<li>BeddingStuffing</li>
+		<li>ComponentMedieval</li>
+	</thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DoubleBedding>1</DoubleBedding>
+    </products>
+    <workAmount>10000</workAmount>
+	<recipeUsers>
+		<li>ElectricTailoringBench</li>
+		<li>HandTailoringBench</li>
+		<!--<li>LeatherworkerTable</li>-->
+	</recipeUsers>
+	<researchPrerequisite><!--Beds_B1-->Apparel_B1</researchPrerequisite>
+	<unfinishedThingDef>UnfinishedBedding</unfinishedThingDef>
+  </RecipeDef>
+  
+</Defs>

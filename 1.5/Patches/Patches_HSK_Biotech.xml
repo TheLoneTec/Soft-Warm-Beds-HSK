@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--HSK-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core SK</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Biotech</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+
+					<!-- ============== Norbal Hay Crib ============== -->
+					
+					<!--Extra Defs-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef ParentName="BlanketBase">
+								<defName>NorbalCribBlanketSingle</defName>
+								<label>Tribal Crib Blanket</label>
+								<description>Keeps you warm.</description>
+								<graphicData>
+									<texPath>Things/Building/HSK/HayCrib/BasicCribBlanket</texPath>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<shaderType>CutoutComplex</shaderType>
+									<drawSize>(2,2)</drawSize>
+									<damageData>
+										<rect>(0,0.05,1,1)</rect>
+									</damageData>
+								</graphicData>
+								<size>(1,1)</size>
+							</ThingDef>
+						</value>
+					</li>
+					
+					<!--Description-->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/description</xpath>
+						<value>
+							<description>A primitive crib filled with hay. A high quality crib will make a baby happy. Multiple cribs can be placed in a bedroom without turning it into a barracks.</description>
+						</value>
+					</li>
+					
+					<!--Fix Visual Glitch-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
+						<value>
+							<drawerType>MapMeshAndRealTime</drawerType>
+						</value>
+					</li>
+					
+					<!--Function Extension-->	
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
+						<value>
+							<inspectorTabs>
+								<li>SoftWarmBeds.ITab_Bedding</li>
+							</inspectorTabs>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/building</xpath>
+						<value>
+							<fixedStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+									</categories>
+								</filter>
+							</fixedStorageSettings>
+							<defaultStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+									</categories>
+								</filter>
+							</defaultStorageSettings>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
+						<value>
+							<tickerType>Normal</tickerType>
+						</value>
+					</li>
+					
+					<!--Graphic Modifications -->	
+					<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/graphicData</xpath>
+						<value>
+							<graphicData>
+								<texPath>Things/Building/HSK/HayCrib/BasicCrib</texPath>
+								<graphicClass>Graphic_Multi</graphicClass>
+								<shaderType>CutoutComplex</shaderType>
+								<drawSize>2,2</drawSize>
+								<damageData>
+									<rect>(0,0.05,1,1)</rect>
+								</damageData>
+							</graphicData>
+						</value>
+					</li>
+					
+					<!--Peserving Menu Icon-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
+						<value>
+							<uiIconPath/>
+						</value>
+					</li>
+
+					<li Class="JPTools.PatchOperationCopy">
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/graphicData/texPath</xpath>
+						<toXpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/uiIconPath</toXpath>
+						<append>_south</append>
+					</li>
+					
+					<!--Beddings Settings-->
+					<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/comps</xpath>
+						<match Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/comps</xpath>
+							<value>
+								<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+									<blanketDef>NorbalCribBlanketSingle</blanketDef>
+									<beddingDef>PrimitiveBedding</beddingDef>
+								</li>
+							</value>
+						</match>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]</xpath>
+							<value>
+								<comps>
+									<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+										<blanketDef>NorbalCribBlanketSingle</blanketDef>
+										<beddingDef>PrimitiveBedding</beddingDef>
+									</li>
+								</comps>
+							</value>
+						</nomatch>
+					</li>
+
+					<!--BedRestEffectiveness Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/statBases/BedRestEffectiveness</xpath>
+						<value>
+							<BedRestEffectiveness>0.45</BedRestEffectiveness>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/statBases</xpath>
+						<value>
+							<Comfort>0.4</Comfort>
+						</value>
+					</li>
+					<!--Insulation Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/statBases</xpath>
+						<value>
+							<BedStuffEffectMultiplierInsulation_Cold>0.4</BedStuffEffectMultiplierInsulation_Cold>
+							<BedStuffEffectMultiplierInsulation_Heat>0.2</BedStuffEffectMultiplierInsulation_Heat>
+						</value>
+					</li>
+				
+					<!--Recipe
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/stuffCategories</xpath>
+						<value>
+							<stuffCategories>
+								<li>Stony</li>
+								<li>Woody</li>
+							</stuffCategories>
+						</value>
+					</li>-->
+				
+					<!--Recipe-->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/costList</xpath>
+						<value>
+							<stuffCategories>
+								<li>Stony</li>
+								<li>Woody</li>
+							</stuffCategories>
+							<costStuffCount>30</costStuffCount>
+							<costList>
+								<Hay>20</Hay>
+								<ComponentMedieval>2</ComponentMedieval>
+							</costList>
+						</value>
+					</li>
+				
+					<!--Hide Body Under bedding
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "Nej_TribalCrib"]/building/bed_showSleeperBody</xpath>
+						<value>
+							<bed_showSleeperBody>True</bed_showSleeperBody>
+						</value>
+					</li>-->
+
+					<!-- ============== Normal Crib ============== -->
+					
+					<!--Extra Defs-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs</xpath>
+						<value>
+							<ThingDef ParentName="BlanketBase">
+								<defName>NormalCribBlanketSingle</defName>
+								<label>Simple Crib Blanket</label>
+								<description>Keeps you warm.</description>
+								<graphicData>
+									<texPath>Things/Building/HSK/Crib/CribBlanket</texPath>
+									<graphicClass>Graphic_Multi</graphicClass>
+									<shaderType>CutoutComplex</shaderType>
+									<drawSize>(2,2)</drawSize>
+									<damageData>
+										<rect>(0,0.05,1,1)</rect>
+									</damageData>
+								</graphicData>
+								<size>(1,1)</size>
+							</ThingDef>
+						</value>
+					</li>
+					
+					<!--Fix Visual Glitch-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Crib"]</xpath>
+						<value>
+							<drawerType>MapMeshAndRealTime</drawerType>
+						</value>
+					</li>
+					
+					<!--Function Extension-->	
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Crib"]</xpath>
+						<value>
+							<inspectorTabs>
+								<li>SoftWarmBeds.ITab_Bedding</li>
+							</inspectorTabs>
+						</value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Crib"]/building</xpath>
+						<value>
+							<fixedStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</fixedStorageSettings>
+							<defaultStorageSettings>
+								<filter>
+									<categories>
+										<li>Textiles</li>
+										<li>HTextiles</li>
+									</categories>
+									<thingDefs>
+										<li>AlphaPoly</li>
+										<li>BetaPoly</li>
+									</thingDefs>
+								</filter>
+							</defaultStorageSettings>
+						</value>
+					</li>
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Crib"]</xpath>
+						<value>
+							<tickerType>Normal</tickerType>
+						</value>
+					</li>
+					<!--Peserving Menu Icon-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Crib"]</xpath>
+						<value>
+							<uiIconPath/>
+						</value>
+					</li>
+					<li Class="JPTools.PatchOperationCopy">
+						<xpath>Defs/ThingDef[defName = "Crib"]/graphicData/texPath</xpath>
+						<toXpath>Defs/ThingDef[defName = "Crib"]/uiIconPath</toXpath>
+						<append>_south</append>
+					</li>
+					
+					<!--Graphic Modifications -->	
+					<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName = "Crib"]/graphicData/texPath</xpath>
+						<value>
+						  <texPath>Things/Building/HSK/Crib/Crib</texPath>
+						</value>
+					</li>
+					
+					<!--Beddings Settings-->
+					
+					<li Class="PatchOperationConditional">
+						<xpath>Defs/ThingDef[defName = "Crib" and @ParentName="SK_SansComfortBedBase"]/comps</xpath>
+						<nomatch Class="PatchOperationAdd">
+							<xpath>Defs/ThingDef[defName = "Crib" and @ParentName="SK_SansComfortBedBase"]</xpath>
+							<value>
+								<comps/>
+							</value>
+						</nomatch>
+					</li>
+					
+					<!--Beddings Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Crib" and @ParentName="SK_SansComfortBedBase"]/comps</xpath>
+						<value>
+							<li Class="SoftWarmBeds.CompProperties_MakeableBed">
+								<blanketDef>NormalCribBlanketSingle</blanketDef>
+								<beddingDef>SingleBedding</beddingDef>
+							</li>
+						</value>
+					</li>
+
+					<!--BedRestEffectiveness Settings-->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "Crib"]/statBases/BedRestEffectiveness</xpath>
+						<value>
+							<BedRestEffectiveness>0.45</BedRestEffectiveness>
+						</value>
+					</li>
+					<!--Comfort Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Crib"]/statBases</xpath>
+						<value>
+							<Comfort>0.35</Comfort>
+						</value>
+					</li>
+					<!--Insulation Settings-->
+					<li Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName = "Crib"]/statBases</xpath>
+						<value>
+							<BedStuffEffectMultiplierInsulation_Cold>0.5</BedStuffEffectMultiplierInsulation_Cold>
+							<BedStuffEffectMultiplierInsulation_Heat>0.3</BedStuffEffectMultiplierInsulation_Heat>
+						</value>
+					</li>
+				
+					<!--Recipe-->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "Crib"]/stuffCategories</xpath>
+						<value>
+							<stuffCategories>
+								<li>Metallic</li>
+								<li>StrongMetallic</li>
+								<li>RuggedMetallic</li>
+								<li>HeavyMetallic</li>
+								<li>Precious</li>
+								<li>Plastic</li>
+								<li>Woody</li>
+							</stuffCategories>
+						</value>
+					</li>
+				
+					<!--Recipe-->
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "Crib"]/costList</xpath>
+						<value>
+							<costList>
+								<ComponentMedieval>4</ComponentMedieval>
+							</costList>
+						</value>
+					</li>
+
+					<!-- ======== Baby Sleeping Spot ========= -->
+
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/ThingDef[defName = "BabySleepingSpot"]/statBases/Comfort</xpath>
+						<value>
+						  <Comfort>0.2</Comfort>
+						</value>
+					</li>
+
+					</operations>
+				</match>
+			</li>
+				
+			</operations>
+		</match>
+	</Operation>
+</Patch>

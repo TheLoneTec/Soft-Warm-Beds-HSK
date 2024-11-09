@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!--HSK-->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Core SK</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+			
+			<!-- ============ Assign stat part ============ -->
+			
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName = "ImmunityGainSpeedFactor"]</xpath>
+				<value>
+				<parts>
+				  <li Class="SoftWarmBeds.StatPart_BedStuff">
+					<priority>100</priority>
+					<additiveStat>Bed_Immunity_Stuff</additiveStat>
+				  </li>
+				</parts>
+				</value>
+			</li>
+	
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/StatDef[defName = "ImmunityGainSpeedFactor"]/parts</xpath>
+				<value>
+				  <li Class="StatPart_Quality">
+					<factorAwful>0.8</factorAwful>
+					<factorPoor>0.9</factorPoor>
+					<factorNormal>1</factorNormal>
+					<factorGood>1.1</factorGood>
+					<factorExcellent>1.2</factorExcellent>
+					<factorMasterwork>1.3</factorMasterwork>
+					<factorLegendary>1.4</factorLegendary>
+				  </li>
+				</value>
+			</li>
+	
+			<!-- ============ Reassign Immunity Speed Gain Factor ============ -->
+	
+			<!-- ======== Stone ======== -->
+	
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/StatDef[defName="ImmunityGainSpeedFactor"]/minValue</xpath>
+				<value><!-- 1.35 -->
+					<minValue>0.2</minValue>
+				</value>
+			</li>	
+
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="WoodLog"]/statBases</xpath>
+				<value><!-- IGSF 1.05 -->
+					<Bed_Immunity_Stuff>0.4</Bed_Immunity_Stuff>
+				</value>
+			</li>
+			<!--
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="Kindling"]/statBases</xpath>
+				<value>--><!-- IGSF 1.05 --> <!--
+					<Bed_Immunity_Stuff>0.3</Bed_Immunity_Stuff>
+				</value>
+			</li>
+			-->
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="HayBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.35</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="HayBedDouble"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.35</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="BagBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.5</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="SleepingSpot"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.2</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="DoubleSleepingSpot"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.2</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="Bedroll"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.3</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="BedrollDouble"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.3</ImmunityGainSpeedFactor>
+			  </value>
+			</li>	
+	
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="Bed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.35</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="DoubleBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.35</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="industrial_single_bed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.4</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="industrial_double_bed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.4</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="MilleniumBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.5</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="MilleniumDoubleBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.5</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="RoyalBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.45</ImmunityGainSpeedFactor>
+			  </value>
+			</li>		
+
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="PodBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.6</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="space_double_bed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.6</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="cryo_single_bed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.65</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+	
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="cryo_double_bed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.65</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="HospitalBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.65</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+			  <xpath>Defs/ThingDef[defName="AdvHospitalBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+			  <value>
+				<ImmunityGainSpeedFactor>0.8</ImmunityGainSpeedFactor>
+			  </value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "prison_single_bed_RT" or defName = "prison_single_bed_LB"]/statBases/ImmunityGainSpeedFactor</xpath>
+				<value>
+					<ImmunityGainSpeedFactor>0.4</ImmunityGainSpeedFactor>
+				</value>
+			</li>
+			
+			<!-- Biotech -->
+	
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Biotech</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+				
+					<li Class="PatchOperationReplace">
+					  <xpath>Defs/ThingDef[defName="BabySleepingSpot"]/statBases/ImmunityGainSpeedFactor</xpath>
+					  <value>
+						<ImmunityGainSpeedFactor>0.3</ImmunityGainSpeedFactor>
+					  </value>
+					</li>
+					
+					<li Class="PatchOperationAdd">
+					  <xpath>Defs/ThingDef[defName="Nej_TribalCrib"]/statBases</xpath>
+					  <value>
+						<ImmunityGainSpeedFactor>0.4</ImmunityGainSpeedFactor>
+					  </value>
+					</li>
+	
+	
+					<li Class="PatchOperationAdd">
+					  <xpath>Defs/ThingDef[defName="Crib"]/statBases</xpath>
+					  <value>
+						<ImmunityGainSpeedFactor>0.55</ImmunityGainSpeedFactor>
+					  </value>
+					</li>
+	
+					</operations>
+				</match>
+			</li>
+			
+			</operations>
+		</match>
+	</Operation>
+</Patch>

@@ -68,20 +68,19 @@
     <HugsLibPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\workshop\content\294100\818773962\v1.2\Assemblies\HugsLib.dll</HugsLibPath>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
-      <HintPath>E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\Assemblies\0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
+    <PackageReference Include="Lib.Harmony" Version="2.3.3" ExcludeAssets="runtime" />
+    <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5.*" />
+    <PackageReference Include="Krafs.Publicizer" Version="2.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="ArchitectSense">
-      <HintPath>E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\Assemblies\ArchitectSense.dll</HintPath>
-    </Reference>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\Assemblies\Assembly-CSharp.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.5\Assemblies\ArchitectSense.dll</HintPath>
     </Reference>
     <Reference Include="HugsLib">
-      <HintPath>E:\Users\kacey\Documents\GitHub\PacasForks\Hardcore-SK-Source\R1.4\Assemblies\HugsLib.dll</HintPath>
-      <Private>False</Private>
+      <HintPath>E:\Users\kacey\Documents\GitHub\Hardcore-SK\Mods\HugsLib\v1.5\Assemblies\HugsLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="UnityEngine.CoreModule">
