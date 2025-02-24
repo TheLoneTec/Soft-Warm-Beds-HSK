@@ -21,4 +21,9 @@
     <StartArguments>-applaunch 294100</StartArguments>
     <StartAction>Program</StartAction>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '1.4|AnyCPU'">
+    <StartProgram>C:\Program Files %28x86%29\Steam\Steam.exe</StartProgram>
+    <StartArguments>-applaunch 294100</StartArguments>
+    <StartAction>Program</StartAction>
+  </PropertyGroup>
 </Project>
