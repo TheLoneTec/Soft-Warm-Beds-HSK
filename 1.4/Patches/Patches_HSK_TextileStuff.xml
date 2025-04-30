@@ -79,6 +79,7 @@
 				<xpath>Defs/ThingDef[defName="Leather_Pig"]/statBases</xpath>
 				<value><!-- IGSF 1 -->
 					<Bed_Immunity_Stuff>0.5</Bed_Immunity_Stuff>
+					<Textile_Softness>0.055</Textile_Softness>
 				</value>
 			</li>
 			
@@ -86,6 +87,7 @@
 				<xpath>Defs/ThingDef[defName="Leather_Light"]/statBases</xpath>
 				<value><!-- IGSF 0.84 -->
 					<Bed_Immunity_Stuff>0.42</Bed_Immunity_Stuff>
+					<Textile_Softness>0.018</Textile_Softness>
 				</value>
 			</li>
 			
@@ -93,6 +95,7 @@
 				<xpath>Defs/ThingDef[defName="Leather_Bird"]/statBases</xpath>
 				<value><!-- IGSF 0.92 -->
 					<Bed_Immunity_Stuff>0.46</Bed_Immunity_Stuff>
+					<Textile_Softness>-0.012</Textile_Softness>
 				</value>
 			</li>
 			
@@ -266,6 +269,7 @@
 				<xpath>Defs/ThingDef[defName="Leather_Patch"]/statBases</xpath>
 				<value><!-- IGSF 0.84 -->
 					<Bed_Immunity_Stuff>0.42</Bed_Immunity_Stuff>
+					<Textile_Softness>0.074</Textile_Softness>
 				</value>
 			</li>
 			
