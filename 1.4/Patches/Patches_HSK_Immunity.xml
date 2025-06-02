@@ -62,18 +62,48 @@
 				</value>
 			</li>
 			-->
-			<li Class="PatchOperationReplace">
-			  <xpath>Defs/ThingDef[defName="HayBed"]/statBases/ImmunityGainSpeedFactor</xpath>
-			  <value>
-				<ImmunityGainSpeedFactor>0.35</ImmunityGainSpeedFactor>
-			  </value>
-			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vile's Wood You Please</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+					  <xpath>Defs/ThingDef[defName="HayBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+					  <value>
+						<ImmunityGainSpeedFactor>0.25</ImmunityGainSpeedFactor>
+					  </value>
+					</li>
 
-			<li Class="PatchOperationReplace">
-			  <xpath>Defs/ThingDef[defName="HayBedDouble"]/statBases/ImmunityGainSpeedFactor</xpath>
-			  <value>
-				<ImmunityGainSpeedFactor>0.35</ImmunityGainSpeedFactor>
-			  </value>
+					<li Class="PatchOperationReplace">
+					  <xpath>Defs/ThingDef[defName="HayBedDouble"]/statBases/ImmunityGainSpeedFactor</xpath>
+					  <value>
+						<ImmunityGainSpeedFactor>0.25</ImmunityGainSpeedFactor>
+					  </value>
+					</li>
+					
+					</operations>
+				</match>
+				<nomatch Class="PatchOperationSequence">
+					<operations>
+					
+					<li Class="PatchOperationReplace">
+					  <xpath>Defs/ThingDef[defName="HayBed"]/statBases/ImmunityGainSpeedFactor</xpath>
+					  <value>
+						<ImmunityGainSpeedFactor>0.35</ImmunityGainSpeedFactor>
+					  </value>
+					</li>
+
+					<li Class="PatchOperationReplace">
+					  <xpath>Defs/ThingDef[defName="HayBedDouble"]/statBases/ImmunityGainSpeedFactor</xpath>
+					  <value>
+						<ImmunityGainSpeedFactor>0.35</ImmunityGainSpeedFactor>
+					  </value>
+					</li>
+					
+					</operations>
+				</nomatch>
 			</li>
 
 			<li Class="PatchOperationReplace">
