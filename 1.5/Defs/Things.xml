@@ -35,7 +35,7 @@
       <li>Fabric</li>
       <li>Leathery</li>
     </stuffCategories>
-    <costStuffCount>85</costStuffCount>
+    <costStuffCount>60</costStuffCount>
     <building>
       <bed_showSleeperBody>true</bed_showSleeperBody>
       <bed_healPerDay>4</bed_healPerDay>
