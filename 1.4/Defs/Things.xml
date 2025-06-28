@@ -36,6 +36,9 @@
       <li>Leathery</li>
     </stuffCategories>
     <costStuffCount>60</costStuffCount>
+	<costList>
+		<ComponentIndustrial>2</ComponentIndustrial>
+	</costList>
     <building>
       <bed_showSleeperBody>true</bed_showSleeperBody>
       <bed_healPerDay>4</bed_healPerDay>
